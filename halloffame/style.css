@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: "Consolas", sans-serif;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.div {
+    width: 70%;
+    height: 175%;
+    position: absolute;
+    background-color: rgb(48, 48, 48);
+    left: 15%;
+}
