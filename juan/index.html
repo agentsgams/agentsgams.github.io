@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>juan.</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+        }
+
+        video {
+            transition: 3s;
+        }
+    </style>
+</head>
+<body >
+    <br><br><br><br><br><br>
+    <center>
+    <video autoplay id="video" onended="end()">
+        <source type="video/mp4" src="./juan.mp4">
+    </video>
+    </center>
+    <script>
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        function end() {
+            document.getElementById("video").style.opacity = 0
+            sleep(3000).then(() => { window.location.href = "https://agentn86.github.io/agentsgams" })
+        }
+    </script>
+</body>
+</html>
