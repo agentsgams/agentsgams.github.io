@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.png">
+    <title>Site Unblckr</title>
+    <link href="../style.css" rel="stylesheet">
+</head>
+<body>
+            <h2>agents tools - Site Unblckr</h2>
+            <p><a href="../../index.html"><< back to agents tools</a></p>
+            <p>The YT Unblckr allows you to watch Youtube videos without the hassle of ads or being watched. You may need to sign out to access all content for this unblckr. The plus icon (green) gets the ID from the Randomized Video section. If you want a different video, hit the retry button (red).</p>
+            <p>You cannot watch multiple YT videos, though. When you have 1 tab open, you must close it to make another YT video.</p>
+            <p><b>Note:</b> Do not add "https://" to the address. If you have a blocker- open up Task Manager and end process. Chromebook: Search + ESC, then scroll down til you find something (Lightspeed Filter Agent, etc.) It is recommended to end the process over and over again when you try going to another website.</p>
+            <input id="password" placeholder="ENTER PASSWORD (REQUIRED)">
+            <table class="panel" align="center">
+                <p1 style="color: red;" id="warning"></p1>
+                <tbody>
+                    <tr>
+                        <td align="center">Address</td>
+                        <td align="center">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center"><input type="text" id="input" class="inputlong"></td>
+                        <td align="center"><input type="submit" value="Send" onclick="watch()"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--<div class="history"><button class="history" onclick="savehistory()" disabled>Save history as CSV</button></div>-->
+    <script>
+
+        var myWindow // this will come in handy later
+
+        // the whole unblcoky thing goes on here
+        function watch() {
+
+
+            if (myWindow) {
+                // if you already have a yt tab, you must close it before making another one.
+                myWindow.focus()
+            } else {
+                if (document.getElementById("input").value == "") {
+                    document.getElementById("warning").innerText = "You didn't put an address."
+                } else {document.getElementById("warning").innerText = ""}
+
+                if (document.getElementById("password").value == "agentspassword123NOCAP") {} else {document.getElementById("warning").innerText = "YOU MUST ENTER PASSWORD."; return}
+
+                // Make a new window
+                myWindow = window.open("about:blank")
+                myWindow.document.title = "Google Classroom - Home"
+
+                // set the margin to 0 so you can see the yt vid
+                myWindow.document.body.style.margin = "0"
+
+                // we make the iframe
+                var iframe = document.createElement("iframe")
+                iframe.style.width = "100%"
+                iframe.style.height = "100%"
+                // this part just adds the youtube video and allows fullscreen
+                iframe.src = "https://" + document.getElementById("input").value
+                iframe.allowFullscreen = true
+                // removes mess that comes with iframes
+                iframe.style.border = "none"
+
+                // we then add the iframe to the window, and we are done!
+                myWindow.document.body.appendChild(iframe)
+
+
+                myWindow.addEventListener('beforeunload', function(e) {
+                    // once the video is closed, we can make another one again (check top)
+                    myWindow = undefined
+                }, false);
+            }
+        }
+
+        function getId() {
+            // this is for the button "Get Id!"
+            document.getElementById("input").value = vids[document.getElementById("index").innerText].id
+        }
+    </script>
+</body>
+</html>

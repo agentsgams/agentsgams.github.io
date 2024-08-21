@@ -1,0 +1,88 @@
+/*
+    CSS inspired by calculator.net
+    brought to you by @agentn86
+*/
+
+body {
+    font-family: 'Arial', sans-serif;
+    width: 50%;
+    font-size: 16px;
+}
+
+h2 {
+    color: #003366;
+}
+
+.greenbar {
+    background: #518428;
+    color: #fff;
+    border: 1px solid #519428;
+    padding: 5px;
+    margin-top: 3px;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.panel {
+    background: #eee;
+    border: solid 1px #bbbbbb;
+    padding: 5px;
+}
+
+.inputlong {
+    border: 1px solid #044284;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px #666;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.aligncenter {
+    text-align:center;
+}
+
+input[type=submit] {
+    border: 0px;
+    color: #fff;
+    padding: 11px 50px 11px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #4c7b25;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="180px" height="40px"><circle cx="112" cy="20" r="11" fill="darkseagreen" /><path d="M110 12 L120 20 L110 28 Z" fill="white" /></svg>');
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #696969;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input[type="submit"] , [name="watch"] {
+    border: 0px;
+    color: #fff;
+    padding: 11px 50px 11px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #4c7b25;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="180px" height="40px"><circle cx="85" cy="20" r="11" fill="darkseagreen" /><path d="M80 12 L80 26 L91 20 Z" fill="white" /></svg>');
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+button[name=transBTN] {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 50px;
+}
