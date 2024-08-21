@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <meta http-equiv="refresh" content="7; URL=https://discord.gg/YE6sZWQTud" />
+    <meta name="keywords" content="agents server, invite, discord invite">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:description" content="agentn86's discord server, use this link to invite people and yourself to the server">
+    <meta property="og:title" content="agents server discord invite">
+    <meta property="og:image" content="https://agentn86.neocities.org/agentsserver.png">
+    <title>redirect - agents server</title>
+    <style>
+      body {
+        background-color: black;  
+      }
+      
+      h1 {
+      left: 0;
+      line-height: 200px;
+      margin-top: -100px;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      width: 100%;
+    }
+    
+    h2 {
+      left: 0;
+      line-height: 200px;
+      margin-top: -100px;
+      position: absolute;
+      text-align: center;
+      top: 68%;
+      font-size: 1em;
+      width: 100%;
+      color: yellow;
+    }
+    
+    h3 {
+      left: 0;
+      line-height: 200px;
+      margin-top: -100px;
+      position: absolute;
+      text-align: center;
+      top: 55%;
+      width: 100%;
+      font-size: 1em;
+      font-weight: normal;
+    }
+    
+    .redirect {
+  animation: MoveUpDown 5s linear infinite;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    top: 60%;
+  }
+  50% {
+    top: 40%;
+  }
+}
+    </style>
+    <script>
+      var seconds = 7
+    
+      function step() {
+        seconds -= 1
+        
+        document.getElementById('seconds').innerText = seconds
+      }
+    </script>
+  </head>
+  <body onload="setInterval(step, 1000)">
+    <h1 style="color: white;" id="redirect"><i>Redirecting...</i></h1>
+    <h2 style="color: white;">being redirected in <span id="seconds">7</span> second(s)</h2>
+  </body>
+</html>
