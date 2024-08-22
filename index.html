@@ -131,6 +131,16 @@
         <footer style="color: red;"><b>DISCLAIMER:</b> The creator of this website is not responsible for any punishment
             given to a user while on "agents gams".</footer>
     </center>
+    <!-- Dialog -->
+    <dialog id="migrate">
+        hi
+    </dialog>
+    <script>
+        const migrate = urlParams.get('migrate')
+        if (migrate == "true") {
+            document.getElementById('migrate').showModal()
+        }
+    </script>
     <!-- Scripts -->
     <script src="gamHTML.js" defer></script>
     <script src="scripts/redirect.js"></script>
