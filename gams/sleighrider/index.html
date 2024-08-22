@@ -1,0 +1,7 @@
+<Module>
+    <ModulePrefs title="Snow Rider 3D" />
+    <title>Snow Rider 3D</title>
+    <Content type="html">
+        <![CDATA[ <link rel="stylesheet" href="style.css"> <script src="./TemplateData/UnityProgress.js"></script> <script src="./Build/UnityLoader.js"></script> <script> var gameInstance = UnityLoader.instantiate("gameContainer", "./Build/SnowRider3D-gd-1.json", { onProgress: UnityProgress, Module: { onRuntimeInitialized: function () { UnityProgress(gameInstance, "complete") } } }); </script> <div class="webgl-content"> <div id="gameContainer" style="width: 100%; height: 100%; margin: auto"></div> </div> ]]>
+    </Content>
+</Module>
