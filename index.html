@@ -136,9 +136,12 @@
         hi there
     </dialog>
     <script>
-        const migrate = urlParams.get('migrate')
+        const queryString = window.location.search
+        const urlParams = new URLSearchParams(queryString)
+        var migrate = urlParams.get('migrate')
+
         if (migrate == "true") {
-            document.getElementById('migrate').showModal()
+            document.getElementById('migrate').openModal()
         }
     </script>
     <!-- Scripts -->
