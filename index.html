@@ -109,7 +109,7 @@
         <p1><b style="color: red;">Red:</b> Not FF, <b style="color: blue;">Blue:</b> Not working, <b
                 style="color: green;">Green:</b> Requires Download, <b style="color: pink;">Pink:</b> Made by Agent</p1>
         <br><br>
-        <img src="ads/template.png" width="400" style="border: 3px solid #ffffff;" draggable="false">
+        <a onclick="cashapp()"><img src="ads/template.png" width="400" style="border: 3px solid #ffffff;" draggable="false"></a>
     </center>
     <br><br><br>
     <div id="gamList"></div>
@@ -129,7 +129,9 @@
             <h3>Want to be in a ad?</h3>
             Cash app me <b>two dollars</b> at $agentn860<br>and you will have your own ad indefinitely!
             <br><br>
-            <img src="./cashapp.png" width="150">
+            <a href="https://cash.app/$agentn860"><img src="./cashapp.png" width="150"></a>
+            <br><br>
+            <button onclick="closecashapp()">Close</button>
         </center>
     </dialog>
     <!-- Scripts -->
@@ -137,6 +139,15 @@
     <script src="scripts/redirect.js"></script>
     <script src="scripts/topbar.js"></script>
     <script src="scripts/randomgam.js"></script>
+    <script defer>
+        function cashapp() {
+            document.getElementById('cashapp').openModal()
+        }
+
+        function closecashapp() {
+            document.getElementById('cashapp').close()
+        }
+    </script>
 </body>
 
 </html>
