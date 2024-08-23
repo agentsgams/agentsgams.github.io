@@ -77,3 +77,4 @@ createItem("polytrack", "Polytrack", "https://images-opensocial.googleuserconten
 createItem("nowgg", "now.gg unblckr", "https://agents-nowgg.glitch.me/", "./comingsoon.png", "white", "*THIS WILL SOON BE MOVED TO AGENTS TOOLS*")
 createItem("driftboss", "Drift Boss", "./gams/driftboss", "./thumbs/driftboss.png", "white", "How long can you last driving your car on a wacky road?")
 createItem("eggycar", "Eggy Car", "./gams/eggycar", "./thumbs/eggycar.png", "white", "Keep your egg in your car without dropping!")
+createItem("profootball", "Pro Football", "./gams/flash/profootball.html", "./thumbs/profootball.jpg", "white", "Miniclip classic!")

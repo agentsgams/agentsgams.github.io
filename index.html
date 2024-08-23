@@ -65,20 +65,23 @@
                 event.target.href = "./juan/"
             })
 
+            var music = false
             function togglemusic() {
+                if (music) {
+                    document.getElementById('musicgif').src = "./musicStop.png"
+                    music = false
 
-                if (document.getElementById("musicgif").src == "./musicStop.png") {
-                    document.getElementById("musicgif").src = "./music.gif"
-                    document.getElementById("audiothing").play()
-                }
+                    document.getElementById('audiothing').pause()
 
-                if (document.getElementById("musicgif").src == "./music.gif") {
-                    document.getElementById("musicgif").src = "./musicStop.png"
-                    document.getElementById("audiothing").pause()
+                } else {
+                    document.getElementById('musicgif').src = "./music.gif"
+                    music = true
+
+                    document.getElementById('audiothing').play()
                 }
             }
         </script>
-        <button onclick="togglemusic()" style="cursor: pointer;"><img src="./musicStop.png" style="border: 0px; background: transparent;"
+        <button onclick="togglemusic()" style="cursor: pointer; background: transparent; border: 0;" id="musicbutton"><img src="./musicStop.png" style="border: 0px; background: transparent;"
                 id="musicgif"></button>
         <br><br>
         <marquee scrollamount="8"><i><b>All gams from agent himself, or some other creators! Maybe try a random gam or
