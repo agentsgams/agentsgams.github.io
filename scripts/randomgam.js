@@ -53,7 +53,3 @@ function randomgam() {
     const link = list[Math.floor(Math.random() * list.length)];
     window.location.replace(link)
 }
-
-function openWindow() {
-    var win = window.open()
-}
