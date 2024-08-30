@@ -17,7 +17,7 @@ function createItem(game, formatted, link, image, color, description, openwindow
                 alert('hi')
             }
         </script>
-        <a href="${link}">&nbsp;&nbsp;<img src="${image}" alt="${game}" width="100" style="border: 3px solid ${color};"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" onclick="openWindow(${link}, ${formatted}, ${image})">${formatted}</a></span>
+        <a href="${link}">&nbsp;&nbsp;<img src="${image}" alt="${game}" width="100" style="border: 3px solid ${color};"></a><span class="title">&nbsp;&nbsp;<button style="color: white; cursor: pointer; border: 0; background: transparent;" onclick="openWindow(${link}, ${formatted}, ${image})">${formatted}</button></span>
         <p1>&nbsp;${description}</p1>
     </div>
     `
