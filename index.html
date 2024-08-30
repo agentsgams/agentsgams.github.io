@@ -63,11 +63,13 @@
             document.getElementById("juan").addEventListener("mouseenter", (event) => {
                 event.target.innerText = "juans"
                 event.target.href = "./juan/"
+                event.target.style.textDecoration = "underline"
             })
 
             document.getElementById("juan").addEventListener("mouseleave", (event) => {
                 event.target.innerText = "agents"
                 event.target.href = ""
+                event.target.style.textDecoration = "none"
             })
 
             var music = false
