@@ -12,6 +12,11 @@ function createItem(game, formatted, link, image, color, description, openwindow
     <br>
     <div style="display: flex; align-items: top;">
         <a name="${game}"></a>
+        <script>
+            function openWindow(link, title, icon) {
+                alert('hi')
+            }
+        </script>
         <a href="${link}">&nbsp;&nbsp;<img src="${image}" alt="${game}" width="100" style="border: 3px solid ${color};"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" onclick="openWindow(${link}, ${formatted}, ${image})">${formatted}</a></span>
         <p1>&nbsp;${description}</p1>
     </div>
