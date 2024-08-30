@@ -1,4 +1,4 @@
-function createItem(game, formatted, link, image, color, description, openwindow) {
+function createItem(game, formatted, link, image, color, description) {
     var template = `
     <br>
     <div style="display: flex; align-items: top;">
@@ -8,25 +8,7 @@ function createItem(game, formatted, link, image, color, description, openwindow
     </div>
     `
 
-    var templateWindow = `
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="${game}"></a>
-        <script>
-            function openWindow(link, title, icon) {
-                alert('hi')
-            }
-        </script>
-        <a href="${link}">&nbsp;&nbsp;<img src="${image}" alt="${game}" width="100" style="border: 3px solid ${color};"></a><span class="title">&nbsp;&nbsp;<button style="color: white; cursor: pointer; border: 0; background: transparent;" onclick="openWindow(${link}, ${formatted}, ${image})">${formatted}</button></span>
-        <p1>&nbsp;${description}</p1>
-    </div>
-    `
-
-    if (openwindow == true) {
-        document.getElementById('gamList').innerHTML = document.getElementById('gamList').innerHTML + templateWindow
-    } else {
-        document.getElementById('gamList').innerHTML = document.getElementById('gamList').innerHTML + template
-    }
+    document.getElementById('gamList').innerHTML = document.getElementById('gamList').innerHTML + template
     
 }
 
@@ -84,16 +66,16 @@ createItem("geodash", "GeoDash", "./gams/geodash/index.html", "./thumbs/geodash.
 createItem("motox3m", "Moto X3M", "./gams/iframe/motox3m", "./thumbs/motox3m.png", "white", "is a motorcycle game where you have to get around obstables and make it to the end.")
 createItem("motox3m2", "Moto X3M 2", "./gams/iframe/motox3m2", "./thumbs/motox3m.png", "white", "is the sequal to Moto X3M, with the same premise.")
 createItem("motox3m3", "Moto X3M 3", "./gams/iframe/motox3m3", "./thumbs/motox3m.png", "white", "is the sequal to Moto X3M, with the same premise.")
-createItem("bigshotboxing", "Big Shot Boxing", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://130291037-114506095424113735.preview.editmysite.com/uploads/b/8156145-746889060530413966/files/bsb.xml&container=ig", "./thumbs/bigshotboxing.png", "white", "is a fighting sim where you must be the top in boxing.", true)
-createItem("sr3d2", "Snow Rider 3D 2", "https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/debugactions@655d5137814242ee9383fb707b77aa394f1c1735/main/sr.xml&container=ig", "./thumbs/snowrider3d.png", "white", "is a infinite runner, but you are on a sliegh! Very challenging, can you get all the presents?", true)
-createItem("s2p", "SLOPE 2 Players", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/vue-tables-2@5eccbd48de60822f1a6d6d605d8c58f317d75b6f/lib/s2p.xml&container=ig", "./thumbs/slope-2-player-logo.jpg", "white", "is a infinite runner by SLOPE, but its for 2 players isntead of 1.", true)
-createItem("soccerlegends", "Soccer Legends", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://728591305-836400173629471539.preview.editmysite.com/uploads/b/139890129-766134333972657537/files/fl.xml&container=ig", "./thumbs/footballlegends.png", "white", "is another type of Basketball Legends, but soccer!", true)
-createItem("hellokittyadventure", "Hello Kitty Adventure", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/8c491f21-7353-4f1f-b2a0-9544824c4d28%2Fhello_kitty_adventure.xml&container=ig", "./thumbs/hellokittyadventure.png", "white", "allows you to inbark in a new adventure in the Hello Kitty universe.", true)
+createItem("bigshotboxing", "Big Shot Boxing", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://130291037-114506095424113735.preview.editmysite.com/uploads/b/8156145-746889060530413966/files/bsb.xml&container=ig", "./thumbs/bigshotboxing.png", "white", "is a fighting sim where you must be the top in boxing.")
+createItem("sr3d2", "Snow Rider 3D 2", "https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/debugactions@655d5137814242ee9383fb707b77aa394f1c1735/main/sr.xml&container=ig", "./thumbs/snowrider3d.png", "white", "is a infinite runner, but you are on a sliegh! Very challenging, can you get all the presents?")
+createItem("s2p", "SLOPE 2 Players", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/vue-tables-2@5eccbd48de60822f1a6d6d605d8c58f317d75b6f/lib/s2p.xml&container=ig", "./thumbs/slope-2-player-logo.jpg", "white", "is a infinite runner by SLOPE, but its for 2 players isntead of 1.")
+createItem("soccerlegends", "Soccer Legends", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://728591305-836400173629471539.preview.editmysite.com/uploads/b/139890129-766134333972657537/files/fl.xml&container=ig", "./thumbs/footballlegends.png", "white", "is another type of Basketball Legends, but soccer!")
+createItem("hellokittyadventure", "Hello Kitty Adventure", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/8c491f21-7353-4f1f-b2a0-9544824c4d28%2Fhello_kitty_adventure.xml&container=ig", "./thumbs/hellokittyadventure.png", "white", "allows you to inbark in a new adventure in the Hello Kitty universe.")
 createItem("retrobowl", "Retro Bowl", "./gams/retrobowl/index.html", "./thumbs/retrobowl.avif", "blue", "allows players to enbark on a football journey!")
 createItem("flappyplane", "Flappy Plane", "./gams/flappyplane/index.html", "./comingsoon.png", "red", "is a clone of Flappy Bird but with a interesting twist...")
 createItem("gunmayhem2", "Gun Mayhem 2", "./gams/flash/gunmayhem2.html", "./comingsoon.png", "white", "is a ultimate battle game! Fire and shoot until you can't no more!")
 createItem("minesweeper", "Minesweeper", "https://agentn86.github.io/js-minesweeper/", "./comingsoon.png", "white", "-- a challenging game where you must figure out the mines before they explode you!")
-createItem("polytrack", "Polytrack", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/wergboy/NLP@3cd7c854d047f364125194f75adeaa75aecf7985/pt/pt.xml&container=ig", "./thumbs/polytrack.png", "white", "is a racing game, runs well on basically anything, and is super fun! (Even your own custom editor..)", true)
+createItem("polytrack", "Polytrack", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/wergboy/NLP@3cd7c854d047f364125194f75adeaa75aecf7985/pt/pt.xml&container=ig", "./thumbs/polytrack.png", "white", "is a racing game, runs well on basically anything, and is super fun! (Even your own custom editor..)")
 createItem("nowgg", "now.gg unblckr", "https://agents-nowgg.glitch.me/", "./comingsoon.png", "white", "*THIS WILL SOON BE MOVED TO AGENTS TOOLS*")
 createItem("driftboss", "Drift Boss", "./gams/driftboss", "./thumbs/driftboss.png", "white", "How long can you last driving your car on a wacky road?")
 createItem("eggycar", "Eggy Car", "./gams/eggycar", "./thumbs/eggycar.png", "white", "Keep your egg in your car without dropping!")
