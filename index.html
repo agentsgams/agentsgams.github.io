@@ -65,6 +65,11 @@
                 event.target.href = "./juan/"
             })
 
+            document.getElementById("juan").addEventListener("mouseleave", (event) => {
+                event.target.innerText = "agents"
+                event.target.href = ""
+            })
+
             var music = false
             function togglemusic() {
                 if (music) {
