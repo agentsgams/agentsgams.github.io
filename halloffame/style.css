@@ -17,8 +17,9 @@ a:hover {
 
 .div {
     width: 70%;
-    height: 175%;
-    position: absolute;
+    height: auto;
+    /* Change height to auto */
     background-color: rgb(48, 48, 48);
-    left: 15%;
+    margin: 0 auto;
+    /* Center the div horizontally */
 }
