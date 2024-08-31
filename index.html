@@ -46,6 +46,8 @@
         .show {
             opacity: 1;
         }
+
+        #juan:hover {color: white;}
     </style>
 </head>
 
@@ -55,7 +57,7 @@
         <center><a href="#top" style="font-size: larger; color: white;">Back to Top</a></center>
     </div>
     <center>
-        <h1><a id="juan" style="color: white; :hover {color: white;}">agents</a> gams</h1>
+        <h1><a id="juan" style="color: white;">agents</a> gams</h1>
         <audio loop id="audiothing">
             <source type="audio/mp3" src="./pilotredsun.mp3">
         </audio>
@@ -88,7 +90,8 @@
                 }
             }
         </script>
-        <button onclick="togglemusic()" style="cursor: pointer; background: transparent; border: 0;" id="musicbutton"><img src="./musicStop.png" style="border: 0px; background: transparent;"
+        <button onclick="togglemusic()" style="cursor: pointer; background: transparent; border: 0;"
+            id="musicbutton"><img src="./musicStop.png" style="border: 0px; background: transparent;"
                 id="musicgif"></button>
         <br><br>
         <marquee scrollamount="8"><i><b>All gams from agent himself, or some other creators! Maybe try a random gam or
@@ -104,32 +107,53 @@
         <div>
             <u><b>Gam Selection</b></u>
             <br>
-                <a href="" style="font-size: larger; color: white;">All Games</a> - 
-                <a onclick="randomgam()" style="font-size: larger; color: white; cursor: pointer;"><u>Random Game</u></a>
+            <a href="" style="font-size: larger; color: white;">All Games</a> -
+            <a onclick="randomgam()" style="font-size: larger; color: white; cursor: pointer;"><u>Random Game</u></a>
             <br><br>
 
             <u><b>Feedback & Community</b></u>
             <br>
-                <a href="https://trello.com/b/YjI0x9ME" style="font-size: larger; color: white; cursor: pointer;"><u>Trello Board</u></a> - 
-                <a href="https://agentn86.123guestbook.com" style="font-size: larger; color: white; cursor: pointer;"><u>Guestbook</u></a> - 
-                <a href="yiscord.html" style="font-size: larger; color: white; cursor: pointer;"><u>agents server (yiscord)</u></a> - 
-                <a href="./halloffame/" style="font-size: larger; color: white; cursor: pointer;"><u>Hall of Fame</u></a>
+            <a href="https://trello.com/b/YjI0x9ME" style="font-size: larger; color: white; cursor: pointer;"><u>Trello
+                    Board</u></a> -
+            <a href="https://agentn86.123guestbook.com"
+                style="font-size: larger; color: white; cursor: pointer;"><u>Guestbook</u></a> -
+            <a href="yiscord.html" style="font-size: larger; color: white; cursor: pointer;"><u>agents server
+                    (yiscord)</u></a> -
+            <a href="./halloffame/" style="font-size: larger; color: white; cursor: pointer;"><u>Hall of Fame</u></a>
             <br><br>
 
             <u><b>Related Sites</b></u>
             <br>
-                <a href="https://sites.google.com/view/agentsgams-blog/home" style="font-size: larger; color: white; cursor: pointer;"><u>Changelogs</u></a> - 
-                <a href="./agentstools/index.html" style="font-size: larger; color: white; cursor: pointer;"><u>agents tools</u></a>
+            <a href="https://sites.google.com/view/agentsgams-blog/home"
+                style="font-size: larger; color: white; cursor: pointer;"><u>Changelogs</u></a> -
+            <a href="./agentstools/index.html" style="font-size: larger; color: white; cursor: pointer;"><u>agents
+                    tools</u></a>
             <br><br>
         </div>
         <br>
         <p1><b style="color: red;">Red:</b> Not FF, <b style="color: blue;">Blue:</b> Not working, <b
                 style="color: green;">Green:</b> Requires Download, <b style="color: pink;">Pink:</b> Made by Agent</p1>
         <br><br>
-        <button style="background: transparent; border: 0;" onclick="cashapp()"><img src="ad_error.png" width="500" id="ad" style="border: 3px solid #ffffff; cursor: pointer;" draggable="false"></button>
+        <button style="background: transparent; border: 0;" onclick="cashapp()"><img src="ad_error.png" width="500"
+                id="ad" style="border: 3px solid #ffffff; cursor: pointer;" draggable="false"></button>
     </center>
     <br><br><br>
     <div id="gamList">
+        <script>
+            function openWindow(link, title) {
+                var win = window.open()
+                win.document.body.style.margin = '0'
+                win.document.body.style.height = '100vh'
+                win.document.title = title
+                var iframe = win.document.createElement('iframe')
+                iframe.style.border = 'none'
+                iframe.style.width = '100%'
+                iframe.style.height = '100%'
+                iframe.style.margin = '0'
+                iframe.src = link
+                win.document.body.appendChild(iframe)
+            }
+        </script>
     </div>
     <br><br>
     <center>
@@ -177,7 +201,7 @@
             "./ads/missingchild.GIF",
             "./ads/epicbossbattle.GIF",
         ]
-        var ad = ads[Math.floor(Math.random()*ads.length)]
+        var ad = ads[Math.floor(Math.random() * ads.length)]
         document.getElementById('ad').src = ad
     </script>
 </body>

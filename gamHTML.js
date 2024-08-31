@@ -1,15 +1,28 @@
-function createItem(game, formatted, link, image, color, description) {
+function createItem(game, formatted, link, image, color, description, iframe) {
     var template = `
     <br>
     <div style="display: flex; align-items: top;">
         <a name="${game}"></a>
-        <a href="${link}">&nbsp;&nbsp;<img src="${image}" alt="${game}" width="100" style="border: 3px solid ${color};"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" href="${link}">${formatted}</a></span>
+        <a href="${link}" style="color:transparent;">&nbsp;&nbsp;<img src="${image}" alt="${game}" width="100" style="border: 3px solid ${color};"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" href="${link}">${formatted}</a></span>
         <p1>&nbsp;${description}</p1>
     </div>
     `
 
-    document.getElementById('gamList').innerHTML = document.getElementById('gamList').innerHTML + template
-    
+    var template_iframe = `
+    <br>
+    <div style="display: flex; align-items: top;">
+        <a name="${game}"></a>
+        <a onclick="openWindow('${link}', '${formatted}')" style="cursor:pointer;">&nbsp;&nbsp;<img src="${image}" alt="${game}" width="100" style="border: 3px solid ${color};"></a><span class="title">&nbsp;&nbsp;<u><a style="color: white; cursor: pointer;" onclick="openWindow('${link}', '${formatted}')">${formatted}</a></u></span>
+        <p1>&nbsp;${description}</p1>
+    </div>
+    `
+
+    if (iframe == true) {
+        document.getElementById('gamList').innerHTML = document.getElementById('gamList').innerHTML + template_iframe
+    } else {
+        document.getElementById('gamList').innerHTML = document.getElementById('gamList').innerHTML + template
+    }
+
 }
 
 createItem("epicbossbattle", "Epic Boss Battle", "https://agentn86.github.io/epicbossbattle/v1.3.3/", "https://agentn86.github.io/epicbossbattle/v1.3.3/loading.png", "pink", "is a tough, rage gam where you have to avoid and end a spaceship without dying in the process! Use the retry button to restart the game when needed.")
@@ -61,22 +74,24 @@ createItem("fireboywatergirl", "Fireboy & Watergirl in The Forest Temple", "./ga
 createItem("eaglercraft", "Eaglercraft", "https://drive.google.com/uc?export=download&id=1-MduluUms_LG7tUJyMkAPBw82O40R11R", "./thumbs/eaglercraft.png", "green", "is a Minecraft clone based for the web! You can play with friends as well!")
 createItem("ssf2", "SSF2", "./gams/flash/ssf2.html", "./thumbs/ssf2.png", "blue", "is a classic flash gam. You should really give it a try!")
 createItem("houseofhazards", "House of Hazards", "./gams/houseofhazards/index.html", "./thumbs/houseofhazards.png", "white", "is a platformer gam that you need to get out of the house. But other players can sabotage you on the way!")
-createItem("1v1.lol", "1v1.LOL", "https://book-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/WPpluginsync@main/lib/edit/up.xml&container=ig", "./thumbs/1v1lol.png", "white", "is a battle royale type game where you must survive with bots as enemeies. There are many different gamemodes- as well.")
+createItem("1v1.lol", "1v1.LOL", "https://book-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/WPpluginsync@main/lib/edit/up.xml&container=ig", "./thumbs/1v1lol.png", "white", "is a battle royale type game where you must survive with bots as enemeies. There are many different gamemodes- as well.", true)
 createItem("geodash", "GeoDash", "./gams/geodash/index.html", "./thumbs/geodash.png", "white", "is a 1-1 replica to Geomentry Dash. Give it a try, and see if you can bet the hard challenging levels!")
 createItem("motox3m", "Moto X3M", "./gams/iframe/motox3m", "./thumbs/motox3m.png", "white", "is a motorcycle game where you have to get around obstables and make it to the end.")
 createItem("motox3m2", "Moto X3M 2", "./gams/iframe/motox3m2", "./thumbs/motox3m.png", "white", "is the sequal to Moto X3M, with the same premise.")
 createItem("motox3m3", "Moto X3M 3", "./gams/iframe/motox3m3", "./thumbs/motox3m.png", "white", "is the sequal to Moto X3M, with the same premise.")
-createItem("bigshotboxing", "Big Shot Boxing", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://130291037-114506095424113735.preview.editmysite.com/uploads/b/8156145-746889060530413966/files/bsb.xml&container=ig", "./thumbs/bigshotboxing.png", "white", "is a fighting sim where you must be the top in boxing.")
-createItem("sr3d2", "Snow Rider 3D 2", "https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/debugactions@655d5137814242ee9383fb707b77aa394f1c1735/main/sr.xml&container=ig", "./thumbs/snowrider3d.png", "white", "is a infinite runner, but you are on a sliegh! Very challenging, can you get all the presents?")
-createItem("s2p", "SLOPE 2 Players", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/vue-tables-2@5eccbd48de60822f1a6d6d605d8c58f317d75b6f/lib/s2p.xml&container=ig", "./thumbs/slope-2-player-logo.jpg", "white", "is a infinite runner by SLOPE, but its for 2 players isntead of 1.")
-createItem("soccerlegends", "Soccer Legends", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://728591305-836400173629471539.preview.editmysite.com/uploads/b/139890129-766134333972657537/files/fl.xml&container=ig", "./thumbs/footballlegends.png", "white", "is another type of Basketball Legends, but soccer!")
-createItem("hellokittyadventure", "Hello Kitty Adventure", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/8c491f21-7353-4f1f-b2a0-9544824c4d28%2Fhello_kitty_adventure.xml&container=ig", "./thumbs/hellokittyadventure.png", "white", "allows you to inbark in a new adventure in the Hello Kitty universe.")
+createItem("bigshotboxing", "Big Shot Boxing", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://130291037-114506095424113735.preview.editmysite.com/uploads/b/8156145-746889060530413966/files/bsb.xml&container=ig", "./thumbs/bigshotboxing.png", "white", "is a fighting sim where you must be the top in boxing.", true)
+createItem("sr3d2", "Snow Rider 3D 2", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/debugactions@6e97a528bfcdd0623e0cd99ad352baebf47a6b70/sr3d2.xml&container=ig", "./thumbs/snowrider3d.png", "white", "is a infinite runner, but you are on a sliegh! Very challenging, can you get all the presents?", true)
+createItem("s2p", "SLOPE 2 Players", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/vue-tables-2@5eccbd48de60822f1a6d6d605d8c58f317d75b6f/lib/s2p.xml&container=ig", "./thumbs/slope-2-player-logo.jpg", "white", "is a infinite runner by SLOPE, but its for 2 players isntead of 1.", true)
+createItem("soccerlegends", "Soccer Legends", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://728591305-836400173629471539.preview.editmysite.com/uploads/b/139890129-766134333972657537/files/fl.xml&container=ig", "./thumbs/footballlegends.png", "white", "is another type of Basketball Legends, but soccer!", true)
+createItem("hellokittyadventure", "Hello Kitty Adventure", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/8c491f21-7353-4f1f-b2a0-9544824c4d28%2Fhello_kitty_adventure.xml&container=ig", "./thumbs/hellokittyadventure.png", "white", "allows you to inbark in a new adventure in the Hello Kitty universe.", true)
 createItem("retrobowl", "Retro Bowl", "./gams/retrobowl/index.html", "./thumbs/retrobowl.avif", "blue", "allows players to enbark on a football journey!")
 createItem("flappyplane", "Flappy Plane", "./gams/flappyplane/index.html", "./comingsoon.png", "red", "is a clone of Flappy Bird but with a interesting twist...")
 createItem("gunmayhem2", "Gun Mayhem 2", "./gams/flash/gunmayhem2.html", "./comingsoon.png", "white", "is a ultimate battle game! Fire and shoot until you can't no more!")
 createItem("minesweeper", "Minesweeper", "https://agentn86.github.io/js-minesweeper/", "./comingsoon.png", "white", "-- a challenging game where you must figure out the mines before they explode you!")
-createItem("polytrack", "Polytrack", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/wergboy/NLP@3cd7c854d047f364125194f75adeaa75aecf7985/pt/pt.xml&container=ig", "./thumbs/polytrack.png", "white", "is a racing game, runs well on basically anything, and is super fun! (Even your own custom editor..)")
+createItem("polytrack", "Polytrack", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/wergboy/NLP@3cd7c854d047f364125194f75adeaa75aecf7985/pt/pt.xml&container=ig", "./thumbs/polytrack.png", "white", "is a racing game, runs well on basically anything, and is super fun! (Even your own custom editor..)", true)
 createItem("nowgg", "now.gg unblckr", "https://agents-nowgg.glitch.me/", "./comingsoon.png", "white", "*THIS WILL SOON BE MOVED TO AGENTS TOOLS*")
 createItem("driftboss", "Drift Boss", "./gams/driftboss", "./thumbs/driftboss.png", "white", "How long can you last driving your car on a wacky road?")
 createItem("eggycar", "Eggy Car", "./gams/eggycar", "./thumbs/eggycar.png", "white", "Keep your egg in your car without dropping!")
 createItem("profootball", "Pro Football", "./gams/flash/profootball.html", "./thumbs/profootball.jpg", "white", "Miniclip classic!")
+createItem("pixelspeedrun", "Pixel Speedrun", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://164395038-759385720163048275.preview.editmysite.com/uploads/b/139890129-591973326979111284/files/pisprun.xml&container=ig", "./thumbs/pixelspeedrun.jpg", "white", "makes you get to the end of the tough platform. Try beating your time!", true)
+createItem("doom1993", "DooM", "https://diekmann.github.io/wasm-fizzbuzz/doom/", "./thumbs/doom1993.jpg", "white", "is the original classic to DOOM 1993! This is the SHAREWARE version, so there is only one episode. No sound and melting screen as well. Put it's a port from DOOM to your web broswer. Can't have everything.", true)
