@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agents gams - Search</title>
+    <style>
+
+        body {
+            font-family: "Consolas", sans-serif;
+        }
+
+        #searchBar {
+
+            background-image: url('searchicon.png');
+            background-position: 10px 12px;
+            background-repeat: no-repeat;
+            
+            width: 96.7%;
+            font-size: 16px;
+            padding: 12px 20px 12px 40px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+            font-family: "Consolas", sans-serif;
+
+        }
+
+        #myUL {
+            
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            
+        }
+
+        #myUL li a {
+
+            border: 1px solid #ddd;
+            margin-top: -1px;
+            background-color: #f6f6f6;
+            padding: 12px;
+
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            display: block;
+
+        }
+
+        #myUL li a:hover:not(.header) {
+            background-color: #eee;
+        }
+
+        #myUL li a.header {
+            cursor: auto;
+        }
+
+        #myUL li a.iframe {
+            cursor: pointer;
+        }
+
+        #myUL li a:active:not(.header) {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="searchBar" onkeyup="search()" placeholder="Find a game...">
+    <ul id="myUL">
+        <!-- 62 Total Games in Search Bar -->
+
+        <!-- MISSING:   -->
+
+        <li><a class="header"><b>1</b></a></li>
+        <li><a onclick='openWindow("https://book-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/WPpluginsync@main/lib/edit/up.xml&container=ig", "1v1.LOL")' class="normal iframe">1v1.LOL</a></li>
+
+        <li><a class="header"><b>3</b></a></li>
+        <li><a href="https://agentn86.github.io/agentgam/gams/3dmaze.html" class="normal">3D Maze</a></li>
+
+        <li><a class="header"><b>A</b></a></li>
+        <li><a href="https://agentn86.github.io/agentgam/gams/flash/ageofwar.html" class="normal">Age of War</a></li>
+        <li><a href="https://agentn86.github.io/agentgam/gams/flash/ageofwar2.html" class="normal">Age of War 2</a></li>
+        <li><a href="https://agentn86.github.io/agentgam/gams/flash/alienhom.html" class="normal">Alien Hominid</a></li>
+        <li><a href="https://agentn86.github.io/agentgam/gams/alienshooter.html" class="normal">Alien Shooter</a></li>
+
+        <li><a class="header"><b>B</b></a></li>
+        <li><a href="https://agentn86.github.io/agentgam/gams/basketballstars" class="normal">Basketball Stars</a></li>
+        <li><a onclick='openWindow("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://130291037-114506095424113735.preview.editmysite.com/uploads/b/8156145-746889060530413966/files/bsb.xml&container=ig", "Big Shot Boxing")' class="normal iframe">Big Shot Boxing</a></li>
+        <li><a href="https://julianyaman.github.io/bitcoin-clicker/" class="normal">Bitcoin Clicker</a></li>
+        <li><a href="https://agentn86.github.io/agentgam/gams/flash/bloontd5.html" class="normal">Bloons Tower Defense 5</a></li>
+        <li><a href="https://agentn86.github.io/agentgam/gams/flash/bloxorz.html" class="normal">Bloxorz</a></li>
+
+        <li><a class="header"><b>C</b></a></li>
+        <li><a href="https://coincollecor.glitch.me/index.html" class="normal">Coin Collector</a></li>
+        <li><a href="https://steamcookieclicker.github.io/" class="normal">Cookie Clicker</a></li>
+
+        <li><a class="header"><b>D</b></a></li>
+        <li><a href="https://agentn86.github.io/agentgam/gams/deepsleep.html" class="normal">Deep Sleep</a></li>
+        <li><a href="https://agentn86.github.io/agentgam/gams/deepersleep.html" class="normal">Deeper Sleep</a></li>
+        <li><a onclick='openWindow("https://diekmann.github.io/wasm-fizzbuzz/doom/", "DooM")'' class="normal iframe">DooM</a></li>
+        <li><a href="https://agentn86.github.io/agentgam/gams/driftboss" class="normal">Drift Boss</a></li>
+
+        <!-- COMPLETE REST TOMMOROW -->
+
+        <li><a href="#" class="normal">Duck Life</a></li>
+
+        <li><a class="header"><b>E</b></a></li>
+        <li><a href="#" class="normal">Eaglercraft</a></li>
+        <li><a href="#" class="normal">Eggy Car</a></li>
+        <li><a href="#" class="normal">Epic Boss Battle</a></li>
+        
+        <li><a class="header"><b>F</b></a></li>
+        <li><a href="#" class="normal">Fireboy & Watergirl in The Forest Temple</a></li>
+        <li><a href="#" class="normal">Flappy Plane</a></li>
+        <li><a href="#" class="normal">Fancy Pants Adventures</a></li>
+
+        <li><a class="header"><b>G</b></a></li>
+        <li><a href="#" class="normal">GeoDash</a></li>
+        <li><a href="#" class="normal">Gun Mayhem 2</a></li>
+
+        <li><a class="header"><b>H</b></a></li>
+        <li><a href="#" class="normal">House of Hazards</a></li>
+        <li><a href="#" class="normal">Hello Kitty Adventure</a></li>
+
+        <li><a class="header"><b>I</b></a></li>
+        <li><a href="#" class="normal">Insane Orb</a></li>
+        <li><a href="#" class="normal">Interactive Buddy</a></li>
+        <li><a href="#" class="normal">Interactive Buddy 2</a></li>
+
+        <li><a class="header"><b>M</b></a></li>
+        <li><a href="#" class="normal">Moto X3M</a></li>
+        <li><a href="#" class="normal">Moto X3M 2</a></li>
+        <li><a href="#" class="normal">Moto X3M 3</a></li>
+        <li><a href="#" class="normal">Minesweeper</a></li>
+
+        <li><a class="header"><b>P</b></a></li>
+        <li><a href="#" class="normal">Papa's Burgeria</a></li>
+        <li><a href="#" class="normal">Papa's Cheeseria</a></li>
+        <li><a href="#" class="normal">Papa's Cupcakeria</a></li>
+        <li><a href="#" class="normal">Papa's Donut</a></li>
+        <li><a href="#" class="normal">Papa's Freezeria</a></li>
+        <li><a href="#" class="normal">Papa's Hotdogeria</a></li>
+        <li><a href="#" class="normal">Papa's Pancakeria</a></li>
+        <li><a href="#" class="normal">Papa's Pasteria</a></li>
+        <li><a href="#" class="normal">Papa's Pizzeria</a></li>
+        <li><a href="#" class="normal">Papa's Scooperia</a></li>
+        <li><a href="#" class="normal">Papa's Sushiria</a></li>
+        <li><a href="#" class="normal">Papa's Taco Mia</a></li>
+        <li><a href="#" class="normal">Papa's Wingeria</a></li>
+        <li><a href="#" class="normal">Pixel Speedrun</a></li>
+        <li><a href="#" class="normal">Polytrack</a></li>
+        <li><a href="#" class="normal">Portal: The Flash Version</a></li>
+        <li><a href="#" class="normal">Pro Football</a></li>
+
+        <li><a class="header"><b>R</b></a></li>
+        <li><a href="#" class="normal">Retro Bowl</a></li>
+        <li><a href="#" class="normal">Run 2</a></li>
+
+        <li><a class="header"><b>S</b></a></li>
+        <li><a href="#" class="normal">SLOPE</a></li>
+        <li><a href="#" class="normal">SLOPE 2 Players</a></li>
+        <li><a href="#" class="normal">SM63</a></li>
+        <li><a href="#" class="normal">SMnake</a></li>
+        <li><a href="#" class="normal">Snow Rider 3D 2</a></li>
+        <li><a href="#" class="normal">Soccer Legends</a></li>
+        <li><a href="#" class="normal">Super Slash Flash 2</a></li>
+
+        <li><a class="header"><b>T</b></a></li>
+        <li><a href="#" class="normal">The Impossible Quiz</a></li>
+        <li><a href="#" class="normal">The Impossible Quiz 2</a></li>
+        <li><a href="#" class="normal">The World's Hardest Game</a></li>
+        <li><a href="#" class="normal">Time Shooter 3</a></li>
+        <li><a href="#" class="normal">Toss the Turtle</a></li>
+
+        <li><a class="header"><b>W</b></a></li>
+        <li><a href="#" class="normal">Wasted Sky</a></li>
+        <li><a href="#" class="normal">Whack your Computer</a></li>
+        <li><a href="#" class="normal">Whack your Boss</a></li>
+
+    </ul>
+    <br>
+    <script>
+        function search() {
+            // Declare variables
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('searchBar');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+     <script>
+        function openWindow(link, title) {
+            var win = window.open()
+            win.document.body.style.margin = '0'
+            win.document.body.style.height = '100vh'
+            win.document.title = title
+            var iframe = win.document.createElement('iframe')
+            iframe.style.border = 'none'
+            iframe.style.width = '100%'
+            iframe.style.height = '100%'
+            iframe.style.margin = '0'
+            iframe.src = link
+            win.document.body.appendChild(iframe)
+        }
+    </script>
+</body>
+
+</html>

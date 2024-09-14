@@ -89,9 +89,13 @@ createItem("flappyplane", "Flappy Plane", "./gams/flappyplane/index.html", "./co
 createItem("gunmayhem2", "Gun Mayhem 2", "./gams/flash/gunmayhem2.html", "./comingsoon.png", "white", "is a ultimate battle game! Fire and shoot until you can't no more!")
 createItem("minesweeper", "Minesweeper", "https://agentn86.github.io/js-minesweeper/", "./comingsoon.png", "white", "-- a challenging game where you must figure out the mines before they explode you!")
 createItem("polytrack", "Polytrack", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/wergboy/NLP@3cd7c854d047f364125194f75adeaa75aecf7985/pt/pt.xml&container=ig", "./thumbs/polytrack.png", "white", "is a racing game, runs well on basically anything, and is super fun! (Even your own custom editor..)", true)
-createItem("nowgg", "now.gg unblckr", "https://agents-nowgg.glitch.me/", "./comingsoon.png", "white", "*THIS WILL SOON BE MOVED TO AGENTS TOOLS*")
 createItem("driftboss", "Drift Boss", "./gams/driftboss", "./thumbs/driftboss.png", "white", "How long can you last driving your car on a wacky road?")
 createItem("eggycar", "Eggy Car", "./gams/eggycar", "./thumbs/eggycar.png", "white", "Keep your egg in your car without dropping!")
 createItem("profootball", "Pro Football", "./gams/flash/profootball.html", "./thumbs/profootball.jpg", "white", "Miniclip classic!")
 createItem("pixelspeedrun", "Pixel Speedrun", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://164395038-759385720163048275.preview.editmysite.com/uploads/b/139890129-591973326979111284/files/pisprun.xml&container=ig", "./thumbs/pixelspeedrun.jpg", "white", "makes you get to the end of the tough platform. Try beating your time!", true)
 createItem("doom1993", "DooM", "https://diekmann.github.io/wasm-fizzbuzz/doom/", "./thumbs/doom1993.jpg", "white", "is the original classic to DOOM 1993! This is the SHAREWARE version, so there is only one episode. No sound and melting screen as well. Put it's a port from DOOM to your web broswer. Can't have everything.", true)
+
+
+
+
+// createItem("nowgg", "now.gg unblckr", "https://agents-nowgg.glitch.me/", "./comingsoon.png", "white", "*THIS WILL SOON BE MOVED TO AGENTS TOOLS*")
