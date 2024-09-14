@@ -134,7 +134,7 @@
         <p1><b style="color: red;">Red:</b> Not FF, <b style="color: blue;">Blue:</b> Not working, <b
                 style="color: green;">Green:</b> Requires Download, <b style="color: pink;">Pink:</b> Made by Agent</p1>
         <br><br>
-        <button style="background: transparent; border: 0;" onclick="cashapp()"><img src="ad_error.png" width="500"
+        <button style="background: transparent; border: 0;" onclick="cashapp()" oncontextmenu="openAd(); return false;"><img src="ad_error.png" width="500"
                 id="ad" style="border: 3px solid #ffffff; cursor: pointer;" draggable="false"></button>
     </center>
     <br><br><br>
@@ -177,6 +177,8 @@
             <br>
             <a href="mailto:agentsgams@gmail.com"><b>agentsgams@gmail.com</b></a>
             <br><br>
+            <i>Also btw you can right click the ad to get a better view...</i>
+            <br><br>
             <button onclick="closecashapp()" style="cursor: pointer;">Close</button>
         </center>
     </dialog>
@@ -192,6 +194,10 @@
 
         function closecashapp() {
             document.getElementById('cashapp').close()
+        }
+
+        function openAd() {
+            window.open(document.getElementById('ad').src)
         }
     </script>
     <script defer>
