@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agents gams - Changelog</title>
+    <style>
+        body {
+            font-family: "Consolas", sans-serif;
+        }
+
+        /* Style the button that is used to open and close the collapsible content */
+        .collapsible {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            font: "Consolas", sans-serif;
+        }
+
+        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+        .active,
+        .collapsible:hover {
+            background-color: #ccc;
+        }
+
+        /* Style the collapsible content. Note: hidden by default */
+        .content {
+
+            padding: 0 18px;
+            background-color: #f1f1f1;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+
+        }
+
+        .collapsible:after {
+            content: '\02795';
+            /* Unicode character for "plus" sign (+) */
+            font: "Consolas", sans-serif;
+            font-size: 13px;
+            color: white;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            font: "Consolas", sans-serif;
+            content: "\2796";
+            /* Unicode character for "minus" sign (-) */
+        }
+    </style>
+</head>
+
+<body>
+    <a href="/agentgam" style="color: black;"><-- Back to agents gams</a>
+            <br><br>
+
+            <button type="button" class="collapsible"><b>Version v3.1 (Current)</b></button>
+            <div class="content">
+                <ul>
+                    <li><b>Website Related</b>
+                        <ul>
+                            <li>Added Changelogs</li>
+                            <li>Added Search Bar
+                                <ul>
+                                    <li>Find your favoriate games, to use this functionality use the "All Games" button
+                                        at the main page.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><b>Game Related</b>
+                        <ul>
+                            <li><span style="color: green;">Coming Soon: </span>Drift Hunters</li>
+                            <li><span style="color: red;">Removed: </span>now.gg unblocker</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.maxHeight) {
+                            content.style.maxHeight = null;
+                        } else {
+                            content.style.maxHeight = content.scrollHeight + "px";
+                        }
+                    });
+                }
+            </script>
+</body>
+
+</html>
