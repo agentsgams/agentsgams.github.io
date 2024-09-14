@@ -93,9 +93,9 @@ createItem("driftboss", "Drift Boss", "./gams/driftboss", "./thumbs/driftboss.pn
 createItem("eggycar", "Eggy Car", "./gams/eggycar", "./thumbs/eggycar.png", "white", "Keep your egg in your car without dropping!")
 createItem("profootball", "Pro Football", "./gams/flash/profootball.html", "./thumbs/profootball.jpg", "white", "Miniclip classic!")
 createItem("pixelspeedrun", "Pixel Speedrun", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://164395038-759385720163048275.preview.editmysite.com/uploads/b/139890129-591973326979111284/files/pisprun.xml&container=ig", "./thumbs/pixelspeedrun.jpg", "white", "makes you get to the end of the tough platform. Try beating your time!", true)
-createItem("doom1993", "DooM", "https://diekmann.github.io/wasm-fizzbuzz/doom/", "./thumbs/doom1993.jpg", "white", "is the original classic to DOOM 1993! This is the SHAREWARE version, so there is only one episode. No sound and melting screen as well. Put it's a port from DOOM to your web broswer. Can't have everything.", true)
-
-
+createItem("doom1993", "DooM", "https://diekmann.github.io/wasm-fizzbuzz/doom/", "./thumbs/doom1993.jpg", "white", "is the original classic to DOOM 1993! This is the SHAREWARE version, so there is only one episode. No sound and melting screen as well.", true)
+/* added */ createItem("javelinfighting", "Javelin Fighting", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/gertdoro/Toolkit@894aa24b4a4091c753666d7d000c28479ebca909/Code/Perl/Javelin.xml&container=ig", "./thumbs/javelinfighting.jpg", "white", "makes you fight an AI opponent in a fatal javelin fight!", true)
+/* added */ createItem("bottleflip", "Bottle Flip", "./gams/iframe/bottleflip.html", "./thumbs/bottleflip.png", "white", "makes you traverse a room without making the bottle fall to the ground!", false)
 
 
 // createItem("nowgg", "now.gg unblckr", "https://agents-nowgg.glitch.me/", "./comingsoon.png", "white", "*THIS WILL SOON BE MOVED TO AGENTS TOOLS*")
