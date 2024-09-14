@@ -47,7 +47,9 @@
             opacity: 1;
         }
 
-        #juan:hover {color: white;}
+        #juan:hover {
+            color: white;
+        }
     </style>
 </head>
 
@@ -195,15 +197,28 @@
         }
     </script>
     <script defer>
-        var ads = [
-            "./ads/jjspiano.gif",
-            "./ads/template.png",
-            "./ads/missingchild.GIF",
-            "./ads/epicbossbattle.GIF",
-            "./ads/apricot.GIF",
-        ]
-        var ad = ads[Math.floor(Math.random() * ads.length)]
-        document.getElementById('ad').src = ad
+
+        const urlParams = new URLSearchParams(window.location.search)
+        const myParam = urlParams.get('secretcode')
+
+        if (myParam === "noads") {
+
+            document.getElementById('ad').remove()
+
+        } else {
+
+            var ads = [
+                "./ads/jjspiano.gif",
+                "./ads/template.png",
+                "./ads/missingchild.GIF",
+                "./ads/epicbossbattle.GIF",
+                "./ads/apricot.GIF",
+            ]
+            var ad = ads[Math.floor(Math.random() * ads.length)]
+            document.getElementById('ad').src = ad
+
+        }
+
     </script>
 </body>
 
