@@ -184,6 +184,17 @@
             <button onclick="closecashapp()" style="cursor: pointer;">Close</button>
         </center>
     </dialog>
+    <dialog id="migrate">
+    <center>
+        <h3>Welcome to the NEW agents gams!</h3>
+        You will get this message every time you use the old link, <a href="https://agentn86.github.io/agentsgams" style="color: rgb(0, 102, 204)">https://agentn86.github.io/agentsgams</a>
+        <br><br>
+        Instead please use the new link <a href="https://agentn86.github.io/agentgam" style="color: rgb(0, 102, 204)">https://agentn86.github.io/agentgam</a> and you wont get this message again.
+        <br><br>
+        <button onclick="window.location.href = 'https://agentn86.github.io/agentgam'">Take me to the new website!</button>
+        <button onclick="document.getElementById('migrate').close()">Ignore anyway</button>
+    </center>
+    </dialog>
     <!-- Scripts -->
     <script src="gamHTML.js" defer></script>
     <script src="scripts/redirect.js"></script>
@@ -206,6 +217,11 @@
 
         const urlParams = new URLSearchParams(window.location.search)
         const myParam = urlParams.get('secretcode')
+        const migrate = urlParams.get("migrate")
+
+        if (migrate === "true") {
+            document.getElementById('migrate').showModal()
+        }
 
         if (myParam === "noads") {
 
