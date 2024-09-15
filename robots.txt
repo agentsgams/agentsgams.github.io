@@ -7,6 +7,7 @@
 # images-opensocial.googleusercontent.com
 # book-opensocial.googleusercontent.com
 # *.glitch.me
+# cdn.jsdelivr.net
 
 # if you have all of this then you are ready to go!
 # CREATED TO FIGHT AGANIST LIGHTSPEED FILTERAGENT
