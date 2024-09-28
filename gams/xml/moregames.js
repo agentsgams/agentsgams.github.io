@@ -1,19 +1,50 @@
 document.addEventListener("DOMContentLoaded", function() {
-    ! function(e) {
-        var t = document.createElement("style")
-        t.type = "text/css", t.styleSheet ? t.styleSheet.cssText = e : t.appendChild(document.createTextNode(e))
-        document.getElementsByTagName("head")[0].appendChild(t)
-    }
-    ("#button {\n  display:none;\n}\n.imgb_vis {\n  animation: imgb-animation 7s linear;\n}\n@keyframes imgb-animation {\n  10% {\n    transform: translateX(0);\n  }\n  20% {\n    transform: translateX(100px);\n  }\n  90% {\n    transform: translateX(100px);\n  }\n  100% {\n    transform: translateX(0);\n  }\n}");
-    var e = document.createElement("div");
-    e.id = "button", e.className = "imgb", e.style = "position:fixed;top:10%;left:-100px;z-index:10", e.innerHTML = '<a target="_blank" href="https://agentn86.github.io/agentgam" title="More of agents gams here!"><img src="https://agentn86.github.io/agentgam/gams/xml/moregam.png" width="100" height="30" style="cursor:pointer;" alt="More Unblocked Games Agents Gams"></a>', document.body.appendChild(e);
-    var t = document.getElementById("button"),
-        n = 0,
-        o = ["block", "none"],
-        a = [7e3, 16e4]
-    ! function e() {
-        n ^= 1
-        t.style.display = o[n]
-        setTimeout(e, a[n])
-    }(), document.querySelector(".imgb").classList.add("imgb_vis")
+    // Create style element
+    var style = document.createElement("style");
+    style.type = "text/css";
+    style.innerHTML = `
+        #button {
+            display: none;
+        }
+        .imgb_vis {
+            animation: imgb-animation 7s linear;
+        }
+        @keyframes imgb-animation {
+            10% {
+                transform: translateX(0);
+            }
+            20% {
+                transform: translateX(100px);
+            }
+            90% {
+                transform: translateX(100px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    `;
+    document.head.appendChild(style);
+
+    // Create button element
+    var button = document.createElement("div");
+    button.id = "button";
+    button.className = "imgb";
+    button.style = "position:fixed;top:10%;left:-100px;z-index:10";
+    button.innerHTML = '<a target="_blank" href="https://agentn86.github.io/agentgam" title="More of agents gams here!"><img src="https://agentn86.github.io/agentgam/gams/xml/moregam.png" width="100" height="30" style="cursor:pointer;" alt="More Unblocked Games Agents Gams"></a>';
+    document.body.appendChild(button);
+
+    // Adjustable timings
+    var showTime = 10000; // 10 secs
+    var hideTime = 180000; // 3 mins
+
+    // Toggle button visibility
+    var toggleButton = function() {
+        button.style.display = button.style.display === "block" ? "none" : "block";
+        setTimeout(toggleButton, button.style.display === "block" ? hideTime : showTime);
+    };
+    toggleButton();
+
+    // Add animation class
+    document.querySelector(".imgb").classList.add("imgb_vis");
 })
