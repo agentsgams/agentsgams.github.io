@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     ("#button {\n  display:none;\n}\n.imgb_vis {\n  animation: imgb-animation 7s linear;\n}\n@keyframes imgb-animation {\n  10% {\n    transform: translateX(0);\n  }\n  20% {\n    transform: translateX(100px);\n  }\n  90% {\n    transform: translateX(100px);\n  }\n  100% {\n    transform: translateX(0);\n  }\n}");
     var e = document.createElement("div");
-    e.id = "button", e.className = "imgb", e.style = "position:fixed;top:10%;left:-100px;z-index:10", e.innerHTML = '<a target="_blank" href="https://agentn86.github.io/agentgam" title="More of agents gams here!"><img src="./moregam.png" width="100" height="30" style="cursor:pointer;" alt="More Unblocked Games Agents Gams"></a>', document.body.appendChild(e);
+    e.id = "button", e.className = "imgb", e.style = "position:fixed;top:10%;left:-100px;z-index:10", e.innerHTML = '<a target="_blank" href="https://agentn86.github.io/agentgam" title="More of agents gams here!"><img src="https://agentn86.github.io/agentgam/gams/xml/moregam.png" width="100" height="30" style="cursor:pointer;" alt="More Unblocked Games Agents Gams"></a>', document.body.appendChild(e);
     var t = document.getElementById("button"),
         n = 0,
         o = ["block", "none"],
