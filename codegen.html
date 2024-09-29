@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Generator</title>
+    <style>
+
+        @font-face {
+            font-family: "segoe";
+            src: url("./segoeuithis.ttf");
+        }
+
+        body {
+            background-color: #1f1f1f;
+            color: #727272;
+            font-family: "segoe";
+        }
+
+        input {
+            background-color: #2b2b2b;
+            border: 0;
+            color: white;
+        }
+
+        textarea {
+            background-color: #2b2b2b;
+            border: 0;
+            color: white;
+        }
+    </style>
+</head>
+<body><center>
+    <h1>Function Generator</h1>
+    Game Link: &nbsp;<input style="width: 250px;" id="gamelink"><br>
+    Color: &nbsp;<input style="width: 250px;" id="color"><br>
+    <br>
+    a Name: &nbsp;<input style="width: 250px;" id="aname"><br>
+    Formal Name: &nbsp;<input style="width: 250px;" id="formalname"><br>
+    <br>
+    Thumbnail: &nbsp;<input style="width: 250px;" id="thumb"><br>
+    Description: &nbsp;<input style="width: 500px;" id="description"><br>
+    iFrame (true/false): &nbsp;<input id="iframe" style="width: 33px;"><br><br>
+    <br>
+    <button style="cursor:pointer;" id="gen" type="submit">Generate</button>
+    <br><br>
+    <textarea readonly placeholder="createItem function" id="createitem" style="width: 600px; max-width: 600px; min-width:600px; height:18px; min-height:18px; max-height:60px;"></textarea><br>
+    <textarea readonly placeholder="addItem function" id="additem" style="width: 600px; max-width: 600px; min-width:600px; height:18px; min-height:18px; max-height:60px;"></textarea>
+
+
+    <script>
+        document.getElementById("createitem").value = ""
+
+        document.getElementById("gen").onclick = function() {
+
+            var gamelink = document.getElementById("gamelink").value
+            var color = document.getElementById("color").value
+            var aname = document.getElementById("aname").value
+            var formalname = document.getElementById("formalname").value
+            var thumb = document.getElementById("thumb").value
+            var description = document.getElementById("description").value
+            var iframe = document.getElementById("iframe").value
+            switch (iframe) {
+                case 'on':
+                    iframe = "true"
+                    break
+                case 'off':
+                    iframe = "false"
+                    break
+            }
+            
+            document.getElementById("createitem").value = 
+            `createItem("${aname}", "${formalname}", "${gamelink}", "${thumb}", "${color}", "${description}", ${iframe})`
+            document.getElementById('additem').value =
+            `addItem("${formalname}", "${gamelink}", ${iframe})`
+        }
+    </script>
+
+</center></body>
+</html>
