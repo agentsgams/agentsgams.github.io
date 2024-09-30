@@ -100,5 +100,6 @@ createItem("timeshooter2", "Time Shooter 2", "https://agentn86.github.io/agentga
 createItem("1on1hockey", "1 on 1 Hockey", "https://agentn86.github.io/agentgam/gams/xml/1on1hockey.html", "./thumbs/1on1hockey.png", "white", "is a game where you fight AI in a tough, customizated battle of hockey!", true)
 createItem("fnaf", "Five Nights at Freddys", "https://agentn86.github.io/agentgam/gams/xml/fnaf.html", "./thumbs/fivenightsatfreddys.png", "white", "is the 2015 classic ported to Flash!", true)
 createItem("douchebagworkout2", "Douchebag Workout 2", "https://agentn86.github.io/agentgam/gams/xml/douchebagworkout2.html", "./thumbs/douchebagworkout2.png", "white", "makes you go on an adventure being the fittest person in the world- scratch that- the *douchebagest* person.", true)
+createItem("unicyclehero", "Unicycle Hero", "https://agentn86.github.io/agentgam/gams/xml/unicyclehero.html", "./thumbs/unicylcehero.avif", "white", "-- can you beat the competition in the strange genres?", true)
 
 // createItem("nowgg", "now.gg unblckr", "https://agents-nowgg.glitch.me/", "./comingsoon.png", "white", "*THIS WILL SOON BE MOVED TO AGENTS TOOLS*")
