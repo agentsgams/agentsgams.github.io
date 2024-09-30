@@ -2,8 +2,6 @@
 <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 <script> window.RufflePlayer = window.RufflePlayer || {}; window.RufflePlayer.config = { "autoplay": "off", "polyfills": true, "letterbox": "on", "backgroundColor": null, "scale": "showAll", "allowFullscreen": true, "forceScale": true, "forceAlign": true, "splashScreen": true, "wmode": "Window", "unmuteOverlay": "hidden", "quality": "high" }; window.addEventListener("load", (event) => { const ruffle = window.RufflePlayer.newest(); const player = ruffle.createPlayer(); const container = document.getElementById("container"); container.appendChild(player); player.load("https://cdn.jsdelivr.net/gh/NWylynko/potatos@7ca279435083c6d51ad912731736f8a51440ec1c/swf/one-on-one-hockey.swf"); player.style.width = "100%"; player.style.height = "100%"; }); </script>
 <body style="margin:0;"><div id="container"> </div>
-<script
-    src="https://agentn86.github.io/agentgam/gams/xml/moregames.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
 <script
     type="text/javascript"> window.SDK_OPTIONS = { gameId: "r2tzpy9cgrn2u4xgzc9z0zbtvxm16mby", onEvent: function (a) { switch (a.name) { case "SDK_GAME_PAUSE": // pause game logic / mute audio break;

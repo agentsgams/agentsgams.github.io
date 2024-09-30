@@ -24,5 +24,4 @@
         config.matchWebGLToCanvasSize = false; container.style.width = "100%"; container.style.height = "100%"; if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) { container.className = "unity-mobile"; // Avoid draining fillrate performance on mobile devices, // and default/override low DPI mode on mobile browsers.
         config.devicePixelRatio = 1; mobileWarning.style.display = "block"; setTimeout(() => { mobileWarning.style.display = "none"; }, 5000);u } else { canvas.style.width = "100%"; canvas.style.height = "100%"; } loadingBar.style.display = "block"; var script = document.createElement("script"); script.src = loaderUrl; script.onload = () => { createUnityInstance(canvas, config, (progress) => { progressBarFull.style.width = 100 * progress + "%"; }).then((unityInstance) => { loadingBar.style.display = "none"; fullscreenButton.onclick = () => { unityInstance.SetFullscreen(1); }; }).catch((message) => { console.log(message); }); }; document.body.appendChild(script); </script>
     </body>
-    <script src="https://agentn86.github.io/agentgam/gams/xml/moregames.js"></script>
 </html>
