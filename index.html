@@ -7,6 +7,12 @@
     <title>agents gams</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
+
+        @font-face {
+            font-family: schlop;
+            src: url('./shlop.otf');
+        }
+
         html {
             scroll-behavior: smooth;
         }
@@ -59,9 +65,10 @@
         <center><a href="#top" style="font-size: larger; color: white;">Back to Top</a></center>
     </div>
     <center>
-        <h1><a id="juan" style="color: white;">agents</a> gams</h1>
+        <h1 id="agentgam"><a id="juan" style="color: white;">agents</a> gams</h1>
+        <h2 id="happyhalloween" style="display:none;">HAPPY HALLOWEEN!</h2>
         <audio loop id="audiothing">
-            <source type="audio/mp3" src="./pilotredsun.mp3">
+            <source type="audio/mp3" id="audio_src" src="./music/pilotredsun.mp3">
         </audio>
         <script>
             document.getElementById("juan").addEventListener("mouseenter", (event) => {
@@ -172,7 +179,8 @@
                         </td>
                         <td>
                             <center>
-                                <a href="https://www.iorad.com/player/2445280/agents-gams-tutorial?iframeHash=trysteps-1&lang=en" style="font-size: larger; color: white; cursor: pointer;"><u>Tutorial</u></a>
+                                <a href="https://www.iorad.com/player/2445280/agents-gams-tutorial?iframeHash=trysteps-1&lang=en"
+                                    style="font-size: larger; color: white; cursor: pointer;"><u>Tutorial</u></a>
                             </center>
                         </td>
                     </tr>
@@ -187,7 +195,13 @@
             oncontextmenu="openAd(); return false;"><img src="ad_error.png" width="500" id="ad"
                 style="border: 3px solid #ffffff; cursor: pointer;" draggable="false"></button>
     </center>
-    <br><br><br>
+    <br>
+    <div id="halloween_topbargifs" style="display:none;">
+        <img src="./seasonalgifs/october/witchbroom.gif" draggable="false" style="position:absolute;border:0;left:30px;margin-bottom:20px;float:left;" width="200">
+        <img src="./seasonalgifs/october/mummy.gif" draggable="false" style="position:absolute;border:0;float:right;left:80%;" width="150">
+        <center><img src="./seasonalgifs/october/skeledance.gif" draggable="false" style="border:0;"></center>
+    </div>
+    <br><br>
     <div id="gamList">
         <script>
             function openWindow(link, title) {
@@ -206,11 +220,14 @@
         </script>
     </div>
     <br><br>
-    <center>
-        <script type='text/javascript'
-            src='https://www.freevisitorcounters.com/auth.php?id=6dc48f83683bbb2d2dc9d37d95844729c9aa3408'></script>
+    <center id="counterCenter">
+        <script type='text/javascript' src='./scripts/counter.js'></script>
         <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1173849/t/9"></script>
     </center>
+    <div id="halloween_bottom" style="display:none;">
+        <img src="./seasonalgifs/october/anitree.gif" draggable="false" style="float: left; border: 0; position: absolute;">
+        <img src="./seasonalgifs/october/catpumpkin.gif" draggable="false" style="float: right; left: 80%; margin-top: 100px; border: 0; position: absolute;">
+    </div>
     <center>
         <footer style="color: red;"><b>DISCLAIMER:</b> The creator of this website is not responsible for any punishment
             given to a user while on "agents gams".</footer>
@@ -255,18 +272,30 @@
             <button onclick="document.getElementById('migrate').close()">Ignore anyway</button>
         </center>
     </dialog>
-    <dialog id="intro" style="color: white; background-color: black;"><center>
-        <h3>Welcome to agents gams!</h3>
-        Either you are new to the website or the new update- v3.1 brought you here,<br>
-        please take a moment to watch this short video about agents gams.<br><br>
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BBu3EgDNJes?si=ux5f-nDwah1jL_u9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <br><br>
-        Be sure to subscribe to <a style="color: white;" href="https://www.youtube.com/@agentsgams">agents gams</a> for video changelogs<br>and gameplay videos from the community.<br><br>
-        <button style="cursor: pointer;" onclick="window.location.href='https://www.iorad.com/player/2445280/agents-gams-tutorial?iframeHash=trysteps-1&lang=en'">Show me the tutorial! (Recommended)</button>
-        <button style="cursor: pointer;" onclick="setCookie('watchedIntro', 'true'); document.getElementById('intro').close()">Never show again</button>
-        <button style="cursor: pointer;" onclick="document.getElementById('intro').close()">Close</button>
-    </center></dialog>
+    <dialog id="intro" style="color: white; background-color: black;">
+        <center>
+            <h3>Welcome to agents gams!</h3>
+            Either you are new to the website or the new update- v3.1 brought you here,<br>
+            please take a moment to watch this short video about agents gams.<br><br>
+            <iframe width="560" height="315"
+                src="https://www.youtube-nocookie.com/embed/BBu3EgDNJes?si=ux5f-nDwah1jL_u9"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br><br>
+            Be sure to subscribe to <a style="color: white;" href="https://www.youtube.com/@agentsgams">agents gams</a>
+            for video changelogs<br>and gameplay videos from the community.<br><br>
+            <button style="cursor: pointer;"
+                onclick="window.location.href='https://www.iorad.com/player/2445280/agents-gams-tutorial?iframeHash=trysteps-1&lang=en'">Show
+                me the tutorial! (Recommended)</button>
+            <button style="cursor: pointer;"
+                onclick="setCookie('watchedIntro', 'true'); document.getElementById('intro').close()">Never show
+                again</button>
+            <button style="cursor: pointer;" onclick="document.getElementById('intro').close()">Close</button>
+        </center>
+    </dialog>
     <!-- Scripts -->
+    <script src="scripts/seasonal.js"></script>
     <script src="gamHTML.js" defer></script>
     <script src="scripts/redirect.js"></script>
     <script src="scripts/topbar.js"></script>
