@@ -393,6 +393,8 @@
             page = pageParam
         }
 
+        if (page === "NaN") {history.back()}
+
         document.getElementById('page').innerText = page
 
         if (migrate === "true") {
