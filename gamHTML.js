@@ -113,6 +113,8 @@ if (page == '2') {
     createItem("garfieldscaryscavengerhunt", "Garfields Scary Scavenger Hunt", "https://agentn86.github.io/agentgam/gams/xml/garfieldscaryhunt.html", "./thumbs/garfieldscaryscavengerhunt.png", "white", "can you help Garfield and friends get through this scary, haunted mansion?", true)
     createItem("dunkshot", "Dunk Shot", "https://agentn86.github.io/agentgam/gams/xml/dunkshot.html", "./thumbs/dunkshot.png", "white", "get to as far up in the tower-- hooping.", true)
     createItem("agenttetris", "agents tetris", "https://agentn86.github.io/tetris-html/", "./comingsoon.png", "white", "is a port of TETRIS created by agentn86. It's simple, but it's addictive!", false)
+    createItem("learntofly", "Learn to Fly", "https://agentn86.github.io/agentgam/gams/flash/learntofly.html", "./thumbs/learntofly.JPG", "white", "is a classic flash gam where you teach a penguin to fly!", false)
+    createItem("learntofly2", "Learn to Fly 2", "https://agentn86.github.io/agentgam/gams/flash/learntofly2.html", "./thumbs/learntofly2.JPG", "white", "is a classic flash gam where you teach a penguin to fly-- again!", false)
     
 }
 
