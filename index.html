@@ -82,15 +82,13 @@
         <script>
             document.getElementById("juan").addEventListener("mouseenter", (event) => {
                 event.target.innerText = "juans"
-                //event.target.href = "./juan/"
-                event.target.onclick = "jumpscare()"
+                event.target.href = "./juan/"
                 event.target.style.textDecoration = "underline"
             })
 
             document.getElementById("juan").addEventListener("mouseleave", (event) => {
                 event.target.innerText = "agents"
-                //event.target.href = ""
-                event.target.onclick = ""
+                event.target.href = ""
                 event.target.style.textDecoration = "none"
             })
 
@@ -108,10 +106,6 @@
 
                     document.getElementById('audiothing').play()
                 }
-            }
-
-            function jumpscare() {
-                document.getElementById('jumpscare').style.visibility = "visible"
             }
         </script>
         <button onclick="togglemusic()" style="cursor: pointer; background: transparent; border: 0;"
@@ -247,8 +241,6 @@
         <footer style="color: red;"><b>DISCLAIMER:</b> The creator of this website is not responsible for any punishment
             given to a user while on "agents gams".</footer>
     </center>
-    <img id="jumpscare" src="./eviljuan.png">
-    <audio id="jumpscareaudio">
 
     </audio>
     <!-- Dialog -->
