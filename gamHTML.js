@@ -103,5 +103,6 @@ createItem("douchebagworkout2", "Douchebag Workout 2", "https://agentn86.github.
 createItem("unicyclehero", "Unicycle Hero", "https://agentn86.github.io/agentgam/gams/xml/unicyclehero.html", "./thumbs/unicylcehero.avif", "white", "-- can you beat the competition in the strange genres?", true)
 createItem("garfieldscaryscavengerhunt", "Garfields Scary Scavenger Hunt", "https://agentn86.github.io/agentgam/gams/xml/garfieldscaryhunt.html", "./thumbs/garfieldscaryscavengerhunt.png", "white", "can you help Garfield and friends get through this scary, haunted mansion?", true)
 createItem("dunkshot", "Dunk Shot", "https://agentn86.github.io/agentgam/gams/xml/dunkshot.html", "./thumbs/dunkshot.png", "white", "get to as far up in the tower-- hooping.", true)
+createItem("agenttetris", "agents tetris", "https://agentn86.github.io/tetris-html/", "./comingsoon.png", "white", "is a port of TETRIS created by agentn86. It's simple, but it's addictive!", false)
 
 // createItem("nowgg", "now.gg unblckr", "https://agents-nowgg.glitch.me/", "./comingsoon.png", "white", "*THIS WILL SOON BE MOVED TO AGENTS TOOLS*")
