@@ -229,6 +229,29 @@
         </script>
     </div>
     <br><br>
+
+    <center>
+        <button onclick="prevpage()" style="cursor:pointer;" title="Previous page"><</button>&nbsp;
+        Page <span id="page">?</span>/<span id="pagemax">2</span> &nbsp;
+        <button onclick="nextpage()" style="cursor:pointer;" title="Next page">></button>
+        <script>
+
+            function nextpage() {
+                if (document.getElementById('pagemax').innerText == document.getElementById('page').innerText) {return}
+                var page = Number(document.getElementById('page').innerText)+1
+                window.location.href = "?pg=" + page
+            }
+
+            function prevpage() {
+                if (document.getElementById('page').innerText == "1") {return}
+                var page = Number(document.getElementById('page').innerText)-1
+                window.location.href = "?pg=" + page
+            }
+
+        </script>
+    </center>
+
+    <br><br>
     <center id="counterCenter">
         <script type='text/javascript' src='./scripts/counter.js'></script>
         <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1173849/t/9"></script>
@@ -361,6 +384,16 @@
         const urlParams = new URLSearchParams(window.location.search)
         const myParam = urlParams.get('secretcode')
         const migrate = urlParams.get("migrate")
+        const pageParam = urlParams.get('pg')
+        var page
+
+        if (pageParam === null) {
+            page = 1
+        } else {
+            page = pageParam
+        }
+
+        document.getElementById('page').innerText = page
 
         if (migrate === "true") {
             document.getElementById('migrate').showModal()
