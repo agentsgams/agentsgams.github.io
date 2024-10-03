@@ -1,57 +1,19 @@
+<!doctype html>
 <html>
-  <head>
-    <title>The Impossible Quiz</title>
-    <style>body {color: white; background-color: black; font-family: "Consolas", sans-serif;}</style>
-  </head>
-  <body>
-    <script src="/ruffle/ruffle.js"></script>
-    <center>
-      <h1>Impossible Quiz</h1>
-      <p1>When you want to go back- <a href="/agentgam">click here</a> to go back to agents gams.</p1>
-      <br><br>
-      <embed src="/agentgam/flash/impossiblequiz.swf" width="550" height="380"></embed>
-      <br><br><br>
-      <h2>Answer Key</h2>
-      <p>1. Four</p>
-      <p>2. No, but a Tin Can</p>
-      <p>3. K.O</p>
-      <p>4. THE ANSWER</p>
-      <p>5. Go outside the game to get to the other side.</p>
-      <p>6. Shallots</p>
-      <p>7. Should say "yes" with a checkmark under the SE in SEARCH</p>
-      <p>8. Top Right "That One"</p>
-      <p>9. Teeth</p>
-      <p>10. n</p>
-      <p>11. Click the circle in i on CLICK</p>
-      <p>12. F'Taang</p>
-      <p>13. Torch</p>
-      <p>14. HORSE</p>
-      <p>15. H</p>
-      <p>16. Click 17. on the top left</p>
-      <p>17. Hammer</p>
-      <p>18. Blue, Orange, Green, Green, Yellow</p>
-      <p>19. Seal!</p>
-      <p>20. Top Left</p>
-      <p>21. +1 Skip</p>
-      <p>22. Bran</p>
-      <p>23. Click the V in LIVES</p>
-      <p>24. Shoe Polish</p>
-      <p>25. 3rd name on green sign</p>
-      <p>26. Go to 28</p>
-      <p>27. Abundance</p>
-      <p>28. Egg Mayo</p>
-      <p>29. Just get to the other circle. No catch.</p>
-      <p>30. WOOF. WOOF. WOOF.</p>
-      <p>31. Babycham and Human Faeces</p>
-      <p>32. 7</p>
-      <p>33. Move your cursor to the "skip" and wait. Elephants should come out, and let them in.</p>
-      <p>34. Wait til the green face shows up- then click that.</p>
-      <p>35. A Walk</p>
-      <p>36. Choose any of them.</p>
-      <p>37. Mary Rose</p>
-      <p>38. Cylindrical Adventures</p>
-      <br>
-      <p><i>More of the walkthrough coming soon...</i></p>
-    </center>
-  </body>
+<head>
+    <title>WAFLASH - agents gams</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/KUKHUA/a-v-c-blk@5cb61b353cff0365c082c9309e82bb561c027201/Run%202/waflash/waflash-style.css"
+        type="text/css">
+    <script>
+        var gameConfig = { swfUrl: "https://agentn86.github.io/agentgam/flash/impossiblequiz.swf" };
+    </script>
+</head>
+<body>
+    <div id="waflashContainer"> <canvas class="waflashCanvas" id="canvas" tabindex="1"></canvas>
+        <div id="waflashStatus" style="display: none;">Playing...</div>
+        <script> var ua = navigator.userAgent.toLowerCase(); if ((navigator.appName == 'Netscape' && ua.indexOf('trident') != -1) || (ua.indexOf("msie") != -1)) { var waf = document.getElementById('waflashStatus'); waf.style.display = 'block'; waf.innerText = '??? ?????(IE) ??? ??? ???? ???? !\n??, ???? ?? ????? ??????.'; gtag('event', 'connect_from_ie', { 'event_category': 'error', 'event_label': ua }); }; </script>
+        <script type="module" crossorigin="anonymous"> let is_mobile = /Mobi/i.test(window.navigator.userAgent); if (is_mobile) { function scrollToSubject() { try { window.scrollTo({ top: 100, left: 0, behavior: 'smooth' }); } catch (e) { } } scrollToSubject(); window.addEventListener("orientationchange", function () { setTimeout(scrollToSubject, 100); }); } else { document.getElementById('canvas').focus(); } document.getElementById('canvas').addEventListener("keydown", function (ev) { ev.preventDefault(); ev.stopPropagation(); }); document.getElementById('canvas').addEventListener("click", function () { document.getElementById('canvas').focus(); }); document.addEventListener("mousedown", (function () { const canvasElement = document.getElementById('canvas'); let focused = false; return function (ev) { if (ev.target == canvasElement) { if (!focused) { canvasElement.focus(); focused = true; } } else { if (focused) { focused = false; } } return true; } })()); import { createWaflash } from 'https://cdn.jsdelivr.net/gh/zhit73/wafedit@f4db9839f6b3a77a75da21d0dc1f70283b50ab14/wasm/waflash-player.min.js'; createWaflash(gameConfig.swfUrl, window.wafOptions || {}); </script>
+    </div>
+</body>
 </html>
