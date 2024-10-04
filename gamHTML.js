@@ -26,6 +26,7 @@ function createItem(game, formatted, link, image, color, description, iframe) {
 }
 
 var page = document.getElementById('page').innerText
+// TOTAL GAMES: 80
 
 if (page == '1') {
 
@@ -88,7 +89,7 @@ if (page == '1') {
 if (page == '2') {
 
     document.getElementById('entries').innerText = "50"
-    document.getElementById('entries_max').innerText = "79"
+    document.getElementById('entries_max').innerText = "80"
 
     createItem("geodash", "GeoDash", "./gams/geodash/index.html", "./thumbs/geodash.png", "white", "is a 1-1 replica to Geomentry Dash. Give it a try, and see if you can bet the hard challenging levels!")
     createItem("motox3m", "Moto X3M", "./gams/iframe/motox3m", "./thumbs/motox3m.png", "white", "is a motorcycle game where you have to get around obstables and make it to the end.")
@@ -121,7 +122,8 @@ if (page == '2') {
     createItem("agenttetris", "agents tetris", "https://agentn86.github.io/tetris-html/", "./thumbs/agentstetris.png", "white", "is a port of TETRIS created by agentn86. It's simple, but it's addictive!", false)
     createItem("learntofly", "Learn to Fly", "https://agentn86.github.io/agentgam/gams/flash/learntofly.html", "./thumbs/learntofly.JPG", "white", "is a classic flash gam where you teach a penguin to fly!", false)
     createItem("learntofly2", "Learn to Fly 2", "https://agentn86.github.io/agentgam/gams/flash/learntofly2.html", "./thumbs/learntofly2.JPG", "white", "is a classic flash gam where you teach a penguin to fly-- again!", false)
-    
+    createItem("minecrafttowerdefense", "Minecraft Tower Defense", "https://agentn86.github.io/agentgam/gams/flash/minecrafttowerdefense.html", "./thumbs/minecrafttowerdefense.png", "white", "is the unofficial flash game where you protect Steve from Minecraft monsters you remember!", false)
+
 }
 
 // createItem("nowgg", "now.gg unblckr", "https://agents-nowgg.glitch.me/", "./comingsoon.png", "white", "*THIS WILL SOON BE MOVED TO AGENTS TOOLS*")
