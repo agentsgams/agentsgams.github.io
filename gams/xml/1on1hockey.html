@@ -1,13 +1,19 @@
+<!doctype html>
 <html>
-<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-<script> window.RufflePlayer = window.RufflePlayer || {}; window.RufflePlayer.config = { "autoplay": "off", "polyfills": true, "letterbox": "on", "backgroundColor": null, "scale": "showAll", "allowFullscreen": true, "forceScale": true, "forceAlign": true, "splashScreen": true, "wmode": "Window", "unmuteOverlay": "hidden", "quality": "high" }; window.addEventListener("load", (event) => { const ruffle = window.RufflePlayer.newest(); const player = ruffle.createPlayer(); const container = document.getElementById("container"); container.appendChild(player); player.load("https://cdn.jsdelivr.net/gh/NWylynko/potatos@7ca279435083c6d51ad912731736f8a51440ec1c/swf/one-on-one-hockey.swf"); player.style.width = "100%"; player.style.height = "100%"; }); </script>
-<body style="margin:0;"><div id="container"> </div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-<script
-    type="text/javascript"> window.SDK_OPTIONS = { gameId: "r2tzpy9cgrn2u4xgzc9z0zbtvxm16mby", onEvent: function (a) { switch (a.name) { case "SDK_GAME_PAUSE": // pause game logic / mute audio break;
-    case "SDK_GAME_START": // advertisement done, resume game logic and unmute audio break;
-    case "SDK_READY": // when sdk is ready break;
-    } } }; (function (a, b, c) { var d = a.getElementsByTagName(b)[0]; a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://cdn.jsdelivr.net/gh/st39/sdk@main/sdkjs.js", d.parentNode.insertBefore(a, d)) })(document, "script", "gamemonetize-sdk"); $(document).ready(function() { var strVar = '<div style="position:fixed;top:0;right:0;bottom:0;left:0;z-index:999;" id="nec">'; $(document.body).append(strVar); $("#nec").click(function () { if (typeof sdk !== 'undefined' && sdk.showBanner !== 'undefined') { sdk.showBanner(); } $('#nec').hide(); }); }); window.setInterval(function(){ $('#nec').show(); }, 745000); </script>
+<head>
+    <title>WAFLASH - agents gams</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/KUKHUA/a-v-c-blk@5cb61b353cff0365c082c9309e82bb561c027201/Run%202/waflash/waflash-style.css"
+        type="text/css">
+    <script>
+        var gameConfig = { swfUrl: "https://agentn86.github.io/agentgam/flash/one-on-one-hockey.swf" };
+    </script>
+</head>
+<body>
+    <div id="waflashContainer"> <canvas class="waflashCanvas" id="canvas" tabindex="1"></canvas>
+        <div id="waflashStatus" style="display: none;">Playing...</div>
+        <script> var ua = navigator.userAgent.toLowerCase(); if ((navigator.appName == 'Netscape' && ua.indexOf('trident') != -1) || (ua.indexOf("msie") != -1)) { var waf = document.getElementById('waflashStatus'); waf.style.display = 'block'; waf.innerText = '??? ?????(IE) ??? ??? ???? ???? !\n??, ???? ?? ????? ??????.'; gtag('event', 'connect_from_ie', { 'event_category': 'error', 'event_label': ua }); }; </script>
+        <script type="module" crossorigin="anonymous"> let is_mobile = /Mobi/i.test(window.navigator.userAgent); if (is_mobile) { function scrollToSubject() { try { window.scrollTo({ top: 100, left: 0, behavior: 'smooth' }); } catch (e) { } } scrollToSubject(); window.addEventListener("orientationchange", function () { setTimeout(scrollToSubject, 100); }); } else { document.getElementById('canvas').focus(); } document.getElementById('canvas').addEventListener("keydown", function (ev) { ev.preventDefault(); ev.stopPropagation(); }); document.getElementById('canvas').addEventListener("click", function () { document.getElementById('canvas').focus(); }); document.addEventListener("mousedown", (function () { const canvasElement = document.getElementById('canvas'); let focused = false; return function (ev) { if (ev.target == canvasElement) { if (!focused) { canvasElement.focus(); focused = true; } } else { if (focused) { focused = false; } } return true; } })()); import { createWaflash } from 'https://cdn.jsdelivr.net/gh/zhit73/wafedit@f4db9839f6b3a77a75da21d0dc1f70283b50ab14/wasm/waflash-player.min.js'; createWaflash(gameConfig.swfUrl, window.wafOptions || {}); </script>
+    </div>
 </body>
-
 </html>
