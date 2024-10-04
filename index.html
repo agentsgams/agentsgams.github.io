@@ -231,9 +231,15 @@
     <br><br>
 
     <center>
-        <button onclick="prevpage()" style="cursor:pointer;" title="Previous page"><</button>&nbsp;
-        Page <span id="page">?</span>/<span id="pagemax">2</span> &nbsp;
-        <button onclick="nextpage()" style="cursor:pointer;" title="Next page">></button>
+        <table>
+            <tr>
+                <td><center><button onclick="prevpage()" style="cursor:pointer;" title="Previous page"><</button>&nbsp;</center></td>
+                <td><center>Page <span id="page">?</span>/<span id="pagemax">2</span> &nbsp;</center></td>
+                <td><center><button onclick="nextpage()" style="cursor:pointer;" title="Next page">></button></center></td>
+            </tr>
+        </table>
+        <p1><span id="entries">???</span> out of <span id="entries_max">???</span> entries</p1>
+        
         <script>
 
             function nextpage() {

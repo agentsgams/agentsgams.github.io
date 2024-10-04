@@ -29,6 +29,9 @@ var page = document.getElementById('page').innerText
 
 if (page == '1') {
 
+    document.getElementById('entries').innerText = "0"
+    document.getElementById('entries_max').innerText = "50"
+
     createItem("epicbossbattle", "Epic Boss Battle", "https://agentn86.github.io/epicbossbattle/v1.3.3/", "https://agentn86.github.io/epicbossbattle/v1.3.3/loading.png", "pink", "is a tough, rage gam where you have to avoid and end a spaceship without dying in the process! Use the retry button to restart the game when needed.")
     createItem("smnake", "SMnake", "https://taco-eating-truck.glitch.me/index.html", "./comingsoon.png", "pink", "is a simple gam where you will forever collect meat with no objective! Passes time away... Use the controls on the top right to play.")
     createItem("coincollector", "Coin Collector", "https://coincollecor.glitch.me/index.html", "./comingsoon.png", "pink", "is a simple gam where you will have to collect as much money as you can. Use the controls on the bottom to play.")
@@ -83,6 +86,9 @@ if (page == '1') {
 }
 
 if (page == '2') {
+
+    document.getElementById('entries').innerText = "50"
+    document.getElementById('entries_max').innerText = "79"
 
     createItem("geodash", "GeoDash", "./gams/geodash/index.html", "./thumbs/geodash.png", "white", "is a 1-1 replica to Geomentry Dash. Give it a try, and see if you can bet the hard challenging levels!")
     createItem("motox3m", "Moto X3M", "./gams/iframe/motox3m", "./thumbs/motox3m.png", "white", "is a motorcycle game where you have to get around obstables and make it to the end.")
