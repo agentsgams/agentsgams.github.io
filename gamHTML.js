@@ -26,7 +26,7 @@ function createItem(game, formatted, link, image, color, description, iframe) {
 }
 
 var page = document.getElementById('page').innerText
-var TOTALGAMES = 87
+var TOTALGAMES = 88
 
 if (page == '1') {
 
@@ -113,7 +113,7 @@ if (page == '2') {
     createItem("javelinfighting", "Javelin Fighting", "https://agentn86.github.io/agentgam/gams/xml/javelinfighting.html", "./thumbs/javelinfighting.jpg", "white", "makes you fight an AI opponent in a fatal javelin fight!", true)
     createItem("bottleflip", "Bottle Flip", "./gams/iframe/bottleflip.html", "./thumbs/bottleflip.png", "white", "makes you traverse a room without making the bottle fall to the ground!", false)
     createItem("timeshooter2", "Time Shooter 2", "https://agentn86.github.io/agentgam/gams/xml/timeshooter2.html", "./thumbs/timeshooter2.png", "white", "the second of the Time Shooter saga.", true)
-    createItem("1on1hockey", "1 on 1 Hockey", "https://agentn86.github.io/agentgam/gams/xml/1on1hockey.html", "./thumbs/1on1hockey.png", "white", "is a game where you fight AI in a tough, customizated battle of hockey!", true)
+    createItem("sportsheadsHockey", "Sport Heads: Ice Hockey", "https://agentn86.github.io/agentgam/gams/xml/1on1hockey.html", "./thumbs/1on1hockey.png", "white", "is a game where you fight AI in a tough, customizated battle of hockey!", false)
     createItem("fnaf", "Five Nights at Freddys", "https://agentn86.github.io/agentgam/gams/xml/fnaf.html", "./thumbs/fivenightsatfreddys.png", "white", "is the 2015 classic ported to Flash!", true)
     createItem("douchebagworkout2", "Douchebag Workout 2", "https://agentn86.github.io/agentgam/gams/xml/douchebagworkout2.html", "./thumbs/douchebagworkout2.png", "white", "makes you go on an adventure being the fittest person in the world- scratch that- the *douchebagest* person.", true)
     createItem("unicyclehero", "Unicycle Hero", "https://agentn86.github.io/agentgam/gams/xml/unicyclehero.html", "./thumbs/unicylcehero.avif", "white", "-- can you beat the competition in the strange genres?", true)
@@ -128,6 +128,7 @@ if (page == '2') {
     createItem("riddleschool", "Riddle School", "https://agentn86.github.io/agentgam/gams/flash/riddleschool.html", "./thumbs/riddleschool.jpeg", "white", "can you help Phil escape his school through puzzles?", false)
     createItem("riddleschool2", "Riddle School 2", "https://agentn86.github.io/agentgam/gams/flash/riddleschool2.html", "./thumbs/riddleschool2.png", "white", "can you help Phil escape again his school through puzzles?", false)
     createItem("riddleschool3", "Riddle School 3", "https://agentn86.github.io/agentgam/gams/flash/riddleschool3.html", "./thumbs/riddleschool3.png", "white", "can you help Phil escape his even bigger high school with more puzzles?", false)
+    createItem("sportsheadsoccer", "Sport Heads: Football Championship", "https://agentn86.github.io/agentgam/gams/flash/sportsheadssoccer.html", "./thumbs/sportsheadSoccer.jpeg", "white", "is another classic Sports Head game where you play soccer against an AI as a head only human.", false)
 
 }
 
