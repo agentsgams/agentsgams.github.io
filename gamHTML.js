@@ -26,7 +26,7 @@ function createItem(game, formatted, link, image, color, description, iframe) {
 }
 
 var page = document.getElementById('page').innerText
-// TOTAL GAMES: 84
+var TOTALGAMES = 87
 
 if (page == '1') {
 
@@ -89,7 +89,7 @@ if (page == '1') {
 if (page == '2') {
 
     document.getElementById('entries').innerText = "50"
-    document.getElementById('entries_max').innerText = "84"
+    document.getElementById('entries_max').innerText = TOTALGAMES
 
     createItem("geodash", "GeoDash", "./gams/geodash/index.html", "./thumbs/geodash.png", "white", "is a 1-1 replica to Geomentry Dash. Give it a try, and see if you can bet the hard challenging levels!")
     createItem("motox3m", "Moto X3M", "./gams/iframe/motox3m", "./thumbs/motox3m.png", "white", "is a motorcycle game where you have to get around obstables and make it to the end.")
@@ -125,6 +125,9 @@ if (page == '2') {
     createItem("minecrafttowerdefense", "Minecraft Tower Defense", "https://agentn86.github.io/agentgam/gams/flash/minecrafttowerdefense.html", "./thumbs/minecrafttowerdefense.png", "white", "is the unofficial flash game where you protect Steve from Minecraft monsters you remember!", false)
     createItem("qwop", "QWOP", "https://agentn86.github.io/agentgam/gams/flash/qwop.html", "./thumbs/qwop.jpeg", "white", "is one of the hardest flash games ever. Can you make it to the end of the race?", false)
     createItem("picosschool", "Picos School", "https://agentn86.github.io/agentgam/gams/flash/picoschool.html", "./thumbs/picosSchool.png", "red", "is where you help Pico escape his school. Problem- this game is quite offensive. Very.", false)
+    createItem("riddleschool", "Riddle School", "https://agentn86.github.io/agentgam/gams/flash/riddleschool.html", "./thumbs/riddleschool.jpeg", "white", "can you help Phil escape his school through puzzles?", false)
+    createItem("riddleschool2", "Riddle School 2", "https://agentn86.github.io/agentgam/gams/flash/riddleschool2.html", "./thumbs/riddleschool2.png", "white", "can you help Phil escape again his school through puzzles?", false)
+    createItem("riddleschool3", "Riddle School 3", "https://agentn86.github.io/agentgam/gams/flash/riddleschool3.html", "./thumbs/riddleschool3.png", "white", "can you help Phil escape his even bigger high school with more puzzles?", false)
 
 }
 
