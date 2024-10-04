@@ -26,7 +26,7 @@ function createItem(game, formatted, link, image, color, description, iframe) {
 }
 
 var page = document.getElementById('page').innerText
-// TOTAL GAMES: 80
+// TOTAL GAMES: 84
 
 if (page == '1') {
 
@@ -83,13 +83,13 @@ if (page == '1') {
     createItem("ssf2", "SSF2", "./gams/flash/ssf2.html", "./thumbs/ssf2.png", "blue", "is a classic flash gam. You should really give it a try!")
     createItem("houseofhazards", "House of Hazards", "./gams/houseofhazards/index.html", "./thumbs/houseofhazards.png", "white", "is a platformer gam that you need to get out of the house. But other players can sabotage you on the way!")
     createItem("1v1.lol", "1v1.LOL", "https://agentn86.github.io/agentgam/gams/xml/1v1lol.html", "./thumbs/1v1lol.png", "white", "is a battle royale type game where you must survive with bots as enemeies. There are many different gamemodes- as well.", true)
-
+    // total here: 50
 }
 
 if (page == '2') {
 
     document.getElementById('entries').innerText = "50"
-    document.getElementById('entries_max').innerText = "80"
+    document.getElementById('entries_max').innerText = "84"
 
     createItem("geodash", "GeoDash", "./gams/geodash/index.html", "./thumbs/geodash.png", "white", "is a 1-1 replica to Geomentry Dash. Give it a try, and see if you can bet the hard challenging levels!")
     createItem("motox3m", "Moto X3M", "./gams/iframe/motox3m", "./thumbs/motox3m.png", "white", "is a motorcycle game where you have to get around obstables and make it to the end.")
@@ -125,7 +125,7 @@ if (page == '2') {
     createItem("minecrafttowerdefense", "Minecraft Tower Defense", "https://agentn86.github.io/agentgam/gams/flash/minecrafttowerdefense.html", "./thumbs/minecrafttowerdefense.png", "white", "is the unofficial flash game where you protect Steve from Minecraft monsters you remember!", false)
     createItem("qwop", "QWOP", "https://agentn86.github.io/agentgam/gams/flash/qwop.html", "./thumbs/qwop.jpeg", "white", "is one of the hardest flash games ever. Can you make it to the end of the race?", false)
     createItem("picosschool", "Picos School", "https://agentn86.github.io/agentgam/gams/flash/picoschool.html", "./thumbs/picosSchool.png", "red", "is where you help Pico escape his school. Problem- this game is quite offensive. Very.", false)
-    
+
 }
 
 // createItem("nowgg", "now.gg unblckr", "https://agents-nowgg.glitch.me/", "./comingsoon.png", "white", "*THIS WILL SOON BE MOVED TO AGENTS TOOLS*")
