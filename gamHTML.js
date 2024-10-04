@@ -123,7 +123,9 @@ if (page == '2') {
     createItem("learntofly", "Learn to Fly", "https://agentn86.github.io/agentgam/gams/flash/learntofly.html", "./thumbs/learntofly.JPG", "white", "is a classic flash gam where you teach a penguin to fly!", false)
     createItem("learntofly2", "Learn to Fly 2", "https://agentn86.github.io/agentgam/gams/flash/learntofly2.html", "./thumbs/learntofly2.JPG", "white", "is a classic flash gam where you teach a penguin to fly-- again!", false)
     createItem("minecrafttowerdefense", "Minecraft Tower Defense", "https://agentn86.github.io/agentgam/gams/flash/minecrafttowerdefense.html", "./thumbs/minecrafttowerdefense.png", "white", "is the unofficial flash game where you protect Steve from Minecraft monsters you remember!", false)
-
+    createItem("qwop", "QWOP", "https://agentn86.github.io/agentgam/gams/flash/qwop.html", "./thumbs/qwop.jpeg", "white", "is one of the hardest flash games ever. Can you make it to the end of the race?", false)
+    createItem("picosschool", "Picos School", "https://agentn86.github.io/agentgam/gams/flash/picoschool.html", "./thumbs/picosSchool.png", "red", "is where you help Pico escape his school. Problem- this game is quite offensive. Very.", false)
+    
 }
 
 // createItem("nowgg", "now.gg unblckr", "https://agents-nowgg.glitch.me/", "./comingsoon.png", "white", "*THIS WILL SOON BE MOVED TO AGENTS TOOLS*")
