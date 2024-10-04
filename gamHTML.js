@@ -100,7 +100,7 @@ if (page == '2') {
     createItem("s2p", "SLOPE 2 Players", "https://agentn86.github.io/agentgam/gams/xml/slope2player.html", "./thumbs/slope-2-player-logo.jpg", "white", "is a infinite runner by SLOPE, but its for 2 players isntead of 1.", true)
     createItem("soccerlegends", "Soccer Legends", "https://agentn86.github.io/agentgam/gams/xml/soccerlegends.html", "./thumbs/footballlegends.png", "white", "is another type of Basketball Legends, but soccer!", true)
     createItem("hellokittyadventure", "Hello Kitty Adventure", "https://agentn86.github.io/agentgam/gams/xml/hellokittyadventure.html", "./thumbs/hellokittyadventure.png", "white", "allows you to inbark in a new adventure in the Hello Kitty universe.", true)
-    createItem("retrobowl", "Retro Bowl", "./gams/retrobowl/index.html", "./thumbs/retrobowl.avif", "blue", "allows players to enbark on a football journey!")
+    createItem("retrobowl", "Retro Bowl", "./gams/retrobowl/index.html", "./thumbs/retrobowl.avif", "white", "allows players to enbark on a football journey!")
     createItem("flappyplane", "Flappy Plane", "./gams/flappyplane/index.html", "./thumbs/flappyplane.jpeg", "red", "is a clone of Flappy Bird but with a interesting twist...")
     createItem("gunmayhem2", "Gun Mayhem 2", "./gams/flash/gunmayhem2.html", "./thumbs/gun-mayhem-2.jpg", "white", "is a ultimate battle game! Fire and shoot until you can't no more!")
     createItem("minesweeper", "Minesweeper", "https://agentn86.github.io/js-minesweeper/", "./thumbs/minesweeper.png", "white", "-- a challenging game where you must figure out the mines before they explode you!")
