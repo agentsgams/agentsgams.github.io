@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agents theater</title>
+    <style>
+        body {
+            background-image: url('./theater.png');
+            background-repeat: no-repeat, repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <audio id="talking">
+        <source type="audio/mp3" src="./talking.mp3">
+    </audio>
+
+    <dialog id="warning" style="width: 100%; height: 100%; background-color: black; color:white;">
+        <center>
+            <br><br>
+            <h1>Fair Warning</h1>
+            It is recommended to be in <b>fullscreen</b> for better sizing. As well, this is made for CHROMEBOOKs.
+            <br>
+            To get rid of this popup, use this button.
+            <br><br>
+            <button style="cursor:pointer;" onclick="openFullscreen();document.getElementById('warning').close()">Put me
+                in fullscreen!</button>
+        </center>
+    </dialog>
+
+    <iframe src="./screen/mainmenu.html" onload="iframe()" id="iframe" style="margin-left:191px;margin-top:46px; border:0;" width="987" height="524">
+        <script>function movie() { alert('movi') }</script>
+    </iframe>
+
+    <script>
+
+        var elem = document.documentElement
+
+        function openFullscreen() {
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) { /* Safari */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE11 */
+                elem.msRequestFullscreen();
+            }
+
+            document.getElementById('talking').play()
+
+        }
+
+        let counter = 0
+        function iframe() {
+            counter+=1
+            if (counter == 2) {
+                document.getElementById('talking').pause()
+                document.body.style.backgroundImage = "url('./theaterWatch.jpg')"
+            }
+        }
+
+        document.getElementById('warning').showModal()
+
+    </script>
+</body>
+
+</html>
