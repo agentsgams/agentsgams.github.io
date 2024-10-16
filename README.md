@@ -24,8 +24,9 @@ Firstly, clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd agentn86.github.io
 ```
+*(or whatever it's titled for you)*
 
 And just open the file with Visual Studio code, or with your code editor.
 
