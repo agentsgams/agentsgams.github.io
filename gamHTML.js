@@ -26,7 +26,7 @@ function createItem(game, formatted, link, image, color, description, iframe) {
 }
 
 var page = document.getElementById('page').innerText
-var TOTALGAMES = 88
+var TOTALGAMES = 90
 
 if (page == '1') {
 
@@ -129,7 +129,9 @@ if (page == '2') {
     createItem("riddleschool2", "Riddle School 2", "https://agentsgams.github.io/gams/flash/riddleschool2.html", "./thumbs/riddleschool2.png", "white", "can you help Phil escape again his school through puzzles?", false)
     createItem("riddleschool3", "Riddle School 3", "https://agentsgams.github.io/gams/flash/riddleschool3.html", "./thumbs/riddleschool3.png", "white", "can you help Phil escape his even bigger high school with more puzzles?", false)
     createItem("sportsheadsoccer", "Sport Heads: Football Championship", "https://agentsgams.github.io/gams/flash/sportsheadssoccer.html", "./thumbs/sportsheadSoccer.jpeg", "white", "is another classic Sports Head game where you play soccer against an AI as a head only human.", false)
-
+    createItem("run", "Run", "https://agentsgams.github.io/gams/flash/run.html", "./comingsoon.png", "white", "is excatly what is sounds like- RUN! You can jump and move around to make it to the next level.", false)
+    createItem("run3", "Run 3", "https://agentsgams.github.io/gams/flash/run3.html", "./comingsoon.png", "white", "is excatly what is sounds like- RUN! You can jump and move around to make it to the next level.", false)
+    
 }
 
 // createItem("nowgg", "now.gg unblckr", "https://agents-nowgg.glitch.me/", "./comingsoon.png", "white", "*THIS WILL SOON BE MOVED TO AGENTS TOOLS*")
