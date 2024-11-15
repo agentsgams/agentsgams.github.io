@@ -26,7 +26,7 @@ function createItem(game, formatted, link, image, color, description, iframe) {
 }
 
 var page = document.getElementById('page').innerText
-var TOTALGAMES = 90
+var TOTALGAMES = 91
 
 if (page == '1') {
 
@@ -131,7 +131,8 @@ if (page == '2') {
     createItem("sportsheadsoccer", "Sport Heads: Football Championship", "https://agentsgams.github.io/agentsgams/gams/flash/sportsheadssoccer.html", "./thumbs/sportsheadSoccer.jpeg", "white", "is another classic Sports Head game where you play soccer against an AI as a head only human.", false)
     createItem("run", "Run", "https://agentsgams.github.io/agentsgams/gams/flash/run.html", "./comingsoon.png", "white", "is excatly what is sounds like- RUN! You can jump and move around to make it to the next level.", false)
     createItem("run3", "Run 3", "https://agentsgams.github.io/agentsgams/gams/flash/run3.html", "./comingsoon.png", "white", "is excatly what is sounds like- RUN! You can jump and move around to make it to the next level.", false)
-    
+    createItem("earthbound", "Earthbound", "https://agentsgams.github.io/emulatorjs/earthbound.html", "./thumbs/earthbound.jpeg", "white", "is the the original SNES classic that everyone knows and enjoys!", false)
+
 }
 
 // createItem("nowgg", "now.gg unblckr", "https://agents-nowgg.glitch.me/", "./comingsoon.png", "white", "*THIS WILL SOON BE MOVED TO AGENTS TOOLS*")
