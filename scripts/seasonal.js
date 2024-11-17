@@ -1,4 +1,4 @@
-var season = "halloween"
+var season = ""
 
 switch (season) {
     case 'halloween':
