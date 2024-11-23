@@ -141,6 +141,7 @@ addItem("Drift Hunters", `https://www.hoodamath.com/mobile/games/drift-hunters/g
 addItem("Soccer Random", `${baseurl}soccerrandom`, false)
 addItem("Basket Random", `${baseurl}basketrandom`, false)
 addItem("Cluster Rush", `${baseurl}clusterrush`, false)
+addItem("Tiny Fishing", `${baseurl}tinyfishing`, false)
 
 // after all the items are added, we add the search bar
 document.getElementById('searchBar').style.display = "block"
