@@ -42,7 +42,7 @@ function addItem(formalname, gamelink, iframe) {
     }
 }
 
-var baseurl = "https://agentsgams.github.io/agentsgams/gams/"
+var baseurl = "https://agentsgams.github.io/projects/"
 
 addItem("Epic Boss Battle", "https://agentn86.github.io/epicbossbattle/v1.3.3/",)
 addItem("SMnake", "https://taco-eating-truck.glitch.me/index.html",)

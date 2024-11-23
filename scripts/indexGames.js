@@ -26,7 +26,7 @@ function createItem(game, formatted, link, image, color, description, iframe) {
 }
 
 var page = document.getElementById('page').innerText
-var baseurl = "https://agentsgams.github.io/agentsgams/gams/"
+var baseurl = "https://agentsgams.github.io/projects/"
 var TOTALGAMES = 96
 
 if (page == '1') {
