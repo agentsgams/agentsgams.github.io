@@ -138,6 +138,7 @@ addItem("Earthbound", "https://agentsgams.github.io/emulatorjs/earthbound.html",
 addItem("Block Blast", `${baseurl}blockblast`, false)
 addItem("Big Tower Tiny Square", `${baseurl}bigtowertinysquare`, false)
 addItem("Drift Hunters", `https://www.hoodamath.com/mobile/games/drift-hunters/game.html`, false)
+addItem("Soccer Random", `${baseurl}soccerrandom`, false)
 
 // after all the items are added, we add the search bar
 document.getElementById('searchBar').style.display = "block"
