@@ -32,7 +32,7 @@
 </head>
 <body><center>
     <h1>Function Generator</h1>
-    Game Link: &nbsp;<input style="width: 250px;" id="gamelink"><br>
+    Game Link: &nbsp;<input style="width: 250px;" id="gamelink" value="${baseurl}"><br>
     Color: &nbsp;<input style="width: 250px;" id="color"><br>
     <br>
     a Name: &nbsp;<input style="width: 250px;" id="aname"><br>
@@ -70,9 +70,10 @@
             }
             
             document.getElementById("createitem").value = 
-            `createItem("${aname}", "${formalname}", "${gamelink}", "${thumb}", "${color}", "${description}", ${iframe})`
+            `createItem("${aname}", "${formalname}", ` + "`" + `${gamelink}` + "`, " + `"${thumb}", "${color}", "${description}", ${iframe})`
+
             document.getElementById('additem').value =
-            `addItem("${formalname}", "${gamelink}", ${iframe})`
+            `addItem("${formalname}", ` + "`" + `${gamelink}` + "`, " + `${iframe})`
         }
     </script>
 
