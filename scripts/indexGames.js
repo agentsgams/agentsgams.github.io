@@ -27,7 +27,7 @@ function createItem(game, formatted, link, image, color, description, iframe) {
 
 var page = document.getElementById('page').innerText
 var baseurl = "https://agentsgams.github.io/projects/"
-var TOTALGAMES = 96
+var TOTALGAMES = 97
 
 if (page == '1') {
 
@@ -138,6 +138,7 @@ if (page == '2') {
     createItem("drifthunters", "Drift Hunters", `https://www.hoodamath.com/mobile/games/drift-hunters/game.html`, "./thumbs/drifthunters.jpg", "white", "is a drift game as said in the title. Make cool moves to get the best score!", false)
     createItem("soccerrandom", "Soccer Random", `${baseurl}soccerrandom`, "./thumbs/soccer-random.png", "white", "is a game where everything is up for RNG- where you go and if you win or not.", false)
     createItem("basketrandom", "Basket Random", `${baseurl}basketrandom`, "./thumbs/basketrandom.png", "white", "is a basketball game where everything is up for RNG- where you go and if you win or not.", false)
+    createItem("clusterrush", "Cluster Rush", `${baseurl}clusterrush`, "./thumbs/cluster-rush.png", "white", "is a platformer game where you jump over trucks to get to the end goal!", false)
 
 }
 

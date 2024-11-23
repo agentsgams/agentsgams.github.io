@@ -140,6 +140,7 @@ addItem("Big Tower Tiny Square", `${baseurl}bigtowertinysquare`, false)
 addItem("Drift Hunters", `https://www.hoodamath.com/mobile/games/drift-hunters/game.html`, false)
 addItem("Soccer Random", `${baseurl}soccerrandom`, false)
 addItem("Basket Random", `${baseurl}basketrandom`, false)
+addItem("Cluster Rush", `${baseurl}clusterrush`, false)
 
 // after all the items are added, we add the search bar
 document.getElementById('searchBar').style.display = "block"
