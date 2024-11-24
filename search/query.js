@@ -144,6 +144,7 @@ addItem("Cluster Rush", `${baseurl}clusterrush`, false)
 addItem("Tiny Fishing", `${baseurl}tinyfishing`, false)
 addItem("BitLife", `${baseurl}bitlife`, false)
 addItem("Boxing Random", `${baseurl}boxingrandom`, false)
+addItem("Volley Random", `${baseurl}volleyrandom`, false)
 
 // after all the items are added, we add the search bar
 document.getElementById('searchBar').style.display = "block"

@@ -27,7 +27,7 @@ function createItem(game, formatted, link, image, color, description, iframe) {
 
 var page = document.getElementById('page').innerText
 var baseurl = "https://agentsgams.github.io/projects/"
-var TOTALGAMES = 100
+var TOTALGAMES = 101
 
 if (page == '1') {
 
@@ -90,7 +90,7 @@ if (page == '1') {
 if (page == '2') {
 
     document.getElementById('entries').innerText = "50"
-    document.getElementById('entries_max').innerText = TOTALGAMES
+    document.getElementById('entries_max').innerText = "100"
 
     createItem("geodash", "GeoDash", `${baseurl}geodash`, "./thumbs/geodash.png", "white", "is a 1-1 replica to Geomentry Dash. Give it a try, and see if you can bet the hard challenging levels!")
     createItem("motox3m", "Moto X3M", `${baseurl}iframe/motox3m`, "./thumbs/motox3m.png", "white", "is a motorcycle game where you have to get around obstables and make it to the end.")
@@ -144,6 +144,15 @@ if (page == '2') {
     createItem("boxingrandom", "Boxing Random", `${baseurl}boxingrandom`, "./thumbs/boxingrandom.jpg", "white", "is a boxing game where everything is up for RNG- where you go and if you win or not.", false)
     // total here: 50
     
+}
+
+if (page == '3') {
+
+    document.getElementById('entries').innerText = "100"
+    document.getElementById('entries_max').innerText = TOTALGAMES
+
+    createItem("volleyrandom", "Volley Random", `${baseurl}volleyrandom`, "./thumbs/volley-random.jpg", "white", "is a volleyball game where everything is up for RNG- where you go and if you win or not.", false)
+
 }
 
 // createItem("nowgg", "now.gg unblckr", "https://agents-nowgg.glitch.me/", "./comingsoon.png", "white", "*THIS WILL SOON BE MOVED TO AGENTS TOOLS*")
