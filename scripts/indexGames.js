@@ -152,6 +152,7 @@ if (page == '3') {
     document.getElementById('entries_max').innerText = TOTALGAMES
 
     createItem("volleyrandom", "Volley Random", `${baseurl}volleyrandom`, "./thumbs/volley-random.jpg", "white", "is a volleyball game where everything is up for RNG- where you go and if you win or not.", false)
+    createItem("superhot", "SUPERHOT", `${baseurl}superhot`, "./thumbs/superhot.jpg", "white", "is the original prototype for the hit game SUPERHOT!", false)
 
 }
 
