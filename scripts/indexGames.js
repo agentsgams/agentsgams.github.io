@@ -155,7 +155,8 @@ if (page == '3') {
     createItem("superhot", "SUPERHOT", `${baseurl}superhot`, "./thumbs/superhot.jpg", "white", "is the original prototype for the hit game SUPERHOT!", false)
     createItem("murder", "Murder", `${baseurl}murder`, "./thumbs/murder.png", "white", "is a RNG game- kill the king and survive the others!", false)
     createItem("paperio2", "Paper.IO 2", `${baseurl}paperio2`, "./thumbs/paperio.png", "white", "is a IO game where you must take over the entire land by painting and elimating others!", false)
-
+    createItem("grindcraft", "Grindcraft", `${baseurl}grindcraft`, "./thumbs/grindcraft.png", "white", "is a clicker game where you become Steve and use resources to make the best town!", false)
+    
 }
 
 // createItem("nowgg", "now.gg unblckr", "https://agents-nowgg.glitch.me/", "./comingsoon.png", "white", "*THIS WILL SOON BE MOVED TO AGENTS TOOLS*")

@@ -148,6 +148,7 @@ addItem("Volley Random", `${baseurl}volleyrandom`, false)
 addItem("SUPERHOT", `${baseurl}superhot`, false)
 addItem("Murder", `${baseurl}murder`, false)
 addItem("Paper.IO 2", `${baseurl}paperio2`, false)
+addItem("Grindcraft", `${baseurl}grindcraft`, false)
 
 // after all the items are added, we add the search bar
 document.getElementById('searchBar').style.display = "block"
