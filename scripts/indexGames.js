@@ -27,7 +27,7 @@ function createItem(game, formatted, link, image, color, description, iframe) {
 
 var page = document.getElementById('page').innerText
 var baseurl = "https://agentsgams.github.io/projects/"
-var TOTALGAMES = 98
+var TOTALGAMES = 99
 
 if (page == '1') {
 
@@ -140,6 +140,7 @@ if (page == '2') {
     createItem("basketrandom", "Basket Random", `${baseurl}basketrandom`, "./thumbs/basketrandom.png", "white", "is a basketball game where everything is up for RNG- where you go and if you win or not.", false)
     createItem("clusterrush", "Cluster Rush", `${baseurl}clusterrush`, "./thumbs/cluster-rush.png", "white", "is a platformer game where you jump over trucks to get to the end goal!", false)
     createItem("tinyfishing", "Tiny Fishing", `${baseurl}tinyfishing`, "./thumbs/tiny-fishing.jpg", "white", "is a fishing game where you collect fish to become rich!", false)
+    createItem("bitlife", "BitLife", `${baseurl}bitlife`, "./thumbs/bitlife.png", "white", "is a life simulation game where you live your life to the best potential!", false)
 
 }
 
