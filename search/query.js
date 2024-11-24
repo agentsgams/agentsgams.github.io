@@ -146,6 +146,7 @@ addItem("BitLife", `${baseurl}bitlife`, false)
 addItem("Boxing Random", `${baseurl}boxingrandom`, false)
 addItem("Volley Random", `${baseurl}volleyrandom`, false)
 addItem("SUPERHOT", `${baseurl}superhot`, false)
+addItem("Murder", `${baseurl}murder`, false)
 
 // after all the items are added, we add the search bar
 document.getElementById('searchBar').style.display = "block"
