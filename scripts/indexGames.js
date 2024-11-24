@@ -27,7 +27,7 @@ function createItem(game, formatted, link, image, color, description, iframe) {
 
 var page = document.getElementById('page').innerText
 var baseurl = "https://agentsgams.github.io/projects/"
-var TOTALGAMES = 99
+var TOTALGAMES = 100
 
 if (page == '1') {
 
@@ -141,7 +141,9 @@ if (page == '2') {
     createItem("clusterrush", "Cluster Rush", `${baseurl}clusterrush`, "./thumbs/cluster-rush.png", "white", "is a platformer game where you jump over trucks to get to the end goal!", false)
     createItem("tinyfishing", "Tiny Fishing", `${baseurl}tinyfishing`, "./thumbs/tiny-fishing.jpg", "white", "is a fishing game where you collect fish to become rich!", false)
     createItem("bitlife", "BitLife", `${baseurl}bitlife`, "./thumbs/bitlife.png", "white", "is a life simulation game where you live your life to the best potential!", false)
-
+    createItem("boxingrandom", "Boxing Random", `${baseurl}boxingrandom`, "./thumbs/boxingrandom.jpg", "white", "is a boxing game where everything is up for RNG- where you go and if you win or not.", false)
+    // total here: 50
+    
 }
 
 // createItem("nowgg", "now.gg unblckr", "https://agents-nowgg.glitch.me/", "./comingsoon.png", "white", "*THIS WILL SOON BE MOVED TO AGENTS TOOLS*")
