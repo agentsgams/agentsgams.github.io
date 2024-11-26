@@ -156,6 +156,7 @@ if (page == '3') {
     createItem("murder", "Murder", `${baseurl}murder`, "./thumbs/murder.png", "white", "is a RNG game- kill the king and survive the others!", false)
     createItem("paperio2", "Paper.IO 2", `${baseurl}paperio2`, "./thumbs/paperio.png", "white", "is a IO game where you must take over the entire land by painting and elimating others!", false)
     createItem("grindcraft", "Grindcraft", `${baseurl}grindcraft`, "./thumbs/grindcraft.png", "white", "is a clicker game where you become Steve and use resources to make the best town!", false)
+    createItem("eightball", "8Ball Pool", `${baseurl}8ball`, "./thumbs/8ball.jpg", "white", "is a casino game where you must get all the balls in the holes, and can be played aganist AI and other players!", false)
     
 }
 
