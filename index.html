@@ -349,7 +349,7 @@
                 onclick="window.location.href='https://www.iorad.com/player/2445280/agents-gams-tutorial?iframeHash=trysteps-1&lang=en'">Show
                 me the tutorial! (Recommended)</button>
             <button style="cursor: pointer;"
-                onclick="setCookie('watchedIntro', 'true'); document.getElementById('intro').close()">Never show
+                onclick="setCookie('watchedIntro', 'true', 365); document.getElementById('intro').close()">Never show
                 again</button>
             <button style="cursor: pointer;" onclick="document.getElementById('intro').close()">Close</button>
         </center>
@@ -376,8 +376,11 @@
     <script defer>
 
 
-        function setCookie(cname, cvalue) {
-            document.cookie = cname + "=" + cvalue + ";"
+        function setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            let expires = "expires="+ d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
         }
 
         function getCookie(cname) {
