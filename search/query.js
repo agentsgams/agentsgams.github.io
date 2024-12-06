@@ -156,6 +156,7 @@ addItem("Head Soccer 2022", `${baseurl}headsoccer`, false)
 addItem("Mad Burger", `${baseurl}madburger`, false)
 addItem("Subway Surfers", `${baseurl}subwaysurfers`, false)
 addItem("Tennis Physics", `${baseurl}tennisphysics`, false)
+addItem("Gunspin", `${baseurl}gunspin`, false)
 
 // after all the items are added, we add the search bar
 document.getElementById('searchBar').style.display = "block"

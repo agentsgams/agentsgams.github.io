@@ -27,7 +27,7 @@ function createItem(game, formatted, link, image, color, description, iframe) {
 
 var page = document.getElementById('page').innerText
 var baseurl = "https://agentsgams.github.io/projects/"
-var TOTALGAMES = 112
+var TOTALGAMES = 113
 
 if (page == '1') {
 
@@ -163,6 +163,7 @@ if (page == '3') {
     createItem("madburger", "Mad Burger", `${baseurl}madburger`, "./thumbs/mad-burger.jpg", "white", "is where you must deliver a burger hundreds of miles away- how? By throwing it.", false)
     createItem("subwaysurfers", "Subway Surfers", `${baseurl}subwaysurfers`, "./thumbs/subway-surfers-stpetersburg.jpg", "white", "is a endless runner classic- run away from the guard and his dog!", false)
     createItem("tennisphysics", "Tennis Physics", `${baseurl}tennisphysics`, "./thumbs/TennisPhysics.jpg", "white", "is made by the same creators of the Random games, randomly move around in a game of tennis.", false)
+    createItem("gunspin", "Gunspin", `${baseurl}gunspin`, "./thumbs/gunspin.png", "white", "is a platformer game, somewhat. Use the imense power of your weapon to get sent to the other side!", false)
 
 }
 
