@@ -14,6 +14,7 @@
 
         <li class="1"><a class="header"><b>1</b></a></li>
         <li class="3"><a class="header"><b>3</b></a></li>
+        <li class="8"><a class="header"><b>8</b></a></li>
         <li class="A"><a class="header"><b>A</b></a></li>
         <li class="B"><a class="header"><b>B</b></a></li>
         <li class="C"><a class="header"><b>C</b></a></li>
@@ -24,8 +25,11 @@
         <li class="H"><a class="header"><b>H</b></a></li>
         <li class="I"><a class="header"><b>I</b></a></li>
         <li class="J"><a class="header"><b>J</b></a></li>
+        <!--<li class="K"><a class="header"><b>K</b></a></li>-->
         <li class="L"><a class="header"><b>L</b></a></li>
         <li class="M"><a class="header"><b>M</b></a></li>
+        <!--<li class="N"><a class="header"><b>N</b></a></li>
+        <li class="O"><a class="header"><b>O</b></a></li>-->
         <li class="P"><a class="header"><b>P</b></a></li>
         <li class="Q"><a class="header"><b>Q</b></a></li>
         <li class="R"><a class="header"><b>R</b></a></li>
@@ -34,6 +38,9 @@
         <li class="U"><a class="header"><b>U</b></a></li>
         <li class="V"><a class="header"><b>V</b></a></li>
         <li class="W"><a class="header"><b>W</b></a></li>
+        <!--<li class="X"><a class="header"><b>X</b></a></li>
+        <li class="Y"><a class="header"><b>Y</b></a></li>
+        <li class="Z"><a class="header"><b>Z</b></a></li>-->
 
     </ul>
     <br>
@@ -46,7 +53,6 @@
             ul = document.getElementById("myUL");
             li = ul.getElementsByTagName('li');
 
-            // Loop through all list items, and hide those who don't match the search query
             for (i = 0; i < li.length; i++) {
                 a = li[i].getElementsByTagName("a")[0];
                 if (a.href) {

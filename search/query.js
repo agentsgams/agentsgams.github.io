@@ -150,6 +150,12 @@ addItem("Murder", `${baseurl}murder`, false)
 addItem("Paper.IO 2", `${baseurl}paperio2`, false)
 addItem("Grindcraft", `${baseurl}grindcraft`, false)
 addItem("8Ball Pool", `${baseurl}8ball`, false)
+addItem("Blumgi Ball", `${baseurl}blumgimagicball`, false)
+addItem("Boxing Random 2", `${baseurl}boxingphysics2`, false)
+addItem("Head Soccer 2022", `${baseurl}headsoccer`, false)
+addItem("Mad Burger", `${baseurl}madburger`, false)
+addItem("Subway Surfers", `${baseurl}subwaysurfers`, false)
+addItem("Tennis Physics", `${baseurl}tennisphysics`, false)
 
 // after all the items are added, we add the search bar
 document.getElementById('searchBar').style.display = "block"

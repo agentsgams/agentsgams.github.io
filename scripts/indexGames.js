@@ -27,7 +27,7 @@ function createItem(game, formatted, link, image, color, description, iframe) {
 
 var page = document.getElementById('page').innerText
 var baseurl = "https://agentsgams.github.io/projects/"
-var TOTALGAMES = 103
+var TOTALGAMES = 112
 
 if (page == '1') {
 
@@ -143,7 +143,7 @@ if (page == '2') {
     createItem("bitlife", "BitLife", `${baseurl}bitlife`, "./thumbs/bitlife.png", "white", "is a life simulation game where you live your life to the best potential!", false)
     createItem("boxingrandom", "Boxing Random", `${baseurl}boxingrandom`, "./thumbs/boxingrandom.jpg", "white", "is a boxing game where everything is up for RNG- where you go and if you win or not.", false)
     // total here: 50
-    
+    // complete total: 100
 }
 
 if (page == '3') {
@@ -151,13 +151,19 @@ if (page == '3') {
     document.getElementById('entries').innerText = "100"
     document.getElementById('entries_max').innerText = TOTALGAMES
 
-    createItem("volleyrandom", "Volley Random", `${baseurl}volleyrandom`, "./thumbs/volley-random.jpg", "white", "is a volleyball game where everything is up for RNG- where you go and if you win or not.", false)
-    createItem("superhot", "SUPERHOT", `${baseurl}superhot`, "./thumbs/superhot.jpg", "white", "is the original prototype for the hit game SUPERHOT!", false)
+    createItem("volleyrandom", "Volley Random", `${baseurl}volleyrandom`, "./thumbs/volley-random.jpg", "white", "is a volleyball project where everything is up for RNG- where you go and if you win or not.", false)
+    createItem("superhot", "SUPERHOT", `${baseurl}superhot`, "./thumbs/superhot.jpg", "white", "is the original prototype for the hit project SUPERHOT!", false)
     createItem("murder", "Murder", `${baseurl}murder`, "./thumbs/murder.png", "white", "is a RNG game- kill the king and survive the others!", false)
-    createItem("paperio2", "Paper.IO 2", `${baseurl}paperio2`, "./thumbs/paperio.png", "white", "is a IO game where you must take over the entire land by painting and elimating others!", false)
-    createItem("grindcraft", "Grindcraft", `${baseurl}grindcraft`, "./thumbs/grindcraft.png", "white", "is a clicker game where you become Steve and use resources to make the best town!", false)
-    createItem("eightball", "8Ball Pool", `${baseurl}8ball`, "./thumbs/8ball.jpg", "white", "is a casino game where you must get all the balls in the holes, and can be played aganist AI and other players!", false)
-    
+    createItem("paperio2", "Paper.IO 2", `${baseurl}paperio2`, "./thumbs/paperio.png", "white", "is a IO project where you must take over the entire land by painting and elimating others!", false)
+    createItem("grindcraft", "Grindcraft", `${baseurl}grindcraft`, "./thumbs/grindcraft.png", "white", "is a clicker project where you become Steve and use resources to make the best town!", false)
+    createItem("eightball", "8Ball Pool", `${baseurl}8ball`, "./thumbs/8ball.jpg", "white", "is a casino project where you must get all the balls in the holes, and can be played aganist AI and other players!", false)
+    createItem("blumgiball", "Blumgi Ball", `${baseurl}blumgimagicball`, "./thumbs/blumgiball.png", "white", "is a basketball platformer project, with a side of puzzles. Score through challenging levels!", false)
+    createItem("boxingrandom2", "Boxing Random 2", `${baseurl}boxingphysics2`, "./thumbs/boxingrandom2.png", "white", "is somewhat similar to the random games, fight eachother in clumsy ways!", false)
+    createItem("headsoccer", "Head Soccer 2022", `${baseurl}headsoccer`, "./thumbs/headsoccer2022.png", "white", "is a soccer game, as you would expect, but everything but your head and shoes are gone!", false)
+    createItem("madburger", "Mad Burger", `${baseurl}madburger`, "./thumbs/mad-burger.jpg", "white", "is where you must deliver a burger hundreds of miles away- how? By throwing it.", false)
+    createItem("subwaysurfers", "Subway Surfers", `${baseurl}subwaysurfers`, "./thumbs/subway-surfers-stpetersburg.jpg", "white", "is a endless runner classic- run away from the guard and his dog!", false)
+    createItem("tennisphysics", "Tennis Physics", `${baseurl}tennisphysics`, "./thumbs/TennisPhysics.jpg", "white", "is made by the same creators of the Random games, randomly move around in a game of tennis.", false)
+
 }
 
 // createItem("nowgg", "now.gg unblckr", "https://agents-nowgg.glitch.me/", "./comingsoon.png", "white", "*THIS WILL SOON BE MOVED TO AGENTS TOOLS*")
