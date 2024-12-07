@@ -27,7 +27,7 @@ function createItem(game, formatted, link, image, color, description, iframe) {
 
 var page = document.getElementById('page').innerText
 var baseurl = "https://agentsgams.github.io/projects/"
-var TOTALGAMES = 113
+var TOTALGAMES = 117
 
 if (page == '1') {
 
@@ -93,9 +93,9 @@ if (page == '2') {
     document.getElementById('entries_max').innerText = "100"
 
     createItem("geodash", "GeoDash", `${baseurl}geodash`, "./thumbs/geodash.png", "white", "is a 1-1 replica to Geomentry Dash. Give it a try, and see if you can bet the hard challenging levels!")
-    createItem("motox3m", "Moto X3M", `${baseurl}iframe/motox3m`, "./thumbs/motox3m.png", "white", "is a motorcycle game where you have to get around obstables and make it to the end.")
-    createItem("motox3m2", "Moto X3M 2", `${baseurl}iframe/motox3m2`, "./thumbs/motox3m.png", "white", "is the sequal to Moto X3M, with the same premise.")
-    createItem("motox3m3", "Moto X3M 3", `${baseurl}iframe/motox3m3`, "./thumbs/motox3m.png", "white", "is the sequal to Moto X3M, with the same premise.")
+    createItem("motox3m", "Moto X3M", `${baseurl}motox3m`, "./thumbs/motox3m.png", "white", "is a motorcycle game where you have to get around obstables and make it to the end.")
+    createItem("motox3m2", "Moto X3M 2", `${baseurl}motox3m-2`, "./thumbs/motox3m.png", "white", "is the sequal to Moto X3M, with the same premise.")
+    createItem("motox3m3", "Moto X3M 3", `${baseurl}motox3m-3`, "./thumbs/motox3m.png", "white", "is the sequal to Moto X3M, with the same premise.")
     createItem("bigshotboxing", "Big Shot Boxing", `${baseurl}xml/bigshotboxing.html`, "./thumbs/bigshotboxing.png", "white", "is a fighting sim where you must be the top in boxing.", true)
     createItem("sr3d2", "Snow Rider 3D 2", `${baseurl}xml/snowrider3d2.html`, "./thumbs/snow-rider-3d.png", "white", "is a infinite runner, but you are on a sliegh! Very challenging, can you get all the presents?")
     createItem("s2p", "SLOPE 2 Players", `${baseurl}xml/slope2player.html`, "./thumbs/slope-2-player-logo.jpg", "white", "is a infinite runner by SLOPE, but its for 2 players isntead of 1.", true)
@@ -164,6 +164,10 @@ if (page == '3') {
     createItem("subwaysurfers", "Subway Surfers", `${baseurl}subwaysurfers`, "./thumbs/subway-surfers-stpetersburg.jpg", "white", "is a endless runner classic- run away from the guard and his dog!", false)
     createItem("tennisphysics", "Tennis Physics", `${baseurl}tennisphysics`, "./thumbs/TennisPhysics.jpg", "white", "is made by the same creators of the Random games, randomly move around in a game of tennis.", false)
     createItem("gunspin", "Gunspin", `${baseurl}gunspin`, "./thumbs/gunspin.png", "white", "is a platformer game, somewhat. Use the imense power of your weapon to get sent to the other side!", false)
+    createItem("2048", "2048", `${baseurl}2048`, "./thumbs/2048.png", "white", "is a strategy project- get to 2048 without running out of spaces.", false)
+    createItem("crossyroad", "Crossy Road", `${baseurl}crossyroad`, "./thumbs/crossyroad.png", "white", "is where you must get to the end... there isnt... whilst avoiding challenges throughout!", false)
+    createItem("johnnyupgrade", "Johnny Upgrade", `${baseurl}johnny-upgrade`, "./thumbs/johnny-upgrade.png", "white", "is a platformer project, keep upgrading til you get to the end.", false)
+    createItem("motox3mwinter", "Moto X3M Winter", `${baseurl}motox3m-winter`, "./thumbs/motoxm3-winter.png", "white", "is the sequal to Moto X3M, but christmas, with the same premise.", false)
 
 }
 
