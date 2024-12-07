@@ -105,7 +105,7 @@ if (page == '2') {
     createItem("flappyplane", "Flappy Plane", `${baseurl}flappyplane`, "./thumbs/flappyplane.jpeg", "red", "is a clone of Flappy Bird but with a interesting twist...")
     createItem("gunmayhem2", "Gun Mayhem 2", `${baseurl}flash/gunmayhem2.html`, "./thumbs/gun-mayhem-2.jpg", "white", "is a ultimate battle game! Fire and shoot until you can't no more!")
     createItem("minesweeper", "Minesweeper", "https://agentn86.github.io/js-minesweeper/", "./thumbs/minesweeper.png", "white", "-- a challenging game where you must figure out the mines before they explode you!")
-    createItem("polytrack", "Polytrack", `${baseurl}xml/polytrack.html`, "./thumbs/polytrack.png", "white", "is a racing game, runs well on basically anything, and is super fun! (Even your own custom editor..)", true)
+    createItem("polytrack", "Polytrack", `${baseurl}multipleVersions/polytrack.html`, "./thumbs/polytrack.png", "white", "is a racing game, runs well on basically anything, and is super fun! (Even your own custom editor..)", true)
     createItem("driftboss", "Drift Boss", `${baseurl}driftboss`, "./thumbs/driftboss.png", "white", "How long can you last driving your car on a wacky road?")
     createItem("eggycar", "Eggy Car", `${baseurl}eggycar`, "./thumbs/eggycar.png", "white", "Keep your egg in your car without dropping!")
     createItem("profootball", "Pro Football", `${baseurl}flash/profootball.html`, "./thumbs/profootball.jpg", "white", "Miniclip classic!")
