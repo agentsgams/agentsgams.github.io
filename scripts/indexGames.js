@@ -27,7 +27,7 @@ function createItem(game, formatted, link, image, color, description, iframe) {
 
 var page = document.getElementById('page').innerText
 var baseurl = "https://agentsgams.github.io/projects/"
-var TOTALGAMES = 117
+var TOTALGAMES = 118
 
 if (page == '1') {
 
@@ -168,6 +168,7 @@ if (page == '3') {
     createItem("crossyroad", "Crossy Road", `${baseurl}crossyroad`, "./thumbs/crossyroad.png", "white", "is where you must get to the end... there isnt... whilst avoiding challenges throughout!", false)
     createItem("johnnyupgrade", "Johnny Upgrade", `${baseurl}johnny-upgrade`, "./thumbs/johnny-upgrade.png", "white", "is a platformer project, keep upgrading til you get to the end.", false)
     createItem("motox3mwinter", "Moto X3M Winter", `${baseurl}motox3m-winter`, "./thumbs/motoxm3-winter.png", "white", "is the sequal to Moto X3M, but christmas, with the same premise.", false)
+    createItem("littlealchemy2", "Little Alchemy 2", `${baseurl}littlealchemy2`, "./thumbs/little-alchemy-2.png", "white", "is where you become the ruler of everything- make things out of materials you collect.", false)
 
 }
 
