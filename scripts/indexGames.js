@@ -97,7 +97,7 @@ if (page == '2') {
     createItem("motox3m2", "Moto X3M 2", `${baseurl}motox3m-2`, "./thumbs/motox3m.png", "white", "is the sequal to Moto X3M, with the same premise.")
     createItem("motox3m3", "Moto X3M 3", `${baseurl}motox3m-3`, "./thumbs/motox3m.png", "white", "is the sequal to Moto X3M, with the same premise.")
     createItem("bigshotboxing", "Big Shot Boxing", `${baseurl}xml/bigshotboxing.html`, "./thumbs/bigshotboxing.png", "white", "is a fighting sim where you must be the top in boxing.", true)
-    createItem("sr3d2", "Snow Rider 3D 2", `${baseurl}xml/snowrider3d2.html`, "./thumbs/snow-rider-3d.png", "white", "is a infinite runner, but you are on a sliegh! Very challenging, can you get all the presents?")
+    createItem("sr3d2", "Snow Rider 3D 2", `${baseurl}snowrider3d`, "./thumbs/snow-rider-3d.png", "white", "is a infinite runner, but you are on a sliegh! Very challenging, can you get all the presents?")
     createItem("s2p", "SLOPE 2 Players", `${baseurl}xml/slope2player.html`, "./thumbs/slope-2-player-logo.jpg", "white", "is a infinite runner by SLOPE, but its for 2 players isntead of 1.", true)
     createItem("soccerlegends", "Soccer Legends", `${baseurl}xml/soccerlegends.html`, "./thumbs/footballlegends.png", "white", "is another type of Basketball Legends, but soccer!", true)
     createItem("hellokittyadventure", "Hello Kitty Adventure", `${baseurl}xml/hellokittyadventure.html`, "./thumbs/hellokittyadventure.png", "white", "allows you to inbark in a new adventure in the Hello Kitty universe.", true)
