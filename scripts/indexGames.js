@@ -169,7 +169,8 @@ if (page == '3') {
     createItem("johnnyupgrade", "Johnny Upgrade", `${baseurl}johnny-upgrade`, "./thumbs/johnny-upgrade.png", "white", "is a platformer project, keep upgrading til you get to the end.", false)
     createItem("motox3mwinter", "Moto X3M Winter", `${baseurl}motox3m-winter`, "./thumbs/motoxm3-winter.png", "white", "is the sequal to Moto X3M, but christmas, with the same premise.", false)
     createItem("littlealchemy2", "Little Alchemy 2", `${baseurl}littlealchemy2`, "./thumbs/little-alchemy-2.png", "white", "is where you become the ruler of everything- make things out of materials you collect.", false)
-
+    createItem("doodlejump", "Doodle Jump", `${baseurl}doodlejump`, "./thumbs/doodlejump.jpg", "white", "is a endless platformer project, keep jumping and avoid dangerous objects and things along the way.", false)
+    
 }
 
 // createItem("nowgg", "now.gg unblckr", "https://agents-nowgg.glitch.me/", "./comingsoon.png", "white", "*THIS WILL SOON BE MOVED TO AGENTS TOOLS*")

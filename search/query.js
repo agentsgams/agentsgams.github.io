@@ -162,6 +162,7 @@ addItem("Crossy Road", `${baseurl}crossyroad`, false)
 addItem("Johnny Upgrade", `${baseurl}johnny-upgrade`, false)
 addItem("Moto X3M Winter", `${baseurl}motox3m-winter`, false)
 addItem("Little Alchemy 2", `${baseurl}littlealchemy2`, false)
+addItem("Doodle Jump", `${baseurl}doodlejump`, false)
 
 // after all the items are added, we add the search bar
 document.getElementById('searchBar').style.display = "block"
