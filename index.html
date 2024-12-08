@@ -231,21 +231,37 @@
         <img src="./seasonalGIFS/october/mummy.gif" draggable="false" style="position:absolute;border:0;float:right;left:80%;" width="150">
         <center><img src="./seasonalGIFS/october/skeledance.gif" draggable="false" style="border:0;"></center>
     </div>
+    <center><input type="checkbox" id="aboutblk">&nbsp;<label for="aboutblk">Do all/none projects open in <b>about:blank</b>? (Experimental!)</label></center>
+    <script>
+
+    </script>
     <br><br>
     <div id="gamList">
         <script>
             function openWindow(link, title) {
-                var win = window.open()
-                win.document.body.style.margin = '0'
-                win.document.body.style.height = '100vh'
-                win.document.title = title + " - agents gams"
-                var iframe = win.document.createElement('iframe')
-                iframe.style.border = 'none'
-                iframe.style.width = '100%'
-                iframe.style.height = '100%'
-                iframe.style.margin = '0'
-                iframe.src = link
-                win.document.body.appendChild(iframe)
+
+                if (document.getElementById('aboutblk').checked) {
+                    if (title == "Eaglercraft") {location.replace(link);return}
+                    var win = window.open()
+                    win.document.body.style.margin = '0'
+                    win.document.body.style.height = '100vh'
+                    win.document.title = title + " - agents gams"
+
+                    var iframe = win.document.createElement('iframe')
+                    iframe.style.border = 'none'
+                    iframe.style.width = '100%'
+                    iframe.style.height = '100%'
+                    iframe.style.margin = '0'
+                    iframe.src = link
+
+                    win.document.body.appendChild(iframe)
+
+                } else {
+                    
+                    location.replace(link)
+
+                }
+                
             }
         </script>
     </div>
@@ -266,13 +282,15 @@
             function nextpage() {
                 if (document.getElementById('pagemax').innerText == document.getElementById('page').innerText) {return}
                 var page = Number(document.getElementById('page').innerText)+1
-                window.location.href = "?pg=" + page
+                var checked = document.getElementById('aboutblk').checked
+                window.location.href = "?pg=" + page + "&checked=" + checked
             }
 
             function prevpage() {
                 if (document.getElementById('page').innerText == "1") {return}
                 var page = Number(document.getElementById('page').innerText)-1
-                window.location.href = "?pg=" + page
+                var checked = document.getElementById('aboutblk').checked
+                window.location.href = "?pg=" + page + "&checked=" + checked
             }
 
         </script>
@@ -417,6 +435,7 @@
         const myParam = urlParams.get('secretcode')
         const migrate = urlParams.get("migrate")
         const pageParam = urlParams.get('pg')
+        const checked = urlParams.get('checked')
         var page
 
         if (pageParam === null) {
@@ -431,6 +450,12 @@
 
         if (migrate === "true") {
             document.getElementById('migrate').showModal()
+        }
+
+        if (checked === "true") {
+            document.getElementById('aboutblk').checked = true
+        } else {
+            document.getElementById('aboutblk').checked = false
         }
 
         if (myParam === "noads") {

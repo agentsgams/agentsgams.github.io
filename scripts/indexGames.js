@@ -3,26 +3,12 @@ function createItem(game, formatted, link, image, color, description, iframe) {
     <br>
     <div style="display: flex; align-items: top;">
         <a name="${game}"></a>
-        <a href="${link}" style="color:transparent;">&nbsp;&nbsp;<img src="${image}" alt="${game}" width="100" style="border: 3px solid ${color};"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" href="${link}">${formatted}</a></span>
-        <p1>&nbsp;${description}</p1>
-    </div>
-    `
-
-    var template_iframe = `
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="${game}"></a>
         <a onclick="openWindow('${link}', '${formatted}')" style="cursor:pointer;">&nbsp;&nbsp;<img src="${image}" alt="${game}" width="100" style="border: 3px solid ${color};"></a><span class="title">&nbsp;&nbsp;<u><a style="color: white; cursor: pointer;" onclick="openWindow('${link}', '${formatted}')">${formatted}</a></u></span>
         <p1>&nbsp;${description}</p1>
     </div>
     `
-
-    if (iframe == true) {
-        document.getElementById('gamList').innerHTML = document.getElementById('gamList').innerHTML + template_iframe
-    } else {
-        document.getElementById('gamList').innerHTML = document.getElementById('gamList').innerHTML + template
-    }
-
+    
+    document.getElementById('gamList').innerHTML = document.getElementById('gamList').innerHTML + template
 }
 
 var page = document.getElementById('page').innerText
