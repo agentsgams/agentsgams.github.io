@@ -1,35 +1,40 @@
 function openWindow(link, title) {
-    var win = window.open()
-    win.document.body.style.margin = '0'
-    win.document.body.style.height = '100vh'
-    win.document.title = title + " - agents gams"
-    var iframe = win.document.createElement('iframe')
-    iframe.style.border = 'none'
-    iframe.style.width = '100%'
-    iframe.style.height = '100%'
-    iframe.style.margin = '0'
-    iframe.src = link
-    win.document.body.appendChild(iframe)
+
+    if (document.getElementById('aboutblk').checked) {
+        if (title == "Eaglercraft") {location.replace(link);return}
+        var win = window.open()
+        win.document.body.style.margin = '0'
+        win.document.body.style.height = '100vh'
+        win.document.title = title + " - agents gams"
+
+        var iframe = win.document.createElement('iframe')
+        iframe.style.border = 'none'
+        iframe.style.width = '100%'
+        iframe.style.height = '100%'
+        iframe.style.margin = '0'
+        iframe.src = link
+
+        win.document.body.appendChild(iframe)
+
+    } else {
+        
+        location.replace(link)
+
+    }
+    
 }
 
-function addItem(formalname, gamelink, iframe) {
+function addItem(formalname, gamelink) {
     var firstLetter = formalname.charAt(0).toUpperCase();
     var listElement = document.createElement("li");
     var anchorElement;
 
-    if (iframe) {
-        anchorElement = document.createElement("a");
-        anchorElement.onclick = function () {
-            openWindow(gamelink, formalname);
-        };
-        anchorElement.className = "normal";
-        anchorElement.textContent = formalname;
-    } else {
-        anchorElement = document.createElement("a");
-        anchorElement.href = gamelink;
-        anchorElement.className = "normal";
-        anchorElement.textContent = formalname;
-    }
+    anchorElement = document.createElement("a");
+    anchorElement.onclick = function () {
+        openWindow(gamelink, formalname);
+    };
+    anchorElement.className = "normal";
+    anchorElement.textContent = formalname;
 
     listElement.appendChild(anchorElement);
 
@@ -163,6 +168,7 @@ addItem("Johnny Upgrade", `${baseurl}johnny-upgrade`, false)
 addItem("Moto X3M Winter", `${baseurl}motox3m-winter`, false)
 addItem("Little Alchemy 2", `${baseurl}littlealchemy2`, false)
 addItem("Doodle Jump", `${baseurl}doodlejump`, false)
+addItem("Wolfenstein 3D", `${baseurl}jsdos/wolfen`)
 
 // after all the items are added, we add the search bar
 document.getElementById('searchBar').style.display = "block"

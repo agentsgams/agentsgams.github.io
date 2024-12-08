@@ -39,8 +39,7 @@
     Formal Name: &nbsp;<input style="width: 250px;" id="formalname"><br>
     <br>
     Thumbnail: &nbsp;<input style="width: 250px;" id="thumb"><br>
-    Description: &nbsp;<input style="width: 500px;" id="description"><br>
-    iFrame (true/false): &nbsp;<input id="iframe" style="width: 33px;"><br><br>
+    Description: &nbsp;<input style="width: 500px;" id="description"><br><br>
     <br>
     <button style="cursor:pointer;" id="gen" type="submit">Generate</button>
     <br><br>
@@ -59,21 +58,12 @@
             var formalname = document.getElementById("formalname").value
             var thumb = document.getElementById("thumb").value
             var description = document.getElementById("description").value
-            var iframe = document.getElementById("iframe").value
-            switch (iframe) {
-                case 'on':
-                    iframe = "true"
-                    break
-                case 'off':
-                    iframe = "false"
-                    break
-            }
-            
+
             document.getElementById("createitem").value = 
-            `createItem("${aname}", "${formalname}", ` + "`" + `${gamelink}` + "`, " + `"${thumb}", "${color}", "${description}", ${iframe})`
+            `createItem("${aname}", "${formalname}", ` + "`" + `${gamelink}` + "`, " + `"${thumb}", "${color}", "${description}")`
 
             document.getElementById('additem').value =
-            `addItem("${formalname}", ` + "`" + `${gamelink}` + "`, " + `${iframe})`
+            `addItem("${formalname}", ` + "`" + `${gamelink}` + "`" + `)`
         }
     </script>
 

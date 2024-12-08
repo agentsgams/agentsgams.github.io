@@ -13,7 +13,7 @@ function createItem(game, formatted, link, image, color, description, iframe) {
 
 var page = document.getElementById('page').innerText
 var baseurl = "https://agentsgams.github.io/projects/"
-var TOTALGAMES = 118
+var TOTALGAMES = 120
 
 if (page == '1') {
 
@@ -156,7 +156,8 @@ if (page == '3') {
     createItem("motox3mwinter", "Moto X3M Winter", `${baseurl}motox3m-winter`, "./thumbs/motoxm3-winter.png", "white", "is the sequal to Moto X3M, but christmas, with the same premise.", false)
     createItem("littlealchemy2", "Little Alchemy 2", `${baseurl}littlealchemy2`, "./thumbs/little-alchemy-2.png", "white", "is where you become the ruler of everything- make things out of materials you collect.", false)
     createItem("doodlejump", "Doodle Jump", `${baseurl}doodlejump`, "./thumbs/doodlejump.jpg", "white", "is a endless platformer project, keep jumping and avoid dangerous objects and things along the way.", false)
-    
+    createItem("wolfenstein3d", "Wolfenstein 3D", `${baseurl}jsdos/wolfen`, "./thumbs/wolfenstein3d.jpg", "white", "is the first game ever made by the creators of DOOM- get out of the castle alive!")
+
 }
 
 // createItem("nowgg", "now.gg unblckr", "https://agents-nowgg.glitch.me/", "./comingsoon.png", "white", "*THIS WILL SOON BE MOVED TO AGENTS TOOLS*")
