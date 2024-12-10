@@ -169,6 +169,7 @@ addItem("Moto X3M Winter", `${baseurl}motox3m-winter`, false)
 addItem("Little Alchemy 2", `${baseurl}littlealchemy2`, false)
 addItem("Doodle Jump", `${baseurl}doodlejump`, false)
 addItem("Wolfenstein 3D", `${baseurl}jsdos/wolfen`)
+addItem("Zeepkist Crash 2D", `${baseurl}zeepkistcrash2d`)
 
 // after all the items are added, we add the search bar
 document.getElementById('searchBar').style.display = "block"
