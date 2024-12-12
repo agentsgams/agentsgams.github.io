@@ -13,7 +13,7 @@ function createItem(game, formatted, link, image, color, description, iframe) {
 
 var page = document.getElementById('page').innerText
 var baseurl = "https://agentsgams.github.io/projects/"
-var TOTALGAMES = 121
+var TOTALGAMES = 119
 
 if (page == '1') {
 
@@ -144,7 +144,7 @@ if (page == '3') {
     createItem("grindcraft", "Grindcraft", `${baseurl}grindcraft`, "./thumbs/grindcraft.png", "white", "is a clicker project where you become Steve and use resources to make the best town!", false)
     createItem("eightball", "8Ball Pool", `${baseurl}8ball`, "./thumbs/8ball.jpg", "white", "is a casino project where you must get all the balls in the holes, and can be played aganist AI and other players!", false)
     createItem("blumgiball", "Blumgi Ball", `${baseurl}blumgimagicball`, "./thumbs/blumgiball.png", "white", "is a basketball platformer project, with a side of puzzles. Score through challenging levels!", false)
-    createItem("boxingrandom2", "Boxing Random 2", `${baseurl}boxingphysics2`, "./thumbs/boxingrandom2.png", "white", "is somewhat similar to the random games, fight eachother in clumsy ways!", false)
+    createItem("boxingphysics2", "Boxing Physics 2", `${baseurl}boxingphysics2`, "./thumbs/boxingrandom2.png", "white", "is somewhat similar to the random games, fight eachother in clumsy ways!", false)
     createItem("headsoccer", "Head Soccer 2022", `${baseurl}headsoccer`, "./thumbs/headsoccer2022.png", "white", "is a soccer game, as you would expect, but everything but your head and shoes are gone!", false)
     createItem("madburger", "Mad Burger", `${baseurl}madburger`, "./thumbs/mad-burger.jpg", "white", "is where you must deliver a burger hundreds of miles away- how? By throwing it.", false)
     createItem("subwaysurfers", "Subway Surfers", `${baseurl}subwaysurfers`, "./thumbs/subway-surfers-stpetersburg.jpg", "white", "is a endless runner classic- run away from the guard and his dog!", false)
@@ -154,9 +154,7 @@ if (page == '3') {
     createItem("crossyroad", "Crossy Road", `${baseurl}crossyroad`, "./thumbs/crossyroad.png", "white", "is where you must get to the end... there isnt... whilst avoiding challenges throughout!", false)
     createItem("johnnyupgrade", "Johnny Upgrade", `${baseurl}johnny-upgrade`, "./thumbs/johnny-upgrade.png", "white", "is a platformer project, keep upgrading til you get to the end.", false)
     createItem("motox3mwinter", "Moto X3M Winter", `${baseurl}motox3m-winter`, "./thumbs/motoxm3-winter.png", "white", "is the sequal to Moto X3M, but christmas, with the same premise.", false)
-    createItem("littlealchemy2", "Little Alchemy 2", `${baseurl}littlealchemy2`, "./thumbs/little-alchemy-2.png", "white", "is where you become the ruler of everything- make things out of materials you collect.", false)
     createItem("doodlejump", "Doodle Jump", `${baseurl}doodlejump`, "./thumbs/doodlejump.jpg", "white", "is a endless platformer project, keep jumping and avoid dangerous objects and things along the way.", false)
-    createItem("wolfenstein3d", "Wolfenstein 3D", `${baseurl}jsdos/wolfen`, "./thumbs/wolfenstein3d.jpg", "white", "is the first game ever made by the creators of DOOM- get out of the castle alive!")
     createItem("zeepkistcrash2d", "Zeepkist Crash 2D", `${baseurl}zeepkistcrash2d`, "./thumbs/zeepkistcrash2d.jpg", "white", "is a ragdoll project, go down a hill; get cash; repeat.")
 
 }
