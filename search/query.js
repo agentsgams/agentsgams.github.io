@@ -18,7 +18,7 @@ function openWindow(link, title) {
 
     } else {
         
-        location.replace(link)
+        window.open(link, '_blank').focus();
 
     }
     
