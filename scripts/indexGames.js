@@ -142,7 +142,7 @@ if (page == '3') {
     createItem("murder", "Murder", `${baseurl}murder`, "./thumbs/murder.png", "white", "is a RNG game- kill the king and survive the others!", false)
     createItem("paperio2", "Paper.IO 2", `${baseurl}paperio2`, "./thumbs/paperio.png", "white", "is a IO project where you must take over the entire land by painting and elimating others!", false)
     createItem("grindcraft", "Grindcraft", `${baseurl}grindcraft`, "./thumbs/grindcraft.png", "white", "is a clicker project where you become Steve and use resources to make the best town!", false)
-    createItem("eightball", "8Ball Pool", `${baseurl}8ball`, "./thumbs/8ball.jpg", "white", "is a casino project where you must get all the balls in the holes, and can be played aganist AI and other players!", false)
+    createItem("eightball", "8Ball Pool", `${baseurl}multipleVersions/8ball.html`, "./thumbs/8ball.jpg", "white", "is a casino project where you must get all the balls in the holes, and can be played aganist AI and other players!", false)
     createItem("blumgiball", "Blumgi Ball", `${baseurl}blumgimagicball`, "./thumbs/blumgiball.png", "white", "is a basketball platformer project, with a side of puzzles. Score through challenging levels!", false)
     createItem("boxingphysics2", "Boxing Physics 2", `${baseurl}boxingphysics2`, "./thumbs/boxingrandom2.png", "white", "is somewhat similar to the random games, fight eachother in clumsy ways!", false)
     createItem("headsoccer", "Head Soccer 2022", `${baseurl}headsoccer`, "./thumbs/headsoccer2022.png", "white", "is a soccer game, as you would expect, but everything but your head and shoes are gone!", false)
