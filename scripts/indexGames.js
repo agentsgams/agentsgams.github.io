@@ -13,7 +13,7 @@ function createItem(game, formatted, link, image, color, description, iframe) {
 
 var page = document.getElementById('page').innerText
 var baseurl = "https://agentsgams.github.io/projects/"
-var TOTALGAMES = 121
+var TOTALGAMES = 122
 
 if (page == '1') {
 
@@ -158,6 +158,7 @@ if (page == '3') {
     createItem("zeepkistcrash2d", "Zeepkist Crash 2D", `${baseurl}zeepkistcrash2d`, "./thumbs/zeepkistcrash2d.jpg", "white", "is a ragdoll project, go down a hill; get cash; repeat.")
     createItem("ovo", "OvO", `${baseurl}ovo`, "./thumbs/ovo.jpeg", "white", "is a platformer project that is very difficult and only the most tough can beat it... can you?")
     createItem("theworldseasyestgame", "The Worlds Easy-est Game", `${baseurl}flash/theworldseasiestgame.html`, "./thumbs/the-worlds-easyest-game.png", "white", "is a puzzle project, similar to the Impossible Quiz. But it is easier now! Right..?")
+    createItem("hypersnake", "Hypersnake", `${baseurl}hypersnake`, "./thumbs/hypersnake.jpeg", "white", "is a puzzle project, keep the snake alive and get past challenges.")
 
 }
 

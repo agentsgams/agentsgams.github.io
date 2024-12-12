@@ -170,6 +170,7 @@ addItem("Doodle Jump", `${baseurl}doodlejump`, false)
 addItem("Zeepkist Crash 2D", `${baseurl}zeepkistcrash2d`)
 addItem("OvO", `${baseurl}ovo`)
 addItem("The Worlds Easy-est Game", `${baseurl}flash/theworldseasiestgame.html`)
+addItem("Hypersnake", `${baseurl}hypersnake`)
 
 // after all the items are added, we add the search bar
 document.getElementById('searchBar').style.display = "block"
