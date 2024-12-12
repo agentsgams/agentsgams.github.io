@@ -13,7 +13,7 @@ function createItem(game, formatted, link, image, color, description, iframe) {
 
 var page = document.getElementById('page').innerText
 var baseurl = "https://agentsgams.github.io/projects/"
-var TOTALGAMES = 119
+var TOTALGAMES = 121
 
 if (page == '1') {
 
@@ -156,6 +156,8 @@ if (page == '3') {
     createItem("motox3mwinter", "Moto X3M Winter", `${baseurl}motox3m-winter`, "./thumbs/motoxm3-winter.png", "white", "is the sequal to Moto X3M, but christmas, with the same premise.", false)
     createItem("doodlejump", "Doodle Jump", `${baseurl}doodlejump`, "./thumbs/doodlejump.jpg", "white", "is a endless platformer project, keep jumping and avoid dangerous objects and things along the way.", false)
     createItem("zeepkistcrash2d", "Zeepkist Crash 2D", `${baseurl}zeepkistcrash2d`, "./thumbs/zeepkistcrash2d.jpg", "white", "is a ragdoll project, go down a hill; get cash; repeat.")
+    createItem("ovo", "OvO", `${baseurl}ovo`, "./thumbs/ovo.jpeg", "white", "is a platformer project that is very difficult and only the most tough can beat it... can you?")
+    createItem("theworldseasyestgame", "The Worlds Easy-est Game", `${baseurl}flash/theworldseasiestgame.html`, "./thumbs/the-worlds-easyest-game.png", "white", "is a puzzle project, similar to the Impossible Quiz. But it is easier now! Right..?")
 
 }
 
