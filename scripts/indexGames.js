@@ -13,7 +13,7 @@ function createItem(game, formatted, link, image, color, description, iframe) {
 
 var page = document.getElementById('page').innerText
 var baseurl = "https://agentsgams.github.io/projects/"
-var TOTALGAMES = 122
+var TOTALGAMES = 124
 
 if (page == '1') {
 
@@ -103,7 +103,7 @@ if (page == '2') {
     createItem("sportsheadsHockey", "Sport Heads: Ice Hockey", `${baseurl}xml/1on1hockey.html`, "./thumbs/1on1hockey.png", "white", "is a game where you fight AI in a tough, customizated battle of hockey!", false)
     createItem("fnaf", "Five Nights at Freddys", `${baseurl}xml/fnaf.html`, "./thumbs/fivenightsatfreddys.png", "white", "is the 2015 classic ported to Flash!", true)
     createItem("douchebagworkout2", "Douchebag Workout 2", `${baseurl}xml/douchebagworkout2.html`, "./thumbs/douchebagworkout2.png", "white", "makes you go on an adventure being the fittest person in the world- scratch that- the *douchebagest* person.", true)
-    createItem("unicyclehero", "Unicycle Hero", `${baseurl}xml/unicyclehero.html`, "./thumbs/unicylcehero.avif", "white", "-- can you beat the competition in the strange genres?", true)
+    createItem("unicyclehero", "Unicycle Hero", `${baseurl}unicyclehero`, "./thumbs/unicylcehero.avif", "white", "-- can you beat the competition in the strange genres?", true)
     createItem("garfieldscaryscavengerhunt", "Garfields Scary Scavenger Hunt", `${baseurl}xml/garfieldscaryhunt.html`, "./thumbs/garfieldscaryscavengerhunt.png", "white", "can you help Garfield and friends get through this scary, haunted mansion?", false)
     createItem("dunkshot", "Dunk Shot", `${baseurl}xml/dunkshot.html`, "./thumbs/dunkshot.png", "white", "get to as far up in the tower-- hooping.", true)
     createItem("agenttetris", "agents tetris", "https://agentn86.github.io/tetris-html/", "./thumbs/agentstetris.png", "white", "is a port of TETRIS created by agentn86. It's simple, but it's addictive!", false)
@@ -121,7 +121,7 @@ if (page == '2') {
     createItem("earthbound", "Earthbound", "https://agentsgams.github.io/emulatorjs/earthbound.html", "./thumbs/earthbound.jpeg", "white", "is the the original SNES classic that everyone knows and enjoys!", false)
     createItem("blockblast", "Block Blast", `${baseurl}blockblast`, "./thumbs/blockblast.jpeg", "white", "is a puzzle game where you must place blocks to clear the board until you fail.", false)
     createItem("bigtowertinysquare", "Big Tower Tiny Square", `${baseurl}bigtowertinysquare`, "./thumbs/bigtowertinysquare.png", "white", "is a platformer game similar to Pixel Speedrun- instead it is way more difficult.", false)
-    createItem("drifthunters", "Drift Hunters", `https://www.hoodamath.com/mobile/games/drift-hunters/game.html`, "./thumbs/drifthunters.jpg", "white", "is a drift game as said in the title. Make cool moves to get the best score!", false)
+    createItem("drifthunters", "Drift Hunters", `${baseurl}drifthunters`, "./thumbs/drifthunters.jpg", "white", "is a drift game as said in the title. Make cool moves to get the best score!", false)
     createItem("soccerrandom", "Soccer Random", `${baseurl}soccerrandom`, "./thumbs/soccer-random.png", "white", "is a game where everything is up for RNG- where you go and if you win or not.", false)
     createItem("basketrandom", "Basket Random", `${baseurl}basketrandom`, "./thumbs/basketrandom.png", "white", "is a basketball game where everything is up for RNG- where you go and if you win or not.", false)
     createItem("clusterrush", "Cluster Rush", `${baseurl}clusterrush`, "./thumbs/cluster-rush.png", "white", "is a platformer game where you jump over trucks to get to the end goal!", false)
@@ -159,6 +159,8 @@ if (page == '3') {
     createItem("ovo", "OvO", `${baseurl}ovo`, "./thumbs/ovo.jpeg", "white", "is a platformer project that is very difficult and only the most tough can beat it... can you?")
     createItem("theworldseasyestgame", "The Worlds Easy-est Game", `${baseurl}flash/theworldseasiestgame.html`, "./thumbs/the-worlds-easyest-game.png", "white", "is a puzzle project, similar to the Impossible Quiz. But it is easier now! Right..?")
     createItem("hypersnake", "Hypersnake", `${baseurl}hypersnake`, "./thumbs/hypersnake.jpeg", "white", "is a puzzle project, keep the snake alive and get past challenges.")
+    createItem("raftwars", "Raft Wars", `${baseurl}raftwars`, "./thumbs/raftwars.png", "white", "is a puzzle shooter project where you protect your new gained wealth from pirates and other people.")
+    createItem("2minfootball", "2 Minute Football", `${baseurl}2minutefootball`, "./thumbs/2minfootball.jpg", "white", "is football but quite short and it's a very fun casual project.")
 
 }
 
