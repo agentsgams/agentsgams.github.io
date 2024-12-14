@@ -119,7 +119,7 @@ if (page == '2') {
     createItem("run", "Run", `${baseurl}flash/run.html`, "./comingsoon.png", "white", "is excatly what is sounds like- RUN! You can jump and move around to make it to the next level.", false)
     createItem("run3", "Run 3", `${baseurl}flash/run3.html`, "./comingsoon.png", "white", "is excatly what is sounds like- RUN! You can jump and move around to make it to the next level.", false)
     createItem("earthbound", "Earthbound", "https://agentsgams.github.io/emulatorjs/earthbound.html", "./thumbs/earthbound.jpeg", "white", "is the the original SNES classic that everyone knows and enjoys!", false)
-    createItem("blockblast", "Block Blast", `${baseurl}blockblast`, "./thumbs/blockblast.jpeg", "white", "is a puzzle game where you must place blocks to clear the board until you fail.", false)
+    createItem("blockblast", "Block Blast", `${baseurl}multipleVersions/blockblast.html`, "./thumbs/blockblast.jpeg", "white", "is a puzzle game where you must place blocks to clear the board until you fail.", false)
     createItem("bigtowertinysquare", "Big Tower Tiny Square", `${baseurl}bigtowertinysquare`, "./thumbs/bigtowertinysquare.png", "white", "is a platformer game similar to Pixel Speedrun- instead it is way more difficult.", false)
     createItem("drifthunters", "Drift Hunters", `${baseurl}drifthunters`, "./thumbs/drifthunters.jpg", "white", "is a drift game as said in the title. Make cool moves to get the best score!", false)
     createItem("soccerrandom", "Soccer Random", `${baseurl}soccerrandom`, "./thumbs/soccer-random.png", "white", "is a game where everything is up for RNG- where you go and if you win or not.", false)

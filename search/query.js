@@ -140,7 +140,7 @@ addItem("Sport Heads: Football Championship", `${baseurl}flash/sportsheadssoccer
 addItem("Run", `${baseurl}flash/run.html`, false)
 addItem("Run 3", `${baseurl}flash/run3.html`, false)
 addItem("Earthbound", "https://agentsgams.github.io/emulatorjs/earthbound.html", false)
-addItem("Block Blast", `${baseurl}blockblast`, false)
+addItem("Block Blast", `${baseurl}multipleVersions/blockblast.html`, false)
 addItem("Big Tower Tiny Square", `${baseurl}bigtowertinysquare`, false)
 addItem("Drift Hunters", `${baseurl}drifthunters`, false)
 addItem("Soccer Random", `${baseurl}soccerrandom`, false)
