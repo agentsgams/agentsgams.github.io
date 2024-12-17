@@ -160,7 +160,7 @@ if (page == '3') {
     createItem("theworldseasyestgame", "The Worlds Easy-est Game", `${baseurl}flash/theworldseasiestgame.html`, "./thumbs/the-worlds-easyest-game.png", "white", "is a puzzle project, similar to the Impossible Quiz. But it is easier now! Right..?")
     createItem("hypersnake", "Hypersnake", `${baseurl}hypersnake`, "./thumbs/hypersnake.jpeg", "white", "is a puzzle project, keep the snake alive and get past challenges.")
     createItem("raftwars", "Raft Wars", `${baseurl}raftwars`, "./thumbs/raftwars.png", "white", "is a puzzle shooter project where you protect your new gained wealth from pirates and other people.")
-    createItem("2minfootball", "2 Minute Football", `${baseurl}2minutefootball`, "./thumbs/2minfootball.jpg", "white", "is football but quite short and it's a very fun casual project.")
+    createItem("2minfootball", "2 Minute Football", `${baseurl}multipleVersions/2minutefootball.html`, "./thumbs/2minfootball.jpg", "white", "is football but quite short and it's a very fun casual project.")
 
 }
 

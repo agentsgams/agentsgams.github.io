@@ -172,7 +172,7 @@ addItem("OvO", `${baseurl}ovo`)
 addItem("The Worlds Easy-est Game", `${baseurl}flash/theworldseasiestgame.html`)
 addItem("Hypersnake", `${baseurl}hypersnake`)
 addItem("Raft Wars", `${baseurl}raftwars`)
-addItem("2 Minute Football", `${baseurl}2minutefootball`)
+addItem("2 Minute Football", `${baseurl}multipleVersions/2minutefootball.html`)
 
 // after all the items are added, we add the search bar
 document.getElementById('searchBar').style.display = "block"
