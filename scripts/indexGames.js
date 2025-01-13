@@ -11,8 +11,9 @@ function createItem(game, formatted, link, image, color, description, iframe) {
     document.getElementById('gamList').innerHTML = document.getElementById('gamList').innerHTML + template
 }
 
+import { getBaseUrl } from './baseURL.js'
 var page = document.getElementById('page').innerText
-var baseurl = "https://agentsgams.github.io/projects/"
+var baseurl = getBaseUrl()
 var TOTALGAMES = 124
 
 if (page == '1') {
