@@ -11,3 +11,17 @@ export function getBaseUrl() {
 
     return BaseUrl
 }
+
+export function isXml() {
+    var Xml = false
+    switch (window.location.host) {
+        case "agentsgams.github.io":
+            Xml = false
+            break
+        case "altagentgam.onrender.com":
+            Xml = "https://example.com?"
+            break
+    }
+
+    return Xml
+}
