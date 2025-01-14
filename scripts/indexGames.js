@@ -11,9 +11,10 @@ function createItem(game, formatted, link, image, color, description, iframe) {
     document.getElementById('gamList').innerHTML = document.getElementById('gamList').innerHTML + template
 }
 
-import { getBaseUrl } from './baseURL.js'
+import { getBaseUrl, isXml } from './baseURL.js'
 var page = document.getElementById('page').innerText
 var baseurl = getBaseUrl()
+var xml = isXml()
 var TOTALGAMES = 124
 
 if (page == '1') {
