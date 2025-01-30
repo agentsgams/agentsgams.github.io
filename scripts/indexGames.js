@@ -15,7 +15,7 @@ import { getBaseUrl, isXml } from './baseURL.js'
 var page = document.getElementById('page').innerText
 var baseurl = getBaseUrl()
 var xml = isXml()
-var TOTALGAMES = 124
+var TOTALGAMES = 120
 
 if (page == '1') {
 
@@ -23,10 +23,6 @@ if (page == '1') {
     document.getElementById('entries_max').innerText = "50"
 
     createItem("epicbossbattle", "Epic Boss Battle", "https://agentn86.github.io/epicbossbattle/v1.3.3/", "https://agentn86.github.io/epicbossbattle/v1.3.3/loading.png", "pink", "is a tough, rage gam where you have to avoid and end a spaceship without dying in the process! Use the retry button to restart the game when needed.")
-    createItem("smnake", "SMnake", "https://taco-eating-truck.glitch.me/index.html", "./thumbs/smnake.png", "pink", "is a simple gam where you will forever collect meat with no objective! Passes time away... Use the controls on the top right to play.")
-    createItem("coincollector", "Coin Collector", "https://coincollecor.glitch.me/index.html", "./thumbs/coincollector.png", "pink", "is a simple gam where you will have to collect as much money as you can. Use the controls on the bottom to play.")
-    createItem("3dmaze", "3D Maze", `${baseurl}3dmaze.html`, "./thumbs/3dmaze.svg", "pink", "is a simple maze gam where you have to find the exit! Use WASD to move and left and right arrows to look around. Try finding the green flag to win.")
-    createItem("alienshooter", "Alien Shooter", `${baseurl}alienshooter.html`, "./thumbs/alienshooter.png", "pink", "is a simple shooter gam where the user has to shoot the alien. The more you shoot- the faster it is! Use mouse to shoot.")
     createItem("bitcoin-clicker", "Bitcoin Clicker", "https://julianyaman.github.io/bitcoin-clicker/", "./thumbs/bitcoinclicker.png", "white", "is a 'Cookie Clicker' similar type gam- but instead it's bitcoin!")
     createItem("cookie-clicker", "Cookie Clicker", `${baseurl}cookieclicker`, "./thumbs/cookieclicker.jpeg", "white", "is exactly what it sounds like. You know what it is- why not play it?")
     createItem("papaspizzeria", "Papa's Pizzeria", `${baseurl}flash/papapizzera.html`, "./thumbs/papapizzeria.jpeg", "white", "is the original classic of the Papa gams. Own a pizza business and get the best scores!")
