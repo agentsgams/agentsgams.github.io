@@ -10,7 +10,11 @@ export function main(input) {
             url = "https://agentsgams-opensocial.googleusercontent.com/gadgets/ifr?container=ig&url=https://cdn.jsdelivr.net/gh/agentsgams/projectsxml/"
             isxml = true
             break
-        }
+        case "lowtaperfade.onrender.com":
+            url = "https://agentsgams-opensocial.googleusercontent.com/gadgets/ifr?container=ig&url=https://cdn.jsdelivr.net/gh/agentsgams/projectsxml/"
+            isxml = true
+            break
+    }
     switch (input) {
         case "BaseURL":
             return url
