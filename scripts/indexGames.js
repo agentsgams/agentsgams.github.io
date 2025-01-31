@@ -25,7 +25,7 @@ if (page == '1') {
 
     createItem("epicbossbattle", "Epic Boss Battle", "https://agentn86.github.io/epicbossbattle/v1.3.3/", "https://agentn86.github.io/epicbossbattle/v1.3.3/loading.png", "pink", "is a tough, rage gam where you have to avoid and end a spaceship without dying in the process! Use the retry button to restart the game when needed.", "epicbossbattle.xml")
     createItem("bitcoin-clicker", "Bitcoin Clicker", "https://julianyaman.github.io/bitcoin-clicker/", "./thumbs/bitcoinclicker.png", "white", "is a 'Cookie Clicker' similar type gam- but instead it's bitcoin!", "bitcoinclicker.xml")
-    createItem("cookie-clicker", "Cookie Clicker", `${baseurl}cookieclicker`, "./thumbs/cookieclicker.jpeg", "white", "is exactly what it sounds like. You know what it is- why not play it?")
+    createItem("cookie-clicker", "Cookie Clicker", `${baseurl}cookieclicker`, "./thumbs/cookieclicker.jpeg", "white", "is exactly what it sounds like. You know what it is- why not play it?", "cookieclicker.xml")
     createItem("papaspizzeria", "Papa's Pizzeria", `${baseurl}flash/papapizzera.html`, "./thumbs/papapizzeria.jpeg", "white", "is the original classic of the Papa gams. Own a pizza business and get the best scores!")
     createItem("papasburgeria", "Papa's Burgeria", `${baseurl}flash/papaburger.html`, "./thumbs/papaburger.jpeg", "white", "is one of the sequels to Papa's Pizzeria. Why not give both a try?")
     createItem("ageofwar2", "Age of War 2", `${baseurl}flash/ageofwar2.html`, "./thumbs/ageofwar2.jpeg", "white", "is a war simulation gam where you try to win a war aganist a enemy AI!")
