@@ -24,7 +24,7 @@ if (page == '1') {
     document.getElementById('entries_max').innerText = "50"
 
     createItem("epicbossbattle", "Epic Boss Battle", "https://agentn86.github.io/epicbossbattle/v1.3.3/", "https://agentn86.github.io/epicbossbattle/v1.3.3/loading.png", "pink", "is a tough, rage gam where you have to avoid and end a spaceship without dying in the process! Use the retry button to restart the game when needed.", "epicbossbattle.xml")
-    createItem("bitcoin-clicker", "Bitcoin Clicker", "https://julianyaman.github.io/bitcoin-clicker/", "./thumbs/bitcoinclicker.png", "white", "is a 'Cookie Clicker' similar type gam- but instead it's bitcoin!")
+    createItem("bitcoin-clicker", "Bitcoin Clicker", "https://julianyaman.github.io/bitcoin-clicker/", "./thumbs/bitcoinclicker.png", "white", "is a 'Cookie Clicker' similar type gam- but instead it's bitcoin!", "bitcoinclicker.xml")
     createItem("cookie-clicker", "Cookie Clicker", `${baseurl}cookieclicker`, "./thumbs/cookieclicker.jpeg", "white", "is exactly what it sounds like. You know what it is- why not play it?")
     createItem("papaspizzeria", "Papa's Pizzeria", `${baseurl}flash/papapizzera.html`, "./thumbs/papapizzeria.jpeg", "white", "is the original classic of the Papa gams. Own a pizza business and get the best scores!")
     createItem("papasburgeria", "Papa's Burgeria", `${baseurl}flash/papaburger.html`, "./thumbs/papaburger.jpeg", "white", "is one of the sequels to Papa's Pizzeria. Why not give both a try?")
@@ -67,7 +67,7 @@ if (page == '1') {
     createItem("fireboywatergirl", "Fireboy & Watergirl in The Forest Temple", `${baseurl}flash/fireboywatergirl.html`, "./thumbs/fireboywatergirl.jpeg", "white", "is a co-op game where the 2 people must escape a temple. Don't let water touch fire and fire touch water- it may not end well!")
     createItem("eaglercraft", "Eaglercraft", "https://drive.google.com/uc?export=download&id=1-MduluUms_LG7tUJyMkAPBw82O40R11R", "./thumbs/eaglercraft.png", "green", "is a Minecraft clone based for the web! You can play with friends as well!")
     createItem("ssf2", "SSF2", `${baseurl}flash/ssf2.html`, "./thumbs/ssf2.png", "blue", "is a classic flash gam. You should really give it a try!")
-    createItem("houseofhazards", "House of Hazards", `${baseurl}houseofhazards`, "./thumbs/houseofhazards.png", "white", "is a platformer gam that you need to get out of the house. But other players can sabotage you on the way!")
+    createItem("houseofhazards", "House of Hazards", `${baseurl}houseofhazards`, "./thumbs/houseofhazards.png", "white", "is a platformer gam that you need to get out of the house. But other players can sabotage you on the way!", "houseofhazards.xml")
     createItem("1v1.lol", "1v1.LOL", `${baseurl}xml/1v1lol.html`, "./thumbs/1v1lol.png", "white", "is a battle royale type game where you must survive with bots as enemeies. There are many different gamemodes- as well.",)
     // total here: 50
 }
