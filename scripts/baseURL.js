@@ -1,27 +1,20 @@
-export function getBaseUrl() {
-    var BaseUrl = ""
+export function main(input) {
+    var isxml = false
+    var url = ""
     switch (window.location.host) {
         case "agentsgams.github.io":
-            BaseUrl = "https://agentsgams.github.io/projects/"
+            url = "https://agentsgams.github.io/projects/"
+            isxml = false
             break
         case "altagentgam.onrender.com":
-            BaseUrl = "https://example.com?"
+            url = "https://agentsgams-opensocial.googleusercontent.com/gadgets/ifr?container=ig&url="
+            isxml = true
             break
+        }
+    switch (input) {
+        case "BaseURL":
+            return url
+        case "IsXML":
+            return isxml
     }
-
-    return BaseUrl
-}
-
-export function isXml() {
-    var Xml = false
-    switch (window.location.host) {
-        case "agentsgams.github.io":
-            Xml = false
-            break
-        case "altagentgam.onrender.com":
-            Xml = "https://example.com?"
-            break
-    }
-
-    return Xml
 }

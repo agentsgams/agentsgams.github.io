@@ -237,8 +237,10 @@
     <br><br>
     <div id="gamList">
         <script>
-            function openWindow(link, title) {
-
+            function openWindow(link, title, xmllist) {
+                // xmllist [0]: is xml
+                // xmllist [1]: xml file
+                // xmllist [2]: xml baseurl
                 if (document.getElementById('aboutblk').checked) {
                     if (title == "Eaglercraft") {location.replace(link);return}
                     var win = window.open()
@@ -251,13 +253,23 @@
                     iframe.style.width = '100%'
                     iframe.style.height = '100%'
                     iframe.style.margin = '0'
-                    iframe.src = link
+                    if (xmllist[0] == true) {
+                        var xmlurl = xmllist[2] + xmllist[1]
+                        iframe.src = xmlurl
+                    } else {
+                        iframe.src = link
+                    }
 
                     win.document.body.appendChild(iframe)
 
                 } else {
                     
-                    window.open(link, '_blank').focus();
+                    if (xmllist[0] == true) {
+                        var xmlurl = xmllist[2] + xmllist[1]
+                        window.open(xmlurl, '_blank').focus();
+                    } else {
+                        window.open(link, '_blank').focus();
+                    }
 
                 }
                 
