@@ -35,7 +35,7 @@ if (page == '1') {
     createItem("theimpossiblequiz", "The Impossible Quiz", `${baseurl}flash/impossiblequiz.html`, "./thumbs/impossiblequiz.jpeg", "white", "is a super hard gam with over 100 questions! Can you beat it?", "flash/impossiblequiz.xml")
     createItem("worldhardgame", "The World's Hardest Game", `${baseurl}flash/worldhardgame.html`, "./thumbs/worldhardgame.jpeg", "white", "is a super hard gam with a bunch of levels... can you beat it?", "flash/worldhardgame.xml")
     createItem("portaltheflashversion", "Portal: The Flash Version", `${baseurl}flash/portalflash.html`, "./thumbs/portalflash.jpeg", "white", "is the '2D version' of Portal.. can you get through the test chambers?", "flash/portalflash.xml")
-    createItem("ageofwar", "Age of War", `${baseurl}flash/ageofwar.html`, "./thumbs/ageofwar.jpeg", "white", "is the original version of Age of War 2. Give it a try!", "flash/ageofwar2.xml")
+    createItem("ageofwar", "Age of War", `${baseurl}flash/ageofwar.html`, "./thumbs/ageofwar.jpeg", "white", "is the original version of Age of War 2. Give it a try!", "flash/ageofwar.xml")
     createItem("papafreezeria", "Papa's Freezeria", `${baseurl}flash/papafreezer.html`, "./thumbs/papafreeze.jpeg", "white", "is another sequal to the Papa franschise. This time- deserts!", "flash/papafreezer.xml")
     createItem("papapancake", "Papa's Pancakeria", `${baseurl}flash/papapancake.html`, "./thumbs/papapancake.jpeg", "white", "is another sequal to the Papa franschise. This time- pancakes!", "flash/papapancake.xml")
     createItem("bloonstd5", "Bloons Tower Defense 5", `${baseurl}flash/bloontd5.html`, "./thumbs/bloonstd5.jpeg", "white", "is a tower defense game where you have to defend your tower- the enemy being balloons!", "flash/bloontd5.xml")
