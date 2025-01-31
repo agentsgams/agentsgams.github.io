@@ -1,3 +1,7 @@
+import { main } from './baseURL.js'
+var baseurl = main('BaseURL')
+var isxml = main('IsXML')
+
 function createItem(game, formatted, link, image, color, description, xmllink) {
     var template = `
     <br>
@@ -13,10 +17,6 @@ function createItem(game, formatted, link, image, color, description, xmllink) {
 
 var page = document.getElementById('page').innerText
 var TOTALGAMES = 120
-
-import { main } from './baseURL.js'
-var baseurl = main('BaseURL')
-var isxml = main('IsXML')
 
 if (page == '1') {
 
