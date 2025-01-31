@@ -7,7 +7,7 @@ export function main(input) {
             isxml = false
             break
         case "altagentgam.onrender.com":
-            url = "https://agentsgams-opensocial.googleusercontent.com/gadgets/ifr?container=ig&url="
+            url = "https://agentsgams-opensocial.googleusercontent.com/gadgets/ifr?container=ig&url=https://cdn.jsdelivr.net/gh/agentsgams/projectsxml/"
             isxml = true
             break
         }
