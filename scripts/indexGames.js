@@ -3,7 +3,7 @@ function createItem(game, formatted, link, image, color, description, xmllink) {
     <br>
     <div style="display: flex; align-items: top;">
         <a name="${game}"></a>
-        <a onclick="openWindow('${link}', '${formatted}', {${isxml}, ${xmllink}, ${baseurl}})" style="cursor:pointer;">&nbsp;&nbsp;<img src="${image}" alt="${game}" width="100" style="border: 3px solid ${color};"></a><span class="title">&nbsp;&nbsp;<u><a style="color: white; cursor: pointer;" onclick="openWindow('${link}', '${formatted}', {${isxml}, ${xmllink}, ${baseurl}})">${formatted}</a></u></span>
+        <a onclick="openWindow('${link}', '${formatted}', {${isxml}, '${xmllink}', '${baseurl}'})" style="cursor:pointer;">&nbsp;&nbsp;<img src="${image}" alt="${game}" width="100" style="border: 3px solid ${color};"></a><span class="title">&nbsp;&nbsp;<u><a style="color: white; cursor: pointer;" onclick="openWindow('${link}', '${formatted}', {${isxml}, '${xmllink}', '${baseurl}'})">${formatted}</a></u></span>
         <p1>&nbsp;${description}</p1>
     </div>
     `
