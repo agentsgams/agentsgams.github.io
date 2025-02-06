@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Changeable Stuff -->
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <title>agents gams hub - config</title>
+    <!-- Meta for Google, etc -->
+    <meta name="keywords" content="agentsgams, agents gams" />
+    <meta property="og:title" content="Welcome, welcome to Agents Gams. It's safe here." />
+    <meta property="og:description" content="Welcome, welcome to Agents Gams. It's safe here." />
+    <meta name="description" content="Welcome, welcome to Agents Gams. It's safe here." />
+    <meta property="og:site_name" content="agentsgams.github.io" />
+    <meta name="author" content="agentn86" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Styling -->
+    <link href="style.css" rel="stylesheet">
+    <link href="fontawesome/css/font-awesome.min.css" rel="stylesheet">
+<body>
+    <div class=topnav><a href=. class="agentsgamsicon">agents gams<span class=blink>_</span></a><div class=dropdown><button class=dropbtn>Extras <i aria-hidden=true class="fa fa-caret-down"></i></button><div class=dropdown-content><a href=https://discord.gg/AMAA6tkysF target=_blank>Discord Server <i aria-hidden=true class="fa fa-external-link"></i></a> <a href="https://docs.google.com/document/d/1Tm8bdScREyatCB3DpfBX5u2tGwN1bHy0lrp13Xg43x4/edit?usp=sharing"target=_blank>Backup List <i aria-hidden=true class="fa fa-external-link"></i></a> <a href=https://forms.gle/wZHp65EoP1synuyXA target=_blank>Request a Project <i aria-hidden=true class="fa fa-external-link"></i></a> <a href="changelog.html"target=>Changelogs</a> <a href="halloffame.html">Hall of Fame</a></div></div><a href=tools.html class="active right">Config</a><a href=leaderboard.html class=right>Leaderboard</a><a href=projects.html class=right>Projects</a></div>
+    <div style="display: flex; flex-direction: column; align-items: center; height: 100%;">
+        <h1 style=" text-align: center;">Configuration</h1>
+
+        <div style="width: 100%; max-width: 600px; margin-bottom: 1em;">
+            <h2>about:blank Creator</h2>
+            <p>Enter a URL you want to be opened in a about:blank page below and hit enter:</p>
+            <input id="abtblankurl" placeholder="Enter a website URL..." style="width: 100%;" type="url"
+                pattern="https://.*" autocomplete="on" value="https://">
+            <br><br>
+            <i style="font-size: 10px; line-height: 0;">Note this will not work with some websites that have settings to
+                turn this feature off, but you can copy the link of this website and put it in for extra privacy.</i>
+        </div>
+
+        <div style="width: 100%; max-width: 600px;">
+            <h2>Cloaker</h2>
+            <p>Enter a new tab title or a image URL below. What you set will be used on the whole site.</p>
+            <input id="cloakerurl" placeholder="Enter a title or image URL..." style="width: 100%;" type="url"
+                autocomplete="on">
+            <br>
+            <p id="output"></p>
+            <div style="display: flex; justify-content: space-between; margin-top: 1em; margin-bottom: 0.5em;">
+                <button id="cloakerTitle" onclick="changeTabTitle()">Set as Title</button>
+                <button id="cloakerImage" onclick="changeTabFavicon()">Set as Image</button>
+                <button id="cloakerReset" onclick="resetTabSettings()">Reset</button>
+            </div>
+            <label for="templates"><i><b>Templates: </b></i></label>
+            <select id="templates">
+                <option value="launchpad">Classlink Launchpad</option>
+                <optgroup label="Google Services">
+                    <option value="gglclassroom">Google Classroom</option>
+                    <option value="gglsearch">Google Search</option>
+                    <option value="ggldocs">Google Docs</option>
+                </optgroup>
+                <optgroup label="Blocked Screens">
+                    <option value="lightspeed">Lightspeed Filter Agent</option>
+                    <option value="goguardian">GoGuardian</option>
+                </optgroup>
+            </select>
+            <button onclick="cloakTemplate(document.getElementById('templates').value);" style="cursor: pointer;">OK</button>
+        </div>
+
+        <p style="text-align: center; margin-top: 2em;">
+            <a href="."><button id="homepage">Back to Homepage</button></a>
+        </p>
+    </div>
+
+    <script src="scripts/tools.js"></script>
+    <script src="scripts/inject.js"></script>
+</body>
+
+</html>
