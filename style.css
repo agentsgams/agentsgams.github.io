@@ -32,6 +32,9 @@ h1 { font-size: 40px; text-shadow: 1px 3px 3px gray; }
 #credits { position: absolute; left: 99%; top: 98%; -webkit-transform: translate(-99%, -98%); transform: translate(-99%, -98%); font-weight: bold; cursor: pointer; }
 #credits:hover { font-weight: normal; }
 
+#debug { position: absolute; left: 99%; top: 93%; -webkit-transform: translate(-99%, -98%); transform: translate(-99%, -98%); font-weight: bold; cursor: pointer; }
+#debug:hover { font-weight: normal; }
+
 /* Modal */
 ::backdrop { background: rgb(19, 19, 19); opacity: 0.9; }
 #creditsDialog { border: 0; border-radius: 10px; width: 600px; height: 400px; }

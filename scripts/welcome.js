@@ -1,3 +1,6 @@
+import { main } from './module.js'
+var isxml = main('IsXML')
+
 function speech() {
     const speech = document.getElementById('speech');
     const speechButton = document.getElementById('speechbtn');
@@ -19,4 +22,8 @@ document.getElementById('credits').onclick = function() {
 document.getElementById('close').onclick = function() {
     const dialog = document.getElementById('creditsDialog');
     dialog.close();
+}
+
+document.getElementById('debug').onclick = function() {
+    alert('Does this website use XML: ' + isxml)
 }
