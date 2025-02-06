@@ -25,5 +25,11 @@ document.getElementById('close').onclick = function() {
 }
 
 document.getElementById('debug').onclick = function() {
-    alert('Does this website use XML: ' + isxml)
+    console.log("%c-- DEBUG -- %c", "font-weight: bold;", "font-weight: normal;");
+    if (isxml == true) {
+        console.log("Using xml format: %ctrue%c", "color: lightgreen;", "color: white;");
+    } else {
+        console.log("Using xml format: %cfalse%c", "color: lightcoral;", "color: white;");
+    }
+    alert('Printed debug to DevTools Console!')
 }
