@@ -56,7 +56,7 @@ function cloakTemplate(name) {
         case "launchpad":
             // ico
             var tcInput = document.getElementById("cloakerurl");
-            tcInput.value = "https://agentsgams.github.io/beta/samplecloaks/classlink.png";
+            tcInput.value = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/samplecloaks/classlink.png";
             changeTabFavicon();
             // title
             tcInput.value = "Login";
@@ -66,7 +66,7 @@ function cloakTemplate(name) {
         case "gglclassroom":
             // ico
             var tcInput = document.getElementById("cloakerurl");
-            tcInput.value = "https://agentsgams.github.io/beta/samplecloaks/classroom.png";
+            tcInput.value = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/samplecloaks/classroom.png";
             changeTabFavicon();
             // title
             tcInput.value = "Home";
@@ -76,7 +76,7 @@ function cloakTemplate(name) {
         case "gglsearch":
             // ico
             var tcInput = document.getElementById("cloakerurl");
-            tcInput.value = "https://agentsgams.github.io/beta/samplecloaks/googlesearch.ico";
+            tcInput.value = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/samplecloaks/googlesearch.ico";
             changeTabFavicon();
             // title
             tcInput.value = "Google";
@@ -86,7 +86,7 @@ function cloakTemplate(name) {
         case "ggldocs":
             // ico
             var tcInput = document.getElementById("cloakerurl");
-            tcInput.value = "https://agentsgams.github.io/beta/samplecloaks/googledocs.ico";
+            tcInput.value = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/samplecloaks/googledocs.ico";
             changeTabFavicon();
             // title
             tcInput.value = "Google Docs";
@@ -96,7 +96,7 @@ function cloakTemplate(name) {
         case "goguardian":
             // ico
             var tcInput = document.getElementById("cloakerurl");
-            tcInput.value = "https://agentsgams.github.io/beta/samplecloaks/goguardian.png";
+            tcInput.value = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/samplecloaks/goguardian.png";
             changeTabFavicon();
             // title
             tcInput.value = "Restricted";
@@ -106,7 +106,7 @@ function cloakTemplate(name) {
         case "lightspeed":
             // ico
             var tcInput = document.getElementById("cloakerurl");
-            tcInput.value = "https://agentsgams.github.io/beta/samplecloaks/lightspeed.png";
+            tcInput.value = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/samplecloaks/lightspeed.png";
             changeTabFavicon();
             // title
             tcInput.value = "Blocked";
