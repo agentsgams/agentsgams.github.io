@@ -14,9 +14,17 @@ export function main(input) {
             url = "https://agentsgams-opensocial.googleusercontent.com/gadgets/ifr?container=ig&url="
             isxml = true
             break
-        case "agentsgamstesting.onrender.com":
+        case "agentsgams.netlify.app":
             url = "https://agentsgams-opensocial.googleusercontent.com/gadgets/ifr?container=ig&url="
             isxml = true
+            break
+        case "rainbow-liger-1ac4c7.netlify.app":
+            url = "https://agentsgams-opensocial.googleusercontent.com/gadgets/ifr?container=ig&url="
+            isxml = true
+            break
+        default:
+            url = "https://example.com?"
+            isxml = false
             break
     }
     switch (input) {
