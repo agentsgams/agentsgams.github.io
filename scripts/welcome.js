@@ -1,7 +1,7 @@
 import { main } from './module.js'
 var isxml = main('IsXML')
 
-function speech() {
+document.getElementById('speechbtn').onclick = function() {
     const speech = document.getElementById('speech');
     const speechButton = document.getElementById('speechbtn');
 
