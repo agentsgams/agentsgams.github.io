@@ -3,10 +3,13 @@
 @keyframes blink { 50% { opacity: 0.0; } }
 :root {--sharedWidth: 195px; --sharedWidth2: 295px; }
 
-/* General Elements */
+/* Themes */
 [data-theme="light"] { --color-bg: #cccaca; --color-fg: black; --topnav-bg: #989a9c; --topnav-active: #c2c3c4; --topnav-hover: #929394; --topnav-text-hover: lightgray; }
 [data-theme="dark"] { --color-bg: #121212; --color-fg: #fff; --topnav-bg: #333; --topnav-active: #9e9e9e; --topnav-hover: #6b6b6b; --topnav-text-hover: black; }
+[data-theme="coder"] { --color-bg: black; --color-fg: #33ff33; --topnav-bg: transparent; --topnav-active: #070707; --topnav-hover: #030303; --topnav-text-hover: white; }
+[data-theme="og"] { --color-bg: black; --color-fg: #fff; --topnav-bg: transparent; --topnav-active: transparent; --topnav-hover: transparent; --topnav-text-hover: white; }
 
+/* General Elements */
 body { background-color: var(--color-bg); color: var(--color-fg); font-family: Code; margin: 0; padding: 0; }
 .container { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align:left;}
 h1 { font-size: 40px; text-shadow: 1px 3px 3px gray; }
@@ -97,10 +100,21 @@ h1 { font-size: 40px; text-shadow: 1px 3px 3px gray; }
 #homepage:hover { background-color: rgb(117, 92, 60); transform: scale(1.05) }
 #homepage:active { background-color: rgb(82, 63, 42); transform: scale(0.95); }
 
-#lightMode { background-color: rgb(169, 169, 169); border: 0; border-radius: 4px; width: var(--sharedWidth2); height: 40px; color: white; cursor: pointer; transition: 0.5s; }
+/* Themes */
+.theme {flex: 1 0 48%; margin: 0.8%; box-sizing: border-box;}
+
+#lightMode { background-color: rgb(169, 169, 169); border: 0; border-radius: 4px; width: var(--sharedWidth2); height: 40px; color: black; cursor: pointer; transition: 0.5s; }
 #lightMode:hover { background-color: rgb(205, 205, 205); transform: scale(1.05) }
 #lightMode:active { background-color: rgb(117, 117, 117); transform: scale(0.95); }
 
 #darkMode { background-color: rgb(69, 69, 69); border: 0; border-radius: 4px; width: var(--sharedWidth2); height: 40px; color: white; cursor: pointer; transition: 0.5s; }
 #darkMode:hover { background-color: rgb(92, 92, 92); transform: scale(1.05) }
 #darkMode:active { background-color: rgb(50, 50, 50); transform: scale(0.95); }
+
+#codeMode { background-color: rgb(0, 0, 0); border: 0; border-radius: 4px; width: var(--sharedWidth2); height: 40px; color: lightgreen; cursor: pointer; transition: 0.5s; }
+#codeMode:hover { background-color: rgb(17, 17, 17); transform: scale(1.05) }
+#codeMode:active { background-color: rgb(15, 15, 15); transform: scale(0.95); }
+
+#ogMode { background-color: rgb(0, 0, 0); border: 0; border-radius: 4px; width: var(--sharedWidth2); height: 40px; color: white; cursor: pointer; transition: 0.5s; }
+#ogMode:hover { background-color: rgb(17, 17, 17); transform: scale(1.05) }
+#ogMode:active { background-color: rgb(15, 15, 15); transform: scale(0.95); }

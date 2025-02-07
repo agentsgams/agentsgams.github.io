@@ -63,6 +63,16 @@ function theme(theme) {
             output2("Set to dark theme successfully", "green");
             window.localStorage.setItem("agentsgams-theme", "dark");
             break;
+        case "coder":
+            document.body.setAttribute("data-theme", "coder");
+            output2("Set to programmer theme successfully", "green");
+            window.localStorage.setItem("agentsgams-theme", "coder");
+            break;
+        case "og":
+            document.body.setAttribute("data-theme", "og");
+            output2("Set to original theme successfully", "green");
+            window.localStorage.setItem("agentsgams-theme", "og");
+            break;
     };
 };
 
