@@ -1,7 +1,7 @@
 /* Custom Stuff */
 @font-face { font-family: Code; src: url('Consolas.ttf'); }
 @keyframes blink { 50% { opacity: 0.0; } }
-:root {--sharedWidth: 195px;}
+:root {--sharedWidth: 195px; --sharedWidth2: 295px; }
 
 /* General Elements */
 [data-theme="light"] { --color-bg: #cccaca; --color-fg: black; --topnav-bg: #989a9c; --topnav-active: #c2c3c4; --topnav-hover: #929394; --topnav-text-hover: lightgray; }
@@ -96,3 +96,11 @@ h1 { font-size: 40px; text-shadow: 1px 3px 3px gray; }
 #homepage { background-color: rgb(100, 77, 51); border: 0; border-radius: 4px; width: var(--sharedWidth); height: 40px; color: white; cursor: pointer; transition: 0.5s; }
 #homepage:hover { background-color: rgb(117, 92, 60); transform: scale(1.05) }
 #homepage:active { background-color: rgb(82, 63, 42); transform: scale(0.95); }
+
+#lightMode { background-color: rgb(169, 169, 169); border: 0; border-radius: 4px; width: var(--sharedWidth2); height: 40px; color: white; cursor: pointer; transition: 0.5s; }
+#lightMode:hover { background-color: rgb(205, 205, 205); transform: scale(1.05) }
+#lightMode:active { background-color: rgb(117, 117, 117); transform: scale(0.95); }
+
+#darkMode { background-color: rgb(69, 69, 69); border: 0; border-radius: 4px; width: var(--sharedWidth2); height: 40px; color: white; cursor: pointer; transition: 0.5s; }
+#darkMode:hover { background-color: rgb(92, 92, 92); transform: scale(1.05) }
+#darkMode:active { background-color: rgb(50, 50, 50); transform: scale(0.95); }

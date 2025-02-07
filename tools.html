@@ -60,6 +60,16 @@
             <button onclick="cloakTemplate(document.getElementById('templates').value);" style="cursor: pointer;">OK</button>
         </div>
 
+        <div style="width: 100%; max-width: 600px;">
+            <h2>Theme Selector</h2>
+            <p>Enter a new tab title or a image URL below. What you set will be used on the whole site.</p>
+            <p id="output2"></p>
+            <div style="display: flex; justify-content: space-between; margin-top: 1em; margin-bottom: 0.5em;">
+                <button id="lightMode" onclick="theme('light')">Light Mode</button>
+                <button id="darkMode" onclick="theme('dark')">Dark Mode</button>
+            </div>
+        </div>
+
         <p style="text-align: center; margin-top: 2em;">
             <a href="."><button id="homepage">Back to Homepage</button></a>
         </p>

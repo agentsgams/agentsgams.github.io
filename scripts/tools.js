@@ -16,6 +16,12 @@ function output(msg, clr) {
     txt.innerText = msg;
 };
 
+function output2(msg, clr) {
+    const txt = document.getElementById("output2");
+    txt.style.color = clr;
+    txt.innerText = msg;
+};
+
 function changeTabTitle() {
     const tcInput = document.getElementById("cloakerurl");
     if (tcInput.value == "") {
@@ -43,6 +49,21 @@ function changeTabFavicon() {
         output("Icon change failed. Make sure you are using a valid URL", "red");
     }
     tcInput.value = "";
+};
+
+function theme(theme) {
+    switch (theme) {
+        case "light":
+            document.body.setAttribute('data-theme', "light");
+            output2("Set to light theme successfully", "green");
+            window.localStorage.setItem("agentsgams-theme", "light");
+            break;
+        case "dark":
+            document.body.setAttribute('data-theme', "dark");
+            output2("Set to dark theme successfully", "green");
+            window.localStorage.setItem("agentsgams-theme", "dark");
+            break;
+    };
 };
 
 function resetTabSettings() {
