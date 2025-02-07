@@ -7,7 +7,7 @@
 [data-theme="light"] { --color-bg: #cccaca; --color-fg: black; }
 [data-theme="dark"] { --color-bg: #121212; --color-fg: #fff; }
 
-body { background-color: #121212; color: #fff; font-family: Code; margin: 0; padding: 0; }
+body { background-color: var(--color-bg); color: var(--color-fg); font-family: Code; margin: 0; padding: 0; }
 .container { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align:left;}
 h1 { font-size: 40px; text-shadow: 1px 3px 3px gray; }
 .blink { animation: blink 2s step-start 0s infinite; }
