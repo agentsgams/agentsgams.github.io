@@ -87,7 +87,7 @@ function cloakTemplate(name) {
         case "launchpad":
             // ico
             var tcInput = document.getElementById("cloakerurl");
-            tcInput.value = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/samplecloaks/classlink.png";
+            tcInput.value = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/assets/img/cloakers/classlink.png";
             changeTabFavicon();
             // title
             tcInput.value = "Login";
@@ -97,7 +97,7 @@ function cloakTemplate(name) {
         case "gglclassroom":
             // ico
             var tcInput = document.getElementById("cloakerurl");
-            tcInput.value = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/samplecloaks/classroom.png";
+            tcInput.value = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/assets/img/cloakers/classroom.png";
             changeTabFavicon();
             // title
             tcInput.value = "Home";
@@ -107,7 +107,7 @@ function cloakTemplate(name) {
         case "gglsearch":
             // ico
             var tcInput = document.getElementById("cloakerurl");
-            tcInput.value = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/samplecloaks/googlesearch.ico";
+            tcInput.value = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/assets/img/cloakers/googlesearch.ico";
             changeTabFavicon();
             // title
             tcInput.value = "Google";
@@ -117,7 +117,7 @@ function cloakTemplate(name) {
         case "ggldocs":
             // ico
             var tcInput = document.getElementById("cloakerurl");
-            tcInput.value = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/samplecloaks/googledocs.ico";
+            tcInput.value = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/assets/img/cloakers/googledocs.ico";
             changeTabFavicon();
             // title
             tcInput.value = "Google Docs";
@@ -127,7 +127,7 @@ function cloakTemplate(name) {
         case "goguardian":
             // ico
             var tcInput = document.getElementById("cloakerurl");
-            tcInput.value = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/samplecloaks/goguardian.png";
+            tcInput.value = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/assets/img/cloakers/goguardian.png";
             changeTabFavicon();
             // title
             tcInput.value = "Restricted";
@@ -137,7 +137,7 @@ function cloakTemplate(name) {
         case "lightspeed":
             // ico
             var tcInput = document.getElementById("cloakerurl");
-            tcInput.value = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/samplecloaks/lightspeed.png";
+            tcInput.value = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/assets/img/cloakers/lightspeed.png";
             changeTabFavicon();
             // title
             tcInput.value = "Blocked";
