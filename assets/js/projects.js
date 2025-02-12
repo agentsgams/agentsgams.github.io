@@ -56,7 +56,7 @@ fetch('./assets/json/projects.json')
     .then((res) => res.json())
     .then((data) => {
         const projects = data[page];
-        if (!projects) { alert('Nothing found for this page.'); return; }
+        if (!projects) { console.log("%cERROR:%c No projects could be found for this page.", "font-weight: bold; color: lightcoral;", "font-weight: normal; color: white;"); return; };
 
         projects.forEach((project) => {
             const { game, formal, description, image, color, xml, link } = project;
@@ -74,6 +74,5 @@ fetch('./assets/json/projects.json')
         });
     })
     .catch((e) => {
-        alert('Could not load games');
-        alert(e);
+        console.log(`%cERROR:%c Could not load games! Message: '${e}'`, "font-weight: bold; color: lightcoral;", "font-weight: normal; color: white;");
 });
