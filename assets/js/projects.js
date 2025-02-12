@@ -34,7 +34,7 @@ switch (page) {
 
 };
 
-fetch('../json/projects.json')
+fetch('./assets/json/projects.json')
     .then((res) => res.json())
     .then((data) => {
         const projects = data[page];
