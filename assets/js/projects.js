@@ -18,37 +18,6 @@ function openWindow(e, t, n, o, c) {
     } else location.replace(e);
 }
 
-function openWindow(link, xml, formal) {
-    if (formal == "Eaglercraft") {location.replace(link)};
-    if (isxml == true) {
-        var url = baseurl + xml;
-        var win = window.open();
-        win.document.body.style.margin = "0";
-        win.document.body.style.height = "100vh";
-        win.document.title = "Redirecting..";
-        var iframe = win.document.createElement("iframe");
-        iframe.src = url
-        iframe.style.border = "none";
-        iframe.style.width = "100%";
-        iframe.style.height = "100%";
-        iframe.style.margin = "0";
-        win.document.body.appendChild(iframe);
-    } else {
-        var url = link;
-        var win = window.open();
-        win.document.body.style.margin = "0";
-        win.document.body.style.height = "100vh";
-        win.document.title = "Redirecting..";
-        var iframe = win.document.createElement("iframe");
-        iframe.src = url
-        iframe.style.border = "none";
-        iframe.style.width = "100%";
-        iframe.style.height = "100%";
-        iframe.style.margin = "0";
-        win.document.body.appendChild(iframe);
-    };
-};
-
 switch (page) {
     case "1":
         document.getElementById('entries').innerText = "0";
@@ -74,13 +43,67 @@ fetch('./assets/json/projects.json')
         projects.forEach((project) => {
             const { game, formal, description, image, color, xml, link } = project;
             const projectDiv=document.createElement("div");projectDiv.style.display="flex",projectDiv.style.alignItems="top";const gameLink=document.createElement("a");gameLink.name=game,gameLink.style.cursor="pointer";const projectImage=document.createElement("img");projectImage.src=image,projectImage.alt=game,projectImage.width=100,projectImage.style.border=`3px solid ${color}`,projectImage.style.cursor="pointer";const titleSpan=document.createElement("span");titleSpan.className="title",titleSpan.innerHTML=`&nbsp;&nbsp;<u><a style="color: white; cursor: pointer;">${formal}</a></u>`;const descriptionParagraph=document.createElement("p1");descriptionParagraph.innerHTML=`&nbsp;${description}`,projectDiv.appendChild(gameLink),gameLink.appendChild(projectImage),projectDiv.appendChild(titleSpan),projectDiv.appendChild(descriptionParagraph);
-            
+
             projectImage.onclick = (e) => {
-                openWindow(link, xml, formal);
+                if (formal == "Eaglercraft") {location.replace(link)};
+                if (isxml == true) {
+                    var url = baseurl + xml;
+                    var win = window.open();
+                    win.document.body.style.margin = "0";
+                    win.document.body.style.height = "100vh";
+                    win.document.title = "Redirecting..";
+                    var iframe = win.document.createElement("iframe");
+                    iframe.src = url
+                    iframe.style.border = "none";
+                    iframe.style.width = "100%";
+                    iframe.style.height = "100%";
+                    iframe.style.margin = "0";
+                    win.document.body.appendChild(iframe);
+                } else {
+                    var url = link;
+                    var win = window.open();
+                    win.document.body.style.margin = "0";
+                    win.document.body.style.height = "100vh";
+                    win.document.title = "Redirecting..";
+                    var iframe = win.document.createElement("iframe");
+                    iframe.src = url
+                    iframe.style.border = "none";
+                    iframe.style.width = "100%";
+                    iframe.style.height = "100%";
+                    iframe.style.margin = "0";
+                    win.document.body.appendChild(iframe);
+                };
             };
 
             titleSpan.querySelector('a').onclick = (e) => {
-                openWindow(link, xml, formal);
+                if (formal == "Eaglercraft") {location.replace(link)};
+                if (isxml == true) {
+                    var url = baseurl + xml;
+                    var win = window.open();
+                    win.document.body.style.margin = "0";
+                    win.document.body.style.height = "100vh";
+                    win.document.title = "Redirecting..";
+                    var iframe = win.document.createElement("iframe");
+                    iframe.src = url
+                    iframe.style.border = "none";
+                    iframe.style.width = "100%";
+                    iframe.style.height = "100%";
+                    iframe.style.margin = "0";
+                    win.document.body.appendChild(iframe);
+                } else {
+                    var url = link;
+                    var win = window.open();
+                    win.document.body.style.margin = "0";
+                    win.document.body.style.height = "100vh";
+                    win.document.title = "Redirecting..";
+                    var iframe = win.document.createElement("iframe");
+                    iframe.src = url
+                    iframe.style.border = "none";
+                    iframe.style.width = "100%";
+                    iframe.style.height = "100%";
+                    iframe.style.margin = "0";
+                    win.document.body.appendChild(iframe);
+                };
             };
 
             document.getElementById('projects').appendChild(projectDiv);
