@@ -15,6 +15,8 @@ function createItem(game, formatted, link, image, color, description, xmllink) {
     document.getElementById('projects').innerHTML += template;
 };
 
+function openWindow(e,t,n,o,c){console.log("Opening window with:", e, t, n, o, c);if("Eaglercraft"!=t){var i=window.open();i.document.body.style.margin="0",i.document.body.style.height="100vh",i.document.title="Redirecting...";var d=i.document.createElement("iframe");if(d.style.border="none",d.style.width="100%",d.style.height="100%",d.style.margin="0",1==n){var l=c+o;d.src=l}else d.src=e;i.document.body.appendChild(d)}else location.replace(e)};
+
 var page = document.getElementById('page').innerText;
 var TOTALGAMES = 120;
 
@@ -52,7 +54,7 @@ fetch('./assets/json/projects.json')
                 
             };
 
-            document.querySelector('body').appendChild(projectDiv);
+            document.getElementById('projects').appendChild(projectDiv);
         });
     })
     .catch((e) => {
