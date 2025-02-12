@@ -1,5 +1,5 @@
 /* Custom Stuff */
-@font-face { font-family: Code; src: url('Consolas.ttf'); }
+@font-face { font-family: Code; src: url('assets/fonts/Consolas.ttf'); }
 @keyframes blink { 50% { opacity: 0.0; } }
 :root {--sharedWidth: 195px; --sharedWidth2: 295px; }
 
