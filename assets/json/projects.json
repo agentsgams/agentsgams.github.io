@@ -1,5 +1,5 @@
 {
     "1": [
-        {"name": "epicbossbattle", "formal": "Epic Boss Battle", "description": "is a tough, rage project where you have to avoid and end a spaceship without dying in the process! Use the retry button to restart the game when needed.", "image": "https://agentn86.github.io/epicbossbattle/v1.3.3/loading.png", "color": "pink", "xml": "https://cdn.jsdelivr.net/gh/agentsgams/projectsxml@master/epicbossbattle.xml", "link": "https://agentn86.github.io/epicbossbattle/v1.3.3/"}
+        {"name": "epicbossbattle", "formal": "Epic Boss Battle", "description": "is a tough, rage project where you have to avoid and end a spaceship without dying in the process! Use the retry button to restart the game when needed.", "image": "epicbossbattle.png", "color": "pink", "xml": "https://cdn.jsdelivr.net/gh/agentsgams/projectsxml@master/epicbossbattle.xml", "link": "https://agentn86.github.io/epicbossbattle/v1.3.3/"}
     ]
 }
