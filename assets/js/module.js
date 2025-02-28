@@ -1,10 +1,12 @@
 export function main(input) {
     var isxml = false
     var url = ""
+    var imgurl = ""
     switch (window.location.host) {
         case "agentsgams.github.io":
             url = "https://agentsgams.github.io/projects/"
             isxml = false
+            imgurl = "https://agentsgams.github.io/agentsgams/assets/img/thumbnails/"
             break
         case "altagentgam.onrender.com":
             url = "https://agentsgams-opensocial.googleusercontent.com/gadgets/ifr?container=ig&url="
