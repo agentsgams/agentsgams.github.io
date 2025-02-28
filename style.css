@@ -30,6 +30,11 @@ h1 { font-size: 40px; text-shadow: 1px 3px 3px gray; }
 #disc:hover { background-color: #6577ff; transform: scale(1.05) }
 #disc:active { background-color: #364dff; transform: scale(0.95); }
 
+#chatroom { background-color: rgb(59, 100, 51); border: 0; border-radius: 4px; width: 130px; height: 40px; color: white; cursor: pointer; transition: 0.5s; }
+#chatroom:hover { background-color: rgb(70, 117, 60); transform: scale(1.05) }
+#chatroom:active { background-color: rgb(49, 82, 42); transform: scale(0.95); }
+
+
 #close { background-color: rgb(95, 95, 95); border: 0; border-radius: 4px; width: 150px; height: 40px; color: white; cursor: pointer; transition: 0.5s; }
 #close:hover { background-color: rgb(139, 139, 139); transform: scale(1.05) }
 #close:active { background-color: rgb(53, 53, 53); transform: scale(0.95); }
