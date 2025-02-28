@@ -10,6 +10,9 @@
         {"name": "whackyourboss", "formal": "Whack your Boss", "description": "might not the the most family friendly gam out there- but it is sure fun to play after a rough day.", "image": "whackyourboss.jpeg", "color": "red", "link": "flash/whackboss"},
         {"name": "ducklife", "formal": "Duck Life", "description": "is a gam where you have to train a duck to get your farm back!", "image": "ducklife.jpeg", "color": "white", "link": "flash/ducklife"},
         {"name": "theimpossiblequiz", "formal": "The Impossible Quiz", "description": "is a super hard gam with over 100 questions! Can you beat it?", "image": "impossiblequiz.jpeg", "color": "white", "link": "flash/impossiblequiz"},
-        {"name": "worldhardgame", "formal": "The Worlds Hardest Game", "description": "is a super hard gam with a bunch of levels... can you beat it?", "image": "worldhardgame.jpeg", "color": "white", "link": "flash/worldhardgame"}
+        {"name": "worldhardgame", "formal": "The Worlds Hardest Game", "description": "is a super hard gam with a bunch of levels... can you beat it?", "image": "worldhardgame.jpeg", "color": "white", "link": "flash/worldhardgame"},
+        {"name": "portaltheflashversion", "formal": "Portal: The Flash Version", "description": "is the '2D version' of Portal.. can you get through the test chambers?", "image": "portalflash.jpeg", "color": "white", "link": "flash/portalflash"},
+        {"name": "ageofwar", "formal": "Age of War", "description": "is the original version of Age of War 2. Give it a try!", "image": "ageofwar.jpeg", "color": "white", "link": "flash/ageofwar"},
+        {"name": "papafreezeria", "formal": "Papas Freezeria", "description": "is another sequal to the Papa franschise. This time- deserts!", "image": "papafreeze.jpeg", "color": "white", "link": "flash/papafreezer"}
     ]
 }
