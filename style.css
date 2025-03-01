@@ -105,6 +105,10 @@ h1 { font-size: 40px; text-shadow: 1px 3px 3px gray; }
 #homepage:hover { background-color: rgb(117, 92, 60); transform: scale(1.05) }
 #homepage:active { background-color: rgb(82, 63, 42); transform: scale(0.95); }
 
+.cdnrefresh { background-color: rgb(100, 51, 51); border: 0; border-radius: 4px; width: var(--sharedWidth); height: 40px; color: white; cursor: pointer; transition: 0.5s; }
+.cdnrefresh:hover { background-color: rgb(117, 60, 60); transform: scale(1.05) }
+.cdnrefresh:active { background-color: rgb(82, 42, 42); transform: scale(0.95); }
+
 /* Themes */
 .theme {flex: 1 0 48%; margin: 0.8%; box-sizing: border-box;}
 
