@@ -29,9 +29,9 @@ export function main(input) {
             imgurl = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/assets/img/thumbnails/";
             break;
         default:
-            url = "https://example.com?";
+            url = "https://agentsgams.github.io/projects/";
             isxml = false;
-            imgurl = "https://example.com?assets/img/thumbnails/";
+            imgurl = "https://agentsgams.github.io/agentsgams/assets/img/thumbnails/";
             break;
     };
     switch (input) {

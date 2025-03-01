@@ -1,5 +1,8 @@
 {
     "1": [
-        {"name": "epicbossbattle", "formal": "Epic Boss Battle", "description": "is a tough, rage project where you have to avoid and end a spaceship without dying in the process! Use the retry button to restart the game when needed.", "image": "epicbossbattle.png", "color": "pink", "link": "epicbossbattle"}
+        {"name": "epicbossbattle", "formal": "Epic Boss Battle", "description": "is a tough, rage project where you have to avoid and end a spaceship without dying in the process! Use the retry button to restart the game when needed.", "image": "epicbossbattle.png", "color": "pink", "link": "epicbossbattle"},
+        {"name": "bitcoinclicker", "formal": "Bitcoin Clicker", "description": "is a 'Cookie Clicker' similar type gam- but instead it's bitcoin!", "image": "bitcoinclicker.png", "color": "white", "link": "bitcoinclicker"},
+        {"name": "cookieclicker", "formal": "Cookie Clicker", "description": "is exactly what it sounds like. You know what it is- why not play it?", "image": "cookieclicker.jpeg", "color": "white", "link": "cookieclicker"},
+        {"name": "papaspizzeria", "formal": "Papas Pizzeria", "description": "is the original classic of the Papa gams. Own a pizza business and get the best scores!", "image": "papapizzeria.jpeg", "color": "white", "link": "flash/papapizzera"}
     ]
 }
