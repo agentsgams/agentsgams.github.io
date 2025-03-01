@@ -4,7 +4,7 @@ var isxml = main('IsXML');
 var imgurl = main('ImgURL');
 
 var page = document.getElementById('page').innerText;
-var TOTALGAMES = 120;
+var TOTALPROJECTS = 120;
 
 function openWindow(link, formal) {
     if (formal == "Eaglercraft") {location.replace(link)};
@@ -50,7 +50,7 @@ switch (page) {
         break;
     case "2":
         document.getElementById('entries').innerText = "100";
-        document.getElementById('entries_max').innerText = TOTALGAMES;
+        document.getElementById('entries_max').innerText = TOTALPROJECTS;
         break;
 
 };
@@ -62,8 +62,8 @@ fetch('./assets/json/projects.json')
         if (!projects) { console.log("%cERROR:%c No projects could be found for this page.", "font-weight: bold; color: lightcoral;", "font-weight: normal; color: white;"); return; };
 
         projects.forEach((project) => {
-            const { game, formal, description, image, color, link } = project;
-            const projectDiv=document.createElement("div");projectDiv.style.display="flex",projectDiv.style.alignItems="top";const gameLink=document.createElement("a");gameLink.name=game,gameLink.style.cursor="pointer";const projectImage=document.createElement("img");projectImage.src=imgurl+image,projectImage.alt=game,projectImage.width=100,projectImage.style.border=`3px solid ${color}`,projectImage.style.cursor="pointer";const titleSpan=document.createElement("span");titleSpan.className="title",titleSpan.innerHTML=`&nbsp;&nbsp;<u><a style="color: white; cursor: pointer;">${formal}</a></u>`;const descriptionParagraph=document.createElement("p1");descriptionParagraph.innerHTML=`&nbsp;${description}`,projectDiv.appendChild(gameLink),gameLink.appendChild(projectImage),projectDiv.appendChild(titleSpan),projectDiv.appendChild(descriptionParagraph);
+            const { name, formal, description, image, color, link } = project;
+            const projectDiv=document.createElement("div");projectDiv.style.display="flex",projectDiv.style.alignItems="top";const projectLink=document.createElement("a");projectLink.setAttribute("name", name);projectLink.style.cursor="pointer";const projectImage=document.createElement("img");projectImage.src=imgurl+image,projectImage.alt=name,projectImage.width=100,projectImage.style.border=`3px solid ${color}`,projectImage.style.cursor="pointer";const titleSpan=document.createElement("span");titleSpan.className="title",titleSpan.innerHTML=`&nbsp;&nbsp;<u><a style="color: white; cursor: pointer;">${formal}</a></u>`;const descriptionParagraph=document.createElement("p1");descriptionParagraph.innerHTML=`&nbsp;${description}`,projectDiv.appendChild(projectLink),projectLink.appendChild(projectImage),projectDiv.appendChild(titleSpan),projectDiv.appendChild(descriptionParagraph);
             
             projectImage.onclick = (e) => { openWindow(link, formal); };
             titleSpan.querySelector('a').onclick = (e) => { openWindow(link, formal); };
@@ -72,5 +72,5 @@ fetch('./assets/json/projects.json')
         });
     })
     .catch((e) => {
-        console.log(`%cERROR:%c Could not load games! Message: '${e}'`, "font-weight: bold; color: lightcoral;", "font-weight: normal; color: white;");
+        console.log(`%cERROR:%c Could not load projects! Message: '${e}'`, "font-weight: bold; color: lightcoral;", "font-weight: normal; color: white;");
 });
