@@ -13,6 +13,8 @@
         {"name": "worldhardgame", "formal": "The Worlds Hardest Game", "description": "is a super hard gam with a bunch of levels... can you beat it?", "image": "worldhardgame.jpeg", "color": "white", "link": "flash/worldhardgame"},
         {"name": "portaltheflashversion", "formal": "Portal: The Flash Version", "description": "is the '2D version' of Portal.. can you get through the test chambers?", "image": "portalflash.jpeg", "color": "white", "link": "flash/portalflash"},
         {"name": "ageofwar", "formal": "Age of War", "description": "is the original version of Age of War 2. Give it a try!", "image": "ageofwar.jpeg", "color": "white", "link": "flash/ageofwar"},
-        {"name": "papafreezeria", "formal": "Papas Freezeria", "description": "is another sequal to the Papa franschise. This time- deserts!", "image": "papafreeze.jpeg", "color": "white", "link": "flash/papafreezer"}
+        {"name": "papafreezeria", "formal": "Papas Freezeria", "description": "is another sequal to the Papa franschise. This time- deserts!", "image": "papafreeze.jpeg", "color": "white", "link": "flash/papafreezer"},
+        {"name": "papapancake", "formal": "Papas Pancakeria", "description": "is another sequal to the Papa franschise. This time- pancakes!", "image": "papapancake.jpeg", "color": "white", "link": "flash/papapancake"},
+        {"name": "bloonstd5", "formal": "Bloons Tower Defense 5", "description": "is a tower defense game where you have to defend your tower- the enemy being balloons!", "image": "bloonstd5.jpeg", "color": "white", "link": "flash/bloontd5"}
     ]
 }
