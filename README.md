@@ -39,6 +39,9 @@ This is all pure HTML, JS, and CSS so no dependencies are required- as well a fu
 If you decide to use some code from agents gams (which, why should you), you should check out the license. It has some great information of what you can or cannot do.
 ## Contributing
 
+> [!IMPORTANT]
+> Do not contribute in the "old.js"! A new update will now allow games to be added via the JSON file (found in assets/json/projects.json) instead of a long function. **I recommend you do not contribute until then!**
+
 Contributions are always welcome! We always need a new game or feature added to keep the community strong.
 
 See `gamesContribute.md` for a simple tutorial to add a game with ease.

@@ -18,6 +18,15 @@ function createItem(game, formatted, link, image, color, description, xmllink) {
 var page = document.getElementById('page').innerText
 var TOTALGAMES = 120
 
+/* ------------------------------------ */
+/*   DO NOT CONTRIBUTE TO THIS FILE!!   */
+/* Instead, use the JSON file found in  */
+/* assets/json/projects.json! Thanks..  */
+/* ------------------------------------ */
+
+// Note: I still wouldn't change/add any new games until I finish adding the first 120 projects.
+// You can mess around with the front end (*.html) stuff though!
+
 if (page == '1') {
 
     document.getElementById('entries').innerText = "0"
