@@ -28,6 +28,11 @@ export function main(input) {
             isxml = true;
             imgurl = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/assets/img/thumbnails/";
             break;
+        case "127.0.0.1:5500":
+            url = "https://agentsgams.github.io/projects/";
+            isxml = false;
+            imgurl = "https://agentsgams.github.io/agentsgams/assets/img/thumbnails/";
+            break
         default:
             url = "https://agentsgams.github.io/projects/";
             isxml = false;

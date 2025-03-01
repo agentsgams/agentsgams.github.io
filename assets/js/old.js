@@ -160,6 +160,7 @@ if (page == '3') {
     createItem("hypersnake", "Hypersnake", `${baseurl}hypersnake`, "./thumbs/hypersnake.jpeg", "white", "is a puzzle project, keep the snake alive and get past challenges.")
     createItem("raftwars", "Raft Wars", `${baseurl}raftwars`, "./thumbs/raftwars.png", "white", "is a puzzle shooter project where you protect your new gained wealth from pirates and other people.")
     createItem("2minfootball", "2 Minute Football", `${baseurl}multipleVersions/2minutefootball.html`, "./thumbs/2minfootball.jpg", "white", "is football but quite short and it's a very fun casual project.")
+    createItem("trimps", "Trimps", `${baseurl}trimps/index.html`, "./thumbs/trimps.jpg", "white", "is a text based idle game.")
 
 }
 
