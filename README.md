@@ -12,6 +12,7 @@ Anybody is also allowed to create pull requests and add games. You can do that b
 > If you use/fork this project, please give it a star in the [original repository](https://github.com/agentsgams/agentsgams.github.io)!
 
 **Also, be sure to join the Discord community for support, links, and to communicate with others/agentn86.**
+
 [<img src="https://raw.githubusercontent.com/agentsgams/agentsgams.github.io/refs/heads/main/assets/img/disc.png">](https://discord.gg/AMAA6tkysF)
 
 ## Deployment
