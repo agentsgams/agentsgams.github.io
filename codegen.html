@@ -8,64 +8,46 @@
 
         @font-face {
             font-family: "segoe";
-            src: url("./segoeuithis.ttf");
+            src: url("./assets/fonts/SegoeUIThis.ttf");
         }
 
         body {
             background-color: #1f1f1f;
-            color: #727272;
-            font-family: "segoe";
+            color: white; /* Changed to white */
+            font-family: "segoe", sans-serif;
         }
 
-        input {
-            background-color: #2b2b2b;
-            border: 0;
-            color: white;
-        }
-
-        textarea {
-            background-color: #2b2b2b;
-            border: 0;
-            color: white;
-        }
+        input,textarea{background-color:#2b2b2b;border:2px solid gray;color:#fff;border-radius:2px;padding:5px;}.project-container{display:flex;align-items:center;text-align:left;margin-left:50px;margin-right:50px;padding:20px;background-color:black;color:white;border-radius:5px;}.project-container img{cursor:pointer;width:100px}.project-text{margin-left:15px;display:inline-block}.project-text a{color:#fff;text-decoration:underline;font-weight:700}
     </style>
 </head>
-<body><center>
+<body>
+<center>
     <h1>Function Generator</h1>
-    Game Link: &nbsp;<input style="width: 250px;" id="gamelink" value="${baseurl}"><br>
-    Color: &nbsp;<input style="width: 250px;" id="color"><br>
-    <br>
-    a Name: &nbsp;<input style="width: 250px;" id="aname"><br>
-    Formal Name: &nbsp;<input style="width: 250px;" id="formalname"><br>
-    <br>
-    Thumbnail: &nbsp;<input style="width: 250px;" id="thumb"><br>
-    Description: &nbsp;<input style="width: 500px;" id="description"><br><br>
-    <br>
-    <button style="cursor:pointer;" id="gen" type="submit">Generate</button>
+    <input oninput="const ts=document.getElementsByClassName('title');for(let i=0; i<ts.length;i++){ts[i].innerText = this.value}" placeholder="Formal Name" value="">
+    <input placeholder="<a> Name" value="">
+    <input oninput="const ds=document.getElementsByClassName('description');for(let i=0; i<ds.length;i++){ds[i].innerText = this.value}" placeholder="Description" value="">
+    <input oninput="document.getElementById('id1').href='https://agentsgams.github.io/projects/'+this.value;document.getElementById('id2').href='https://cdn.jsdelivr.net/gh/agentsgams/projectsxml@master/'+this.value+'.xml';" placeholder="Link (./projects/)" value="">
+
     <br><br>
-    <textarea readonly placeholder="createItem function" id="createitem" style="width: 600px; max-width: 600px; min-width:600px; height:18px; min-height:18px; max-height:60px;"></textarea><br>
-    <textarea readonly placeholder="addItem function" id="additem" style="width: 600px; max-width: 600px; min-width:600px; height:18px; min-height:18px; max-height:60px;"></textarea>
-
-
-    <script>
-        document.getElementById("createitem").value = ""
-
-        document.getElementById("gen").onclick = function() {
-
-            var gamelink = document.getElementById("gamelink").value
-            var color = document.getElementById("color").value
-            var aname = document.getElementById("aname").value
-            var formalname = document.getElementById("formalname").value
-            var thumb = document.getElementById("thumb").value
-            var description = document.getElementById("description").value
-
-            document.getElementById("createitem").value = 
-            `createItem("${aname}", "${formalname}", ` + "`" + `${gamelink}` + "`, " + `"${thumb}", "${color}", "${description}")`
-
-            document.getElementById('additem').value =
-            `addItem("${formalname}", ` + "`" + `${gamelink}` + "`" + `)`
-        }
-    </script>
-
-</center></body>
+    <div class="project-container">
+        <a name="undefined" style="cursor: pointer;">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABEUlEQVRYR+2X4Q6DIAyErXv/R3aMzihQqL0yZYmRvzb0u6O0SGEJYZqngSvEXLTnoxAXnP0dI0+G9QHApEeBpYoLAUqrNaQLATC7+gGik/RKxcTpPOW04X0BMLNqRUQnAVhmaYkeAMs55DtUhGdYfcNriPibxyhXrToCn929FziRGQBzbC6LrVUMKY8I04GeDvdXAJncEgA5YG2Sn5EJIMoGBkAgUnJ+tXBhrOtoSDUbUUtFcaOUR5SpPttkM6ILQO1qrFZ8tEa02ootFzhPaXQbqxtgfzCImW83hRShJc/rEBpGvCXiCFInUgAM4FHuiX0Ahjmgzc1hAGtnrP/rBgK0SxMH+P3t0STAATx3yxH7AVDN3KGxYwoHAAAAAElFTkSuQmCC" style="border:3px solid white;">
+        </a>
+        <div class="project-text">
+            <span class="title"><a style="cursor: pointer;" id="id1">[title NORMAL]</a></span>
+            <p class="description">[description NORMAL]</p>
+        </div>
+    </div>
+    <br>
+    <div class="project-container">
+        <a name="undefined" style="cursor: pointer;">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABEUlEQVRYR+2X4Q6DIAyErXv/R3aMzihQqL0yZYmRvzb0u6O0SGEJYZqngSvEXLTnoxAXnP0dI0+G9QHApEeBpYoLAUqrNaQLATC7+gGik/RKxcTpPOW04X0BMLNqRUQnAVhmaYkeAMs55DtUhGdYfcNriPibxyhXrToCn929FziRGQBzbC6LrVUMKY8I04GeDvdXAJncEgA5YG2Sn5EJIMoGBkAgUnJ+tXBhrOtoSDUbUUtFcaOUR5SpPttkM6ILQO1qrFZ8tEa02ootFzhPaXQbqxtgfzCImW83hRShJc/rEBpGvCXiCFInUgAM4FHuiX0Ahjmgzc1hAGtnrP/rBgK0SxMH+P3t0STAATx3yxH7AVDN3KGxYwoHAAAAAElFTkSuQmCC" style="border:3px solid white;">
+        </a>
+        <div class="project-text">
+            <span class="title"><a style="cursor: pointer;" id="id2">[title XML]</a></span>
+            <p class="description">[description XML]</p>
+        </div>
+    </div>
+</center>
+</body>
 </html>
