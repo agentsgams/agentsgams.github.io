@@ -6,32 +6,32 @@ export function main(input) {
         case "agentsgams.github.io":
             url = "https://agentsgams.github.io/projects/";
             isxml = false;
-            imgurl = "https://agentsgams.github.io/agentsgams/assets/img/thumbnails/";
+            imgurl = "https://agentsgams.github.io/assets/img/thumbnails/";
             break
         case "altagentgam.onrender.com":
             url = "https://agentsgams-opensocial.googleusercontent.com/gadgets/ifr?container=ig&url=https://cdn.jsdelivr.net/gh/agentsgams/projectsxml@master/";
             isxml = true;
-            imgurl = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/assets/img/thumbnails/";
+            imgurl = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams.github.io@master/assets/img/thumbnails/";
             break;
         case "lowtaperfade.onrender.com":
             url = "https://agentsgams-opensocial.googleusercontent.com/gadgets/ifr?container=ig&url=https://cdn.jsdelivr.net/gh/agentsgams/projectsxml@master/";
             isxml = true;
-            imgurl = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/assets/img/thumbnails/";
+            imgurl = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams.github.io@master/assets/img/thumbnails/";
             break;
         case "agentsgams.netlify.app":
             url = "https://agentsgams-opensocial.googleusercontent.com/gadgets/ifr?container=ig&url=https://cdn.jsdelivr.net/gh/agentsgams/projectsxml@master/";
             isxml = true;
-            imgurl = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/assets/img/thumbnails/";
+            imgurl = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams.github.io@master/assets/img/thumbnails/";
             break;
         case "rainbow-liger-1ac4c7.netlify.app":
             url = "https://agentsgams-opensocial.googleusercontent.com/gadgets/ifr?container=ig&url=https://cdn.jsdelivr.net/gh/agentsgams/projectsxml@master/";
             isxml = true;
-            imgurl = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams@master/assets/img/thumbnails/";
+            imgurl = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams.github.io@master/assets/img/thumbnails/";
             break;
         default:
             url = "https://agentsgams.github.io/projects/";
             isxml = false;
-            imgurl = "https://agentsgams.github.io/agentsgams/assets/img/thumbnails/";
+            imgurl = "https://cdn.jsdelivr.net/gh/agentsgams/agentsgams.github.io@master/assets/img/thumbnails/";
             break;
     };
     switch (input) {
