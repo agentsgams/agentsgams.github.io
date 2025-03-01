@@ -21,6 +21,7 @@ function openWindow(link, formal) {
         iframe.style.height = "100%";
         iframe.style.margin = "0";
         win.document.body.appendChild(iframe);
+        console.log("Launching project with URL set as '" + url + "', XML is set to true.")
     } else {
         var url = baseurl + link;
         var win = window.open();
@@ -34,6 +35,7 @@ function openWindow(link, formal) {
         iframe.style.height = "100%";
         iframe.style.margin = "0";
         win.document.body.appendChild(iframe);
+        console.log("Launching project with URL set as '" + url + "', XML is set to false.")
     };
 };
 
