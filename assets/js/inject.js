@@ -1,7 +1,7 @@
 const local_title = localStorage.getItem("agentsgams-title");
 const local_icon = localStorage.getItem("agentsgams-icon");
 const local_theme = localStorage.getItem("agentsgams-theme");
-const local_allowAds = "true" === "true" // make it toggable soon (wip)
+const local_allowAds = "true" || "true" // make it toggable soon (wip)
 const local_cdn = localStorage.getItem("agentsgams-cdn");
 
 // Cloaker Whatnot
