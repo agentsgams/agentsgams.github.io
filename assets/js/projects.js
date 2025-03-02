@@ -2,6 +2,7 @@ import { main } from './module.js';
 var baseurl = main('BaseURL');
 var isxml = main('IsXML');
 var imgurl = main('ImgURL');
+var cdnProvider = localStorage.getItem("agentsgams-cdn") === "https://agentsgams.github.io/projectsxml/";
 
 var page = document.getElementById('page').innerText;
 var TOTALPROJECTS = 120;
@@ -9,7 +10,8 @@ var TOTALPROJECTS = 120;
 function openWindow(link, formal) {
     if (formal == "Eaglercraft") {location.replace(link)};
     if (isxml == true) {
-        var url = baseurl + link + ".xml";
+        var cdnPro = cdnProvider.replace("projects", "projectsxml");
+        var url = baseurl + cdnPro +link + ".xml";
         var win = window.open();
         win.document.body.style.margin = "0";
         win.document.body.style.height = "100vh";

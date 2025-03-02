@@ -4,27 +4,27 @@ export function main(input) {
     var imgurl = "";
     switch (window.location.host) {
         case "agentsgams.github.io":
-            url = "/projects/";
+            url = "https://agentsgams.github.io/projects/";
             isxml = false;
             imgurl = "./assets/img/thumbnails/";
             break
         case "altagentgam.onrender.com":
-            url = "https://agentsgams-opensocial.googleusercontent.com/gadgets/ifr?container=ig&url=https://cdn.jsdelivr.net/gh/agentsgams/projectsxml@master/";
+            url = "https://agentsgams-opensocial.googleusercontent.com/gadgets/ifr?container=ig&url=";
             isxml = true;
             imgurl = "./assets/img/thumbnails/";
             break;
         case "lowtaperfade.onrender.com":
-            url = "https://agentsgams-opensocial.googleusercontent.com/gadgets/ifr?container=ig&url=https://cdn.jsdelivr.net/gh/agentsgams/projectsxml@master/";
+            url = "https://agentsgams-opensocial.googleusercontent.com/gadgets/ifr?container=ig&url=";
             isxml = true;
             imgurl = "./assets/img/thumbnails/";
             break;
         case "agentsgams.netlify.app":
-            url = "https://agentsgams-opensocial.googleusercontent.com/gadgets/ifr?container=ig&url=https://cdn.jsdelivr.net/gh/agentsgams/projectsxml@master/";
+            url = "https://agentsgams-opensocial.googleusercontent.com/gadgets/ifr?container=ig&url=";
             isxml = true;
             imgurl = "./assets/img/thumbnails/";
             break;
         case "rainbow-liger-1ac4c7.netlify.app":
-            url = "https://agentsgams-opensocial.googleusercontent.com/gadgets/ifr?container=ig&url=https://cdn.jsdelivr.net/gh/agentsgams/projectsxml@master/";
+            url = "https://agentsgams-opensocial.googleusercontent.com/gadgets/ifr?container=ig&url=";
             isxml = true;
             imgurl = "./assets/img/thumbnails/";
             break;
