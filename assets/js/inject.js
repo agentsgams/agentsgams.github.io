@@ -49,7 +49,7 @@ async function isBlocked(url) {
     try {
         var README = await fetch(url + 'README.md');
         var content = await README.text();
-        if (content.startsWith('# Projects')) { return false; } else { return true; };
+        if (content.startsWith('# agents gams assets')) { return false; } else { return true; };
     } catch { return true; };
 };
   
