@@ -16,6 +16,29 @@ agents gams is a simple, but effective game website that focuses more on the com
 
 ## Deployment
 
+### Via Cloud
+
+> [!NOTE]
+> You will have to sync every so often to get the latest stuff.. though you can make the website "XML" though it hasn't been released yet.
+
+> [!WARNING]
+> I don't recommend you use Cyclic as it is being shut down in a couple months, you can if you already have a preexisting account though. The option will be removed once Cyclic gets rid of their Pro tier servers.
+
+You can easily clone and host the website using one of these service providers *though, if you wouldn't like to deal with the hassle you can just find another hoster or use the offical websites*:
+
+[![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://replit.com/github/agentsgams/agentsgams.github.io)
+[![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/agentsgams/agentsgams.github.io)
+[![Deploy to IBM Cloud](https://binbashbanana.github.io/deploy-buttons/buttons/remade/ibmcloud.svg)](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/agentsgams/agentsgams.github.io)
+[![Deploy to Amplify Console](https://binbashbanana.github.io/deploy-buttons/buttons/remade/amplifyconsole.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/agentsgams/agentsgams.github.io)
+[![Run on Google Cloud](https://binbashbanana.github.io/deploy-buttons/buttons/remade/googlecloud.svg)](https://deploy.cloud.run/?git_repo=https://github.com/agentsgams/agentsgams.github.io)
+[![Deploy to Oracle Cloud](https://binbashbanana.github.io/deploy-buttons/buttons/remade/oraclecloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/agentsgams/agentsgams.github.io/archive/refs/heads/main.zip)
+[![Deploy with Vercel](https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg)](https://vercel.com/new/clone?repository-url=https://github.com/agentsgams/agentsgams.github.io) 
+[![Deploy with Netlify](https://binbashbanana.github.io/deploy-buttons/buttons/remade/netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/agentsgams/agentsgams.github.io)
+[![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://render.com/deploy?repo=https://github.com/agentsgams/agentsgams.github.io)
+[![Deploy to Cyclic](https://binbashbanana.github.io/deploy-buttons/buttons/remade/cyclic.svg)](https://app.cyclic.sh/api/app/deploy/agentsgams/agentsgams.github.io)
+
+### Locally
+
 Firstly, clone the project
 
 ```bash
@@ -35,9 +58,7 @@ And just open the file with Visual Studio code, or with your code editor.
   code
 ```
 
-This is all pure HTML, JS, and CSS so no dependencies are required or a full stack website.
-
-If you decide to use some code from agents gams (which, why should you), you should check out the license. It has some great information of what you can or cannot do.
+This is all pure HTML, JS, and CSS so no dependencies are required or a full stack website. If you decide to use some code from agents gams (which, why should you it sucks), you should check out the license. It has some great information of what you can or cannot do.
 
 ## Contributing
 
