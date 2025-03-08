@@ -21,9 +21,6 @@ console.warn( `%c${array[Math.floor(Math.random() * array.length)]}%c You can me
 if (local_allowAds) {
     console.log("Ads enabled, thank you very much!")
 
-    // <!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-WV5EJV9W8G"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-WV5EJV9W8G');</script>
-    //<!-- Google tag (ads) --> <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4260993446105201"
-    //crossorigin="anonymous"></script>
     const tagmanager = document.createElement("script");
     tagmanager.setAttribute("async", "");
     tagmanager.setAttribute("src", "https://www.googletagmanager.com/gtag/js?id=G-WV5EJV9W8G")
