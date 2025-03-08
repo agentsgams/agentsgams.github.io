@@ -63,11 +63,15 @@ async function getCDN(cdns) {
 
 if (!window.localStorage.hasOwnProperty("agentsgams-cdn")) {
     debug("User does not appear to have CDN")
-    fetch("./assets/json/cdns.json")
-        .then((res) => res.json())
-        .then(async (cdns) => {
-            debug("Assigning available CDN...")
-            localStorage.setItem("agentsgams-cdn", await getCDN(cdns));
-            location.reload();
-        });
+    
+    fetch('./assets/json/projects.json')
+    .then((res) => res.json())
+    .then(async (cdns) => {
+        debug("Assigning available CDN...")
+        localStorage.setItem("agentsgams-cdn", await getCDN(cdns));
+        location.reload();
+    })
+    .catch((e) => {
+        debug(`Failed to get CDN. Message: ${e}`);
+});
 };
