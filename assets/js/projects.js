@@ -9,36 +9,39 @@ var TOTALPROJECTS = 120;
 
 function openWindow(link, formal) {
     if (formal == "Eaglercraft") {location.replace(link)};
-    if (isxml == true) {
+    var url = "https://example.com"
+    if (isxml) {
         var cdnPro = cdnProvider.replace("projects", "projectsxml");
-        var url = baseurl + cdnPro + link + ".xml";
-        var win = window.open();
-        win.document.body.style.margin = "0";
-        win.document.body.style.height = "100vh";
-        win.document.title = "Redirecting..";
-        var iframe = win.document.createElement("iframe");
-        iframe.src = url
-        iframe.style.border = "none";
-        iframe.style.width = "100%";
-        iframe.style.height = "100%";
-        iframe.style.margin = "0";
-        win.document.body.appendChild(iframe);
-        console.log("Launching project with URL set as '" + url + "', XML is set to true.")
-    } else {
-        var url = baseurl + link;
-        var win = window.open();
-        win.document.body.style.margin = "0";
-        win.document.body.style.height = "100vh";
-        win.document.title = "Redirecting..";
-        var iframe = win.document.createElement("iframe");
-        iframe.src = url
-        iframe.style.border = "none";
-        iframe.style.width = "100%";
-        iframe.style.height = "100%";
-        iframe.style.margin = "0";
-        win.document.body.appendChild(iframe);
-        console.log("Launching project with URL set as '" + url + "', XML is set to false.")
-    };
+        url =  cdnPro + link + ".xml";
+    } else { url = baseurl + link; };
+
+    var win = window.open();
+    win.document.body.style.margin = "0";
+    win.document.body.style.height = "100vh";
+    win.document.title = "Redirecting..";
+
+    var iframe = win.document.createElement("iframe");
+    if (isxml) { iframe.src = url };
+    iframe.style.border = "none";
+    iframe.style.width = "100%";
+    iframe.style.height = "100%";
+    iframe.style.margin = "0";
+    win.document.body.appendChild(iframe);
+
+    if (!isxml) {
+        var req = new XMLHttpRequest();
+        req.onreadystatechange = function() {
+            if (req.readyState == 4 && req.status == 200) {
+                iframe.contentDocument.open();
+                iframe.contentDocument.write(req.responseText);
+                iframe.contentDocument.close();
+                iframe.style.display = "block";
+            };
+        };
+        req.open("GET", url);
+        req.send();
+    }
+    
 };
 
 switch (page) {
