@@ -8,12 +8,13 @@ var page = document.getElementById('page').innerText;
 var TOTALPROJECTS = 120;
 
 function openWindow(link, formal) {
-    if (formal == "Eaglercraft") {location.replace(link)};
-    var url = "https://example.com"
+    if (formal == "Eaglercraft") { location.replace(link); }
+    
+    var url = "https://example.com";
     if (isxml) {
         var cdnPro = cdnProvider.replace("projects", "projectsxml");
-        url =  cdnPro + link + ".xml";
-    } else { url = baseurl + link; };
+        url = cdnPro + link + ".xml";
+    } else { url = baseurl + link; }
 
     var win = window.open();
     win.document.body.style.margin = "0";
@@ -21,28 +22,31 @@ function openWindow(link, formal) {
     win.document.title = "Redirecting..";
 
     var iframe = win.document.createElement("iframe");
-    if (!isxml) { iframe.src = url };
     iframe.style.border = "none";
     iframe.style.width = "100%";
     iframe.style.height = "100%";
     iframe.style.margin = "0";
     win.document.body.appendChild(iframe);
 
-    if (!isxml) {
+    if (isxml) {
         var req = new XMLHttpRequest();
         req.onreadystatechange = function() {
-            if (req.readyState == 4 && req.status == 200) {
+            if (req.readyState == 4) {
+            if (req.status == 200) {
                 iframe.contentDocument.open();
                 iframe.contentDocument.write(req.responseText);
                 iframe.contentDocument.close();
-                iframe.style.display = "block";
-            };
+            } else {
+                console.error("Failed to load XML: " + req.status);
+            }
+            }
         };
         req.open("GET", url);
         req.send();
+    } else {
+        iframe.src = url;
     }
-    
-};
+}
 
 switch (page) {
     case "1":
