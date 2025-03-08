@@ -6,11 +6,12 @@ const local_allowAds = "true" || "true"; // make it toggable soon (wip)
 
 const local_debug = localStorage.getItem("agentsgams-debug") || "false";
 if (local_debug==="true"){console.warn("Debug mode enabled, welcome fellow developer!")}
+function debug(text){if(localStorage.getItem("agentsgams-debug")||'false'){console.log(`%cDEBUG: %c${text}`,"font-weight:bold;","font-weight:normal;")}}
 
 // Cloaker Whatnot
-if (window.localStorage.hasOwnProperty("agentsgams-title")) { document.title = local_title; console.log("%cTitle is now: %c" + local_title, "font-weight: bold;", "font-weight: normal;"); };
-if (window.localStorage.hasOwnProperty("agentsgams-icon")) { document.querySelector("link[rel=icon]").href = local_icon; console.log("%cFavicon is now: %c" + local_icon, "font-weight: bold;", "font-weight: normal;"); };
-if (window.localStorage.hasOwnProperty("agentsgams-theme")) { document.body.setAttribute("data-theme", local_theme); console.log("%cTheme is set to: %c" + local_theme, "font-weight: bold;", "font-weight: normal;"); };
+if (window.localStorage.hasOwnProperty("agentsgams-title")) { document.title = local_title; debug(`Cloaker title is set to "${local_title}"`) };
+if (window.localStorage.hasOwnProperty("agentsgams-icon")) { document.querySelector("link[rel=icon]").href = local_icon; debug(`Cloaker favicon is set to "${local_icon}"`) };
+if (window.localStorage.hasOwnProperty("agentsgams-theme")) { document.body.setAttribute("data-theme", local_theme); debug(`Theme is set to ${local_theme}`) };
 
 // Secret DevTools Easter Egg
 var array = ["Ah, hello Gordon Freeman!", "Hello there!", "It's great to see you again!", "hi,", "whats up reddit, its kendrick lamar", "It is nice to see you!", "I see someone is using DevTools..!", "Chrome or Firefox?", "letter from agentn86..", "[insert funny joke that you can only see if your chromebook allows the devtools setting or using a personal computer]"]
@@ -61,9 +62,11 @@ async function getCDN(cdns) {
 };
 
 if (!window.localStorage.hasOwnProperty("agentsgams-cdn")) {
+    debug("User does not appear to have CDN")
     fetch("./assets/json/cdns.json")
         .then((res) => res.json())
         .then(async (cdns) => {
+            debug("Assigning available CDN...")
             localStorage.setItem("agentsgams-cdn", await getCDN(cdns));
             location.reload();
         });
