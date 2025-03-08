@@ -21,7 +21,7 @@ function openWindow(link, formal) {
     win.document.title = "Redirecting..";
 
     var iframe = win.document.createElement("iframe");
-    if (isxml) { iframe.src = url };
+    if (!isxml) { iframe.src = url };
     iframe.style.border = "none";
     iframe.style.width = "100%";
     iframe.style.height = "100%";
