@@ -71,7 +71,7 @@ switch (page) {
 fetch('./assets/json/projects.json')
     .then((res) => res.json())
     .then((data) => {
-        const projects = data[page];
+        const projects = data.slice(parseInt(page)-1*50, parseInt(page)*50+1);
         if (!projects) { debug("ERROR: No projects found for this page!"); return; };
 
         projects.forEach((project) => {
