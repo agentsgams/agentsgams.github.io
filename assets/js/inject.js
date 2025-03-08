@@ -1,8 +1,11 @@
 const local_title = localStorage.getItem("agentsgams-title");
 const local_icon = localStorage.getItem("agentsgams-icon");
 const local_theme = localStorage.getItem("agentsgams-theme");
-const local_allowAds = "true" || "true" // make it toggable soon (wip)
 const local_cdn = localStorage.getItem("agentsgams-cdn");
+const local_allowAds = "true" || "true"; // make it toggable soon (wip)
+
+const local_debug = localStorage.getItem("agentsgams-debug") || "false";
+if (local_debug==="true"){console.warn("Debug mode enabled, welcome fellow developer!")}
 
 // Cloaker Whatnot
 if (window.localStorage.hasOwnProperty("agentsgams-title")) { document.title = local_title; console.log("%cTitle is now: %c" + local_title, "font-weight: bold;", "font-weight: normal;"); };
@@ -15,7 +18,7 @@ console.warn( `%c${array[Math.floor(Math.random() * array.length)]}%c You can me
 
 // Analytics and Google Stuff
 if (local_allowAds) {
-    console.log("Ads enabled, thank you :)")
+    console.log("Ads enabled, thank you very much!")
 
     // <!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-WV5EJV9W8G"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-WV5EJV9W8G');</script>
     //<!-- Google tag (ads) --> <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4260993446105201"
@@ -28,14 +31,14 @@ if (local_allowAds) {
     window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-WV5EJV9W8G');
     `;
     document.head.append(tagmanager, tagmanagerInfo);
-    console.log("Sucessfully injected Google Tag Manager");
+    if (local_debug==="true"){console.log("%cDEBUG:%c Sucessfully injected Google Tag Manager", "font-weight:bold;", "font-weight:normal;");}
 
     const gglads = document.createElement("script");
     gglads.setAttribute("async", "");
     gglads.setAttribute("src", "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4260993446105201");
     gglads.setAttribute("crossorigin", "anonymous");
     document.head.append(gglads);
-    console.log("Sucessfully injected Google AdSense");
+    if (local_debug==="true"){console.log("%cDEBUG:%c Sucessfully injected Google AdSense", "font-weight:bold;", "font-weight:normal;");}
 
 };
 

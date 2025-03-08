@@ -3,6 +3,7 @@ var baseurl = main('BaseURL');
 var isxml = main('IsXML');
 var imgurl = main('ImgURL');
 var cdnProvider = localStorage.getItem("agentsgams-cdn") || "https://agentsgams.github.io/projectsxml/";
+function debug(text){if(localStorage.getItem("agentsgams-debug")||'false'){console.log(`%cDEBUG: %c${text}`,"font-weight:bold;","font-weight:normal;")}}
 
 var page = document.getElementById('page').innerText;
 var TOTALPROJECTS = 120;
@@ -33,16 +34,16 @@ function openWindow(link, formal) {
         req.onreadystatechange = function() {
             if (req.readyState == 4) {
             if (req.status == 200) {
-                console.log("Sucessfully fetched XML request!")
+                debug("Sucessfully fetched and received XML request!");
                 iframe.contentDocument.open();
                 iframe.contentDocument.write(req.responseText);
                 iframe.contentDocument.close();
             } else {
-                console.error("Failed to load XML: " + req.status);
+                debug("Failed to get XML request: " + req.status);
             }
             }
         };
-        console.log("Sending XML request..")
+        debug("Fetching XML request...")
         req.open("GET", url);
         req.send();
     } else {
@@ -70,7 +71,7 @@ fetch('./assets/json/projects.json')
     .then((res) => res.json())
     .then((data) => {
         const projects = data[page];
-        if (!projects) { console.log("%cERROR:%c No projects could be found for this page.", "font-weight: bold; color: lightcoral;", "font-weight: normal; color: white;"); return; };
+        if (!projects) { debug("ERROR: No projects found for this page!"); return; };
 
         projects.forEach((project) => {
             const { name, formal, description, image, color, link } = project;
@@ -83,5 +84,5 @@ fetch('./assets/json/projects.json')
         });
     })
     .catch((e) => {
-        console.log(`%cERROR:%c Could not load projects! Message: '${e}'`, "font-weight: bold; color: lightcoral;", "font-weight: normal; color: white;");
+        debug(`ERORR: Could not load projects! Message: ${e}`);
 });
