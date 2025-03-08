@@ -34,7 +34,7 @@ function openWindow(link, formal) {
         req.onreadystatechange = function() {
             if (req.readyState == 4) {
             if (req.status == 200) {
-                debug("Sucessfully fetched and received XML request!");
+                debug("Sucessfully fetched and received XML request with URL: " + url);
                 iframe.contentDocument.open();
                 iframe.contentDocument.write(req.responseText);
                 iframe.contentDocument.close();
@@ -47,6 +47,7 @@ function openWindow(link, formal) {
         req.open("GET", url);
         req.send();
     } else {
+        debug("Opening project with URL " + url);
         iframe.src = url;
     }
 }
