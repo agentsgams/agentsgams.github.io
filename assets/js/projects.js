@@ -33,6 +33,7 @@ function openWindow(link, formal) {
         req.onreadystatechange = function() {
             if (req.readyState == 4) {
             if (req.status == 200) {
+                console.log("Sucessfully fetched XML request!")
                 iframe.contentDocument.open();
                 iframe.contentDocument.write(req.responseText);
                 iframe.contentDocument.close();
@@ -41,6 +42,7 @@ function openWindow(link, formal) {
             }
             }
         };
+        console.log("Sending XML request..")
         req.open("GET", url);
         req.send();
     } else {
