@@ -6,7 +6,7 @@ const local_allowAds = "true" || "true"; // make it toggable soon (wip)
 
 const local_debug = localStorage.getItem("agentsgams-debug") || "false";
 if (local_debug==="true"){console.warn("Debug mode enabled, welcome fellow developer!");var eruda=document.createElement('script');eruda.src="https://cdn.jsdelivr.net/npm/eruda";document.body.append(eruda);eruda.onload=function(){eruda.init();}}
-function debug(text){if(localStorage.getItem("agentsgams-debug")||'false'){console.log(`%cDEBUG: %c${text}`,"font-weight:bold;","font-weight:normal;")}}
+function debug(text){if(localStorage.getItem("agentsgams-debug")||'false'==="true"){console.log(`%cDEBUG: %c${text}`,"font-weight:bold;","font-weight:normal;")}}
 
 // Cloaker Whatnot
 if (window.localStorage.hasOwnProperty("agentsgams-title")) { document.title = local_title; debug(`Cloaker title is set to "${local_title}"`) };

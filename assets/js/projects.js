@@ -3,7 +3,7 @@ var baseurl = main('BaseURL');
 var isxml = main('IsXML');
 var imgurl = main('ImgURL');
 var cdnProvider = localStorage.getItem("agentsgams-cdn") || "https://agentsgams.github.io/projectsxml/";
-function debug(text){if(localStorage.getItem("agentsgams-debug")||'false'){console.log(`%cDEBUG: %c${text}`,"font-weight:bold;","font-weight:normal;")}}
+function debug(text){if(localStorage.getItem("agentsgams-debug")||'false'==="true"){console.log(`%cDEBUG: %c${text}`,"font-weight:bold;","font-weight:normal;")}}
 
 var page = document.getElementById('page').innerText;
 var TOTALPROJECTS = 120;
