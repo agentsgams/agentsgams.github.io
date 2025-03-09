@@ -42,11 +42,8 @@ h1 { font-size: 40px; text-shadow: 1px 3px 3px gray; }
 #close:active { background-color: rgb(53, 53, 53); transform: scale(0.95); }
 
 /* Credits */
-#credits { position: absolute; left: 99%; top: 98%; -webkit-transform: translate(-99%, -98%); transform: translate(-99%, -98%); font-weight: bold; cursor: pointer; }
+#credits { position: fixed; bottom: 0; right: 0; transform: translate(0, 0); padding: 15px; color: white; z-index: 1000; cursor: pointer; font-weight: bold; }
 #credits:hover { font-weight: normal; }
-
-#debug { position: absolute; left: 99%; top: 93%; -webkit-transform: translate(-99%, -98%); transform: translate(-99%, -98%); font-weight: bold; cursor: pointer; }
-#debug:hover { font-weight: normal; }
 
 /* Modal */
 ::backdrop { background: rgb(19, 19, 19); opacity: 0.9; }
