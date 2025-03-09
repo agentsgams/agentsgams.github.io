@@ -52,28 +52,9 @@ function changeTabFavicon() {
 };
 
 function theme(theme) {
-    switch (theme) {
-        case "light":
-            document.body.setAttribute('data-theme', "light");
-            output2("Set to light theme successfully", "green");
-            window.localStorage.setItem("agentsgams-theme", "light");
-            break;
-        case "dark":
-            document.body.setAttribute('data-theme', "dark");
-            output2("Set to dark theme successfully", "green");
-            window.localStorage.setItem("agentsgams-theme", "dark");
-            break;
-        case "coder":
-            document.body.setAttribute("data-theme", "coder");
-            output2("Set to programmer theme successfully", "green");
-            window.localStorage.setItem("agentsgams-theme", "coder");
-            break;
-        case "og":
-            document.body.setAttribute("data-theme", "og");
-            output2("Set to original theme successfully", "green");
-            window.localStorage.setItem("agentsgams-theme", "og");
-            break;
-    };
+    document.body.setAttribute('data-theme', theme);
+    output2(`Set to "${theme}" theme successfully`, "green");
+    window.localStorage.setItem("agentsgams-theme", theme);
 };
 
 function resetTabSettings() {
