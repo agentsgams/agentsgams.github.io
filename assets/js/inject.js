@@ -23,10 +23,10 @@ if (local_allowAds) {
 
     const tagmanager = document.createElement("script");
     tagmanager.setAttribute("async", "");
-    tagmanager.setAttribute("src", "https://www.googletagmanager.com/gtag/js?id=G-WV5EJV9W8G")
+    tagmanager.setAttribute("src", "https://www.googletagmanager.com/gtag/js?id=G-QM149LBV45")
     const tagmanagerInfo = document.createElement("script");
     tagmanagerInfo.innerHTML = `
-    window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-WV5EJV9W8G');
+    window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-QM149LBV45');
     `;
     document.head.append(tagmanager, tagmanagerInfo);
     if (local_debug==="true"){console.log("%cDEBUG:%c Sucessfully injected Google Tag Manager", "font-weight:bold;", "font-weight:normal;");}
