@@ -5,7 +5,7 @@ const local_cdn = localStorage.getItem("agentsgams-cdn");
 const local_allowAds = "true" || "true"; // make it toggable soon (wip)
 
 const local_debug = localStorage.getItem("agentsgams-debug") || "false";
-if (local_debug==="true"){console.warn("Debug mode enabled, welcome fellow developer!")}
+if (local_debug==="true"){console.warn("Debug mode enabled, welcome fellow developer!");var eruda=document.createElement('script');eruda.src="https://cdn.jsdelivr.net/npm/eruda";document.body.append(eruda);eruda.onload=function(){eruda.init();}}
 function debug(text){if(localStorage.getItem("agentsgams-debug")||'false'){console.log(`%cDEBUG: %c${text}`,"font-weight:bold;","font-weight:normal;")}}
 
 // Cloaker Whatnot
@@ -61,7 +61,7 @@ async function getCDN(cdns) {
 if (!window.localStorage.hasOwnProperty("agentsgams-cdn")) {
     debug("User does not appear to have CDN")
     
-    fetch('./assets/json/projects.json')
+    fetch('./assets/json/cdns.json')
     .then((res) => res.json())
     .then(async (cdns) => {
         debug("Assigning available CDN...")

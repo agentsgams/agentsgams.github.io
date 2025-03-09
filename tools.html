@@ -81,6 +81,16 @@
             </div>
         </div>
 
+        <div style="width: 100%; max-width: 600px;">
+            <h2>Debug Mode</h2>
+            <p>Gives you the Javascript Console and some extra stuff to mess around with. Only should be used with debugging the website, this does not give you cheats or whatnot.</i></p>
+            <p>Toggle Debug Mode: <input type="checkbox" id="debugCheckbox"></p>
+            <script>if (window.localStorage.hasOwnProperty("agentsgams-debug")){switch(localStorage.getItem('agentsgams-debug')){case"true":document.getElementById('debugCheckbox').setAttribute('checked','true');break;default:break;}};</script>
+            <div style="display: flex; flex-wrap: wrap; margin-top: 1em; margin-bottom: 0.5em;">
+                <button class="apply theme" onclick="localStorage.setItem('agentsgams-debug',document.getElementById('debugCheckbox').checked);location.reload();">Apply</button>
+            </div>
+        </div>
+
         <p style="text-align: center; margin-top: 2em;">
             <a href="."><button id="homepage">Back to Homepage</button></a>
         </p>
