@@ -64,10 +64,10 @@
             <p>Enter a new tab title or a image URL below. What you set will be used on the whole site.</p>
             <p id="output2"></p>
             <div style="display: flex; flex-wrap: wrap; margin-top: 1em; margin-bottom: 0.5em;">
-                <button id="lightMode" class="theme" onclick="theme('light')">Light</button>
-                <button id="darkMode" class="theme" onclick="theme('dark')">Dark (Default)</button>
-                <button id="codeMode" class="theme" onclick="theme('coder')">Programmer</button>
-                <button id="ogMode" class="theme" onclick="theme('og')">Original</button>
+                <button id="lightMode" class="settingButton" onclick="theme('light')">Light</button>
+                <button id="darkMode" class="settingButton" onclick="theme('dark')">Dark (Default)</button>
+                <button id="codeMode" class="settingButton" onclick="theme('coder')">Programmer</button>
+                <button id="ogMode" class="settingButton" onclick="theme('og')">Original</button>
             </div>
         </div>
 
@@ -77,7 +77,7 @@
             <p style="display: none;"><b>Current CDN: </b><span id="cdnCurrent">None..?</span></p>
             <script>if (window.localStorage.hasOwnProperty("agentsgams-cdn")){document.getElementById('cdnCurrent').innerText=localStorage.getItem("agentsgams-cdn");};</script>
             <div style="display: flex; flex-wrap: wrap; margin-top: 1em; margin-bottom: 0.5em;">
-                <button class="cdnrefresh theme" onclick="alert('Website will refresh around 2 times.');localStorage.removeItem('agentsgams-cdn');location.reload();">Refresh CDNs</button>
+                <button class="cdnrefresh settingButton" onclick="alert('Website will refresh around 2 times.');localStorage.removeItem('agentsgams-cdn');location.reload();">Refresh CDNs</button>
             </div>
         </div>
 
@@ -87,7 +87,7 @@
             <p>Toggle Debug Mode: <input type="checkbox" id="debugCheckbox"></p>
             <script>if (window.localStorage.hasOwnProperty("agentsgams-debug")){switch(localStorage.getItem('agentsgams-debug')){case"true":document.getElementById('debugCheckbox').setAttribute('checked','true');break;default:break;}};</script>
             <div style="display: flex; flex-wrap: wrap; margin-top: 1em; margin-bottom: 0.5em;">
-                <button class="apply theme" onclick="localStorage.setItem('agentsgams-debug',document.getElementById('debugCheckbox').checked);location.reload();">Apply</button>
+                <button class="apply settingButton" onclick="localStorage.setItem('agentsgams-debug',document.getElementById('debugCheckbox').checked);location.reload();">Apply</button>
             </div>
         </div>
 

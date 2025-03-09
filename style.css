@@ -114,7 +114,7 @@ h1 { font-size: 40px; text-shadow: 1px 3px 3px gray; }
 .apply:active { background-color: rgb(49, 82, 42); transform: scale(0.95); }
 
 /* Themes */
-.theme {flex: 1 0 48%; margin: 0.8%; box-sizing: border-box;}
+.settingButton {flex: 1 0 48%; margin: 0.8%; box-sizing: border-box;}
 
 #lightMode { background-color: rgb(169, 169, 169); border: 0; border-radius: 4px; width: var(--sharedWidth2); height: 40px; color: black; cursor: pointer; transition: 0.5s; }
 #lightMode:hover { background-color: rgb(205, 205, 205); transform: scale(1.05) }
