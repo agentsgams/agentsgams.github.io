@@ -7,7 +7,7 @@
 </head>
 <body>
     <input type="text" onkeyup="handleInput(this.value)" placeholder="Input function here...">
-    <input disabled type="text" id="output" onclick="copyToClipboard()">
+    <input readonly type="text" id="output" onclick="copyToClipboard()">
     <script>
         function createItem(name, formal, link, imagePath, color, description) {
             const image = imagePath.split('/').pop();
@@ -36,12 +36,11 @@
 
         function copyToClipboard() {
             const outputField = document.querySelector('#output');
-            outputField.select(); // Select the text in the output field
-            navigator.clipboard.writeText(outputField.value) // Copy the selected text to clipboard
+            outputField.select();
+            navigator.clipboard.writeText(outputField.value)
                 .catch(err => {
-                    console.error('Failed to copy: ', err); // Handle errors
+                    console.error('Failed to copy: ', err);
                 });
-
         }
     </script>
     <style>
