@@ -1,36 +1,59 @@
-<input onchange="handleInput(this.value)">
-<p>output</p>
-<script>
-    function createItem(name, formal, link, imagePath, color, description) {
-        // Extract the image filename from the imagePath
-        const image = imagePath.split('/').pop(); // Get the last part of the path
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function -> JSON</title>
+</head>
+<body>
+    <input type="text" onkeyup="handleInput(this.value)" placeholder="Input function here...">
+    <input disabled type="text" id="output" onclick="copyToClipboard()">
+    <script>
+        function createItem(name, formal, link, imagePath, color, description) {
+            const image = imagePath.split('/').pop();
 
-        // Create the JSON object
-        const jsonObject = {
-            name: name,
-            formal: formal,
-            description: description,
-            image: image,
-            color: color,
-            link: link.split('/').pop() // Get the last part of the link
-        };
+            const jsonObject = {
+                name: name,
+                formal: formal,
+                description: description,
+                image: image,
+                color: color,
+                link: link.split('/').pop()
+            };
 
-        // Convert to JSON string and remove spaces next to { and before }
-        return JSON.stringify(jsonObject, null, 2).replace(/\s*{\s*/g, '{').replace(/\s*}\s*/g, '}');
-    }
-
-    function handleInput(input) {
-        try {
-            // Use eval to execute the input as a function call
-            const result = eval(input);
-            document.querySelector('p').textContent = result; // Display the result in the paragraph
-        } catch (error) {
-            console.error("Error executing input:", error);
-            document.querySelector('p').textContent = "Error: " + error.message; // Display error message
+            return JSON.stringify(jsonObject, null, 2).replace(/\s*{\s*/g, '{').replace(/\s*}\s*/g, '}');
         }
-    }
 
-    let baseurl = "";
-    let jsonResult = createItem("papastacomia", "Papas Taco Mia", `${baseurl}flash/papaTacoMia.html`, "./assets/img/thumbnails/papatacomia.png", "white", "is another spinof to the Papa's gams. Why not give it a try?");
-    console.log(jsonResult);
-</script>
+        function handleInput(input) {
+            try {
+                const result = eval(input);
+                document.querySelector('#output').value = result;
+            } catch (error) {
+                console.error("Error executing input:", error);
+                document.querySelector('#output').value = "Error: " + error.message;
+            }
+        }
+
+        function copyToClipboard() {
+            const outputField = document.querySelector('#output');
+            outputField.select(); // Select the text in the output field
+            navigator.clipboard.writeText(outputField.value) // Copy the selected text to clipboard
+                .catch(err => {
+                    console.error('Failed to copy: ', err); // Handle errors
+                });
+
+        }
+    </script>
+    <style>
+        input {
+            width: 50%;
+            font-size: 16px;
+            padding: 12px 20px 12px 10px;
+            border: 1px solid rgb(27, 27, 27);
+            margin-bottom: 12px;
+            color: black;
+        }
+    </style>
+</body>
+
+</html>
