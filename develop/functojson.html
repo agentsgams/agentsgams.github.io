@@ -1,0 +1,36 @@
+<input onchange="handleInput(this.value)">
+<p>output</p>
+<script>
+    function createItem(name, formal, link, imagePath, color, description) {
+        // Extract the image filename from the imagePath
+        const image = imagePath.split('/').pop(); // Get the last part of the path
+
+        // Create the JSON object
+        const jsonObject = {
+            name: name,
+            formal: formal,
+            description: description,
+            image: image,
+            color: color,
+            link: link.split('/').pop() // Get the last part of the link
+        };
+
+        // Convert to JSON string and remove spaces next to { and before }
+        return JSON.stringify(jsonObject, null, 2).replace(/\s*{\s*/g, '{').replace(/\s*}\s*/g, '}');
+    }
+
+    function handleInput(input) {
+        try {
+            // Use eval to execute the input as a function call
+            const result = eval(input);
+            document.querySelector('p').textContent = result; // Display the result in the paragraph
+        } catch (error) {
+            console.error("Error executing input:", error);
+            document.querySelector('p').textContent = "Error: " + error.message; // Display error message
+        }
+    }
+
+    let baseurl = "";
+    let jsonResult = createItem("papastacomia", "Papas Taco Mia", `${baseurl}flash/papaTacoMia.html`, "./assets/img/thumbnails/papatacomia.png", "white", "is another spinof to the Papa's gams. Why not give it a try?");
+    console.log(jsonResult);
+</script>

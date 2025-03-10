@@ -25,5 +25,12 @@
     {"name": "wastedsky", "formal": "Wasted Sky", "description": "is a point and click game where you need to need to destroy the enemy ships!", "image": "wastedsky.png", "color": "white", "link": "flash/wastedsky"},
     {"name": "impossiblequiz2", "formal": "The Impossible Quiz 2", "description": "is the sequal to The Impossible Quiz- even more impossible that can be!", "image": "impossiblequiz2.png", "color": "white", "link": "flash/impossiblequiz2"},
     {"name": "whackcomputer", "formal": "Whack your Computer", "description": "helps you answer the question- can you feel better after whacking your computer? Find out...", "image": "whackcomputer.png", "color": "white", "link": "flash/whackcomputer"},
-    {"name": "papacheese", "formal": "Papas Cheeseria", "description": "is another spinof to the Papa's gams. Why not give it a try?", "image": "papacheeseria.png", "color": "white", "link": "flash/papaCheese"}
+    {"name": "papacheese", "formal": "Papas Cheeseria", "description": "is another spinof to the Papa's gams. Why not give it a try?", "image": "papacheeseria.png", "color": "white", "link": "flash/papaCheese"},
+    {"name": "papacupcake", "formal": "Papas Cupcakeria", "description": "is another spinof to the Papa's gams. Why not give it a try?", "image": "papacupcakeria.png", "color": "white", "link": "flash/papaCupcake"},
+    {"name": "papadonut", "formal": "Papas Donuteria", "description": "is another spinof to the Papa's gams. Why not give it a try?", "image": "papadonuteria.png", "color": "white", "link": "flash/papaDonut.html"},
+    {"name": "papahotdog", "formal": "Papas Hotdogeria", "description": "is another spinof to the Papa's gams. Why not give it a try?", "image": "papahotdogeria.png", "color": "white", "link": "flash/papaHotDog"},
+    {"name": "papapasteria", "formal": "Papas Pastaria", "description": "is another spinof to the Papa's gams. Why not give it a try?", "image": "papapasteria.png", "color": "white", "link": "flash/papaPastaria"},
+    {"name": "papascooperia", "formal": "Papas Scooperia", "description": "is another spinof to the Papa's gams. Why not give it a try?", "image": "papascooperia.png", "color": "white", "link": "flash/papaScooperia"},
+    {"name": "papasushi", "formal": "Papas Sushiria", "description": "is another spinof to the Papa's gams. Why not give it a try?", "image": "papasusheria.png", "color": "white", "link": "flash/papaSushiria"},
+    {"name": ""}
 ]
