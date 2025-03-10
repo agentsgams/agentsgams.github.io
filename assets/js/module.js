@@ -31,7 +31,7 @@ export function main(input) {
         case "127.0.0.1:5500":
             // basically localhost
             url = "https://agentsgams.github.io/projects/";
-            isxml = false;
+            isxml = true;
             imgurl = "https://agentsgams.github.io/assets/img/thumbnails/";
             break;
         default:

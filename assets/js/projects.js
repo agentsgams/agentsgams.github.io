@@ -36,12 +36,14 @@ function openWindow(link, formal) {
             if (req.status == 200) {
                 debug("Sucessfully fetched and received XML request with URL: " + url);
                 iframe.contentDocument.open();
-                iframe.contentDocument.write(req.responseText);
+                iframe.contentDocument.writeln(req.responseText);
                 iframe.contentDocument.close();
             } else {
                 debug("Failed to get XML request: " + req.status);
                 if (req.status===404){
-                    alert("Hello!\n\nIf you are seeing this, this project is not available in the 'XML version' of agents gams, which you are using. We recommend you use the standalone version until further notice. Until then, you can only use the projects that don't give this error. Sorry!")
+                    iframe.contentDocument.open();
+                    iframe.contentDocument.writeIn("Hello!\n\nIf you are seeing this, this project is not available in the 'XML version' of agents gams, which you are using. We recommend you use the standalone version until further notice. Until then, you can only use the projects that don't give this error. Sorry!")
+                    iframe.contentDocument.close();
                 }
             }
             }
