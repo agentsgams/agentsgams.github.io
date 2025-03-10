@@ -71,8 +71,8 @@ switch (page) {
 fetch('./assets/json/projects.json')
     .then((res) => res.json())
     .then((data) => {
-        const projects = data.slice((parseInt(page)-1)*50, (parseInt(page)*50)+1);
-        debug(`Splicing projects.json with page number ${page}, starting with ${(parseInt(page)-1)*50} and ending with ${(parseInt(page)*50)+1}. If the ending one more than an even number, then the formula is working.`)
+        const projects = data.slice((parseInt(page)-1)*50, (parseInt(page)*50));
+        debug(`Splicing projects.json with page number ${page}, starting with ${(parseInt(page)-1)*50} and ending with ${(parseInt(page)*50)}.`)
         if (!projects) { debug("ERROR: No projects found for this page!"); return; };
 
         projects.forEach((project) => {
