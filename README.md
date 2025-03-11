@@ -6,7 +6,8 @@
 <div align="center">
 
 ![License](https://img.shields.io/github/license/agentsgams/agentsgams.github.io)
-![Repo Size](https://img.shields.io/github/repo-size/agentsgams/agentsgams.github.io?label=Total%20size)
+![Repo Size](https://img.shields.io/github/repo-size/agentsgams/agentsgams.github.io?label=total%20size)
+![GitHub deployments](https://img.shields.io/github/deployments/agentsgams/agentsgams.github.io/github-pages?label=deployment%20status)
 ![Stargazers](https://img.shields.io/github/stars/agentsgams/agentsgams.github.io)
 
 </div>
