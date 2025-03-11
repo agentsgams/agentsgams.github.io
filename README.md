@@ -2,10 +2,11 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/agentsgams/.github/refs/heads/main/header.png">
   <p><i>Started since <b>extremely</b> early 2024, <b>agents gams</b> is a unblocked games service.</i></p>
-  ![License](https://img.shields.io/github/license/agentsgams/agentsgams.github.io)
-  ![Repo Size](https://img.shields.io/github/repo-size/agentsgams/agentsgams.github.io?label=Total%20size)
-  ![Stargazers](https://img.shields.io/github/stars/agentsgams/agentsgams.github.io)
-  <p style="font-size:10px"><i>You have chosen, or been chosen, to relocate to one of our finest remaining project sites. I thought so much of agents gams that I elected to establish my Administration here, in the Hub World so thoughtfully provided by Our Benefactors. I have been proud to call agents gams my home. And so, whether you are here to stay, or passing through on your way to parts unknown, welcome to agents gams. It's safer here.</i></p>
+</div>
+<div align="center">
+  [![License](https://img.shields.io/github/license/agentsgams/agentsgams.github.io)]
+  [![Repo Size](https://img.shields.io/github/repo-size/agentsgams/agentsgams.github.io?label=Total%20size)]
+  [![Stargazers](https://img.shields.io/github/stars/agentsgams/agentsgams.github.io)]
 </div>
 
 ----
