@@ -4,9 +4,9 @@
   <p><i>Started since <b>extremely</b> early 2024, <b>agents gams</b> is a unblocked games service.</i></p>
 </div>
 <div align="center">
-  [![License](https://img.shields.io/github/license/agentsgams/agentsgams.github.io)]
-  [![Repo Size](https://img.shields.io/github/repo-size/agentsgams/agentsgams.github.io?label=Total%20size)]
-  [![Stargazers](https://img.shields.io/github/stars/agentsgams/agentsgams.github.io)]
+![License](https://img.shields.io/github/license/agentsgams/agentsgams.github.io)
+![Repo Size](https://img.shields.io/github/repo-size/agentsgams/agentsgams.github.io?label=Total%20size)
+![Stargazers](https://img.shields.io/github/stars/agentsgams/agentsgams.github.io)
 </div>
 
 ----
