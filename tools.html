@@ -24,7 +24,7 @@
         <div style="width: 100%; max-width: 600px; margin-bottom: 1em;">
             <h2>about:blank Creator</h2>
             <p>Enter a URL you want to be opened in a about:blank page below and hit enter:</p>
-            <input id="abtblankurl" placeholder="Enter a website URL..." style="width: 100%;" type="url"
+            <input id="abtblankurl" placeholder="Enter a website URL..." style="width: 100%;" type="url" class="inputField"
                 pattern="https://.*" autocomplete="on" value="https://">
             <br><br>
             <i style="font-size: 10px; line-height: 0;">Note this will not work with some websites that have settings to
@@ -34,7 +34,7 @@
         <div style="width: 100%; max-width: 600px;">
             <h2>Cloaker</h2>
             <p>Enter a new tab title or a image URL below. What you set will be used on the whole site.</p>
-            <input id="cloakerurl" placeholder="Enter a title or image URL..." style="width: 100%;" type="url"
+            <input id="cloakerurl" placeholder="Enter a title or image URL..." style="width: 100%;" type="url" class="inputField"
                 autocomplete="on">
             <br>
             <p id="output"></p>
@@ -57,6 +57,18 @@
                 </optgroup>
             </select>
             <button onclick="cloakTemplate(document.getElementById('templates').value);" style="cursor: pointer;">OK</button>
+        </div>
+
+        <div style="width: 100%; max-width: 600px; margin-bottom: 1em;">
+            <h2>Panic Key</h2>
+            <p>You can easily enter a keybind and website here, press this and it will take you there.</p>
+            <input id="panicKeyURL" placeholder="Enter a website URL to be sent to.." style="width: 100%;" type="url" class="inputField"
+                pattern="https://.*" autocomplete="on" value="https://">
+            <div style="display: flex; flex-wrap: wrap; margin-top: 1em; margin-bottom: 0.5em;">
+                <button class="cdnrefresh settingButton" onclick="alert('Website will refresh around 2 times.');localStorage.removeItem('agentsgams-cdn');location.reload();">Refresh CDNs</button>
+            </div>
+            <br><br>
+            
         </div>
 
         <div style="width: 100%; max-width: 600px;">
