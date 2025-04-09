@@ -17,7 +17,7 @@
     <link href="style.css" rel="stylesheet">
     <link href="assets/fontawesome/css/font-awesome.min.css" rel="stylesheet">
 <body data-theme="dark">
-    <div class=topnav><a href=. class="agentsgamsicon">agents gams<span class=blink>_</span></a><div class=dropdown><button class=dropbtn>Extras <i aria-hidden=true class="fa fa-caret-down"></i></button><div class=dropdown-content><a href=https://discord.gg/AMAA6tkysF target=_blank>Official Server <i aria-hidden=true class="fa fa-external-link"></i></a> <a href="https://docs.google.com/document/d/1Tm8bdScREyatCB3DpfBX5u2tGwN1bHy0lrp13Xg43x4/edit?usp=sharing"target=_blank>Backup List <i aria-hidden=true class="fa fa-external-link"></i></a> <a href=https://forms.gle/wZHp65EoP1synuyXA target=_blank>Request a Project <i aria-hidden=true class="fa fa-external-link"></i></a> <a href="changelog.html"target=>Changelogs</a> <a href="halloffame.html">Hall of Fame</a></div></div><a href=tools.html class="right active">Config</a><a href=status.html class=right>Status</a><a href=leaderboard.html class=right>Leaderboard</a><a href=projects.html class=right>Projects</a></div>
+    <div class=topnav><a href=. class="agentsgamsicon">agents gams<span class=blink>_</span></a><div class=dropdown><button class=dropbtn>Extras <i aria-hidden=true class="fa fa-caret-down"></i></button><div class=dropdown-content><a href="emulatorjs/"target=>EmulatorJS</a> <a href=https://discord.gg/AMAA6tkysF target=_blank>Official Server <i aria-hidden=true class="fa fa-external-link"></i></a> <a href="https://docs.google.com/document/d/1Tm8bdScREyatCB3DpfBX5u2tGwN1bHy0lrp13Xg43x4/edit?usp=sharing"target=_blank>Backup List <i aria-hidden=true class="fa fa-external-link"></i></a> <a href=https://forms.gle/wZHp65EoP1synuyXA target=_blank>Request a Project <i aria-hidden=true class="fa fa-external-link"></i></a> <a href="changelog.html"target=>Changelogs</a> <a href="halloffame.html">Hall of Fame</a></div></div><a href=tools.html class="right active">Config</a><a href=status.html class=right>Status</a><a href=leaderboard.html class=right>Leaderboard</a><a href=projects.html class=right>Projects</a></div>
     <div style="display: flex; flex-direction: column; align-items: center; height: 100%;">
         <h1 style=" text-align: center;">Configuration</h1>
 
@@ -41,7 +41,7 @@
             <div style="display: flex; justify-content: space-between; margin-top: 1em; margin-bottom: 0.5em;">
                 <button id="cloakerTitle" onclick="changeTabTitle()">Set as Title</button>
                 <button id="cloakerImage" onclick="changeTabFavicon()">Set as Image</button>
-                <button id="cloakerReset" onclick="resetTabSettings()">Reset</button>
+                <button id="cloakerReset" class="warningButton" onclick="resetTabSettings()">Reset</button>
             </div>
             <label for="templates"><i><b>Templates: </b></i></label>
             <select id="templates">
@@ -65,10 +65,10 @@
             <input id="panicKeyURL" placeholder="Enter a website URL to be sent to.." style="width: 100%;" type="url" class="inputField"
                 pattern="https://.*" autocomplete="on" value="https://">
             <div style="display: flex; flex-wrap: wrap; margin-top: 1em; margin-bottom: 0.5em;">
-                <button class="cdnrefresh settingButton" onclick="alert('Website will refresh around 2 times.');localStorage.removeItem('agentsgams-cdn');location.reload();">Refresh CDNs</button>
+                <button class="panickey settingButton" onclick="localStorage.setItem('agentsgams-panickeylink',document.querySelector('#panicKeyURL').value);window.location.reload();">Change Website</button>
+                <button class="panickey settingButton" onclick="document.getElementById('panicKeyPopup').showModal()">Change Panic Key</button>
+                <button class="warningButton settingButton" onclick="localStorage.removeItem('agentsgams-panickey');location.reload();">Reset both Website and Key</button>
             </div>
-            <br><br>
-            
         </div>
 
         <div style="width: 100%; max-width: 600px;">
@@ -95,7 +95,7 @@
                 <p style="display: none;"><b>Current CDN: </b><span id="cdnCurrent">None..?</span></p>
                 <script>if (window.localStorage.hasOwnProperty("agentsgams-cdn")){document.getElementById('cdnCurrent').innerText=localStorage.getItem("agentsgams-cdn");};</script>
                 <div style="display: flex; flex-wrap: wrap; margin-top: 1em; margin-bottom: 0.5em;">
-                <button class="cdnrefresh settingButton" onclick="alert('Website will refresh around 2 times.');localStorage.removeItem('agentsgams-cdn');location.reload();">Refresh CDNs</button>
+                <button class="warningButton settingButton" onclick="alert('Website will refresh around 2 times.');localStorage.removeItem('agentsgams-cdn');location.reload();">Refresh CDNs</button>
                 </div>
             </div>
 
@@ -117,6 +117,17 @@
             <a href="."><button id="homepage">Back to Homepage</button></a>
         </p>
     </div>
+
+    <dialog id="panicKeyPopup">
+        <h2>Panic Key</h2>
+        <p style="font-size:13px;color:red;">Warning: be sure to make a unique key<br>so you can't accidently press it</p>
+        <input style="height:30px;width:30px;text-align:center;font-size:23px;" maxlength="1" id="panicKeyInput">
+        <script>if(window.localStorage.hasOwnProperty("agentsgams-panickey")){document.querySelector('#panicKeyInput').value=localStorage.getItem('agentsgams-panickey')}</script>
+        <div style="display: flex; flex-wrap: wrap; margin-top: 1em; margin-bottom: 0.5em;">
+            <button class="panickey settingButton" onclick="if(document.querySelector('#panicKeyInput').value==''){alert('hello');return}else{localStorage.setItem('agentsgams-panickey',document.querySelector('#panicKeyInput').value);window.location.reload()}">Set</button>
+            <button class="panickey settingButton" onclick="document.getElementById('panicKeyPopup').close()">Cancel</button>
+        </div>
+    </dialog>
 
     <script src="assets/js/tools.js"></script>
     <script src="assets/js/inject.js"></script>

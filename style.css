@@ -98,10 +98,6 @@ h1 { font-size: 40px; text-shadow: 1px 3px 3px gray; }
 #cloakerImage:hover { background-color: rgb(60, 87, 117); transform: scale(1.05) }
 #cloakerImage:active { background-color: rgb(42, 61, 82); transform: scale(0.95); }
 
-#cloakerReset { background-color: rgb(100, 51, 51); border: 0; border-radius: 4px; width: var(--sharedWidth); height: 40px; color: white; cursor: pointer; transition: 0.5s; }
-#cloakerReset:hover { background-color: rgb(117, 60, 60); transform: scale(1.05) }
-#cloakerReset:active { background-color: rgb(82, 42, 42); transform: scale(0.95); }
-
 #homepage { background-color: rgb(100, 77, 51); border: 0; border-radius: 4px; width: var(--sharedWidth); height: 40px; color: white; cursor: pointer; transition: 0.5s; }
 #homepage:hover { background-color: rgb(117, 92, 60); transform: scale(1.05) }
 #homepage:active { background-color: rgb(82, 63, 42); transform: scale(0.95); }
@@ -114,13 +110,19 @@ h1 { font-size: 40px; text-shadow: 1px 3px 3px gray; }
 #darkblueMode:hover { background-color: #2A7AEF; transform: scale(1.05) }
 #darkblueMode:active { background-color: #195bbe; transform: scale(0.95); }
 
-.cdnrefresh { background-color: rgb(100, 51, 51); border: 0; border-radius: 4px; width: var(--sharedWidth); height: 40px; color: white; cursor: pointer; transition: 0.5s; }
-.cdnrefresh:hover { background-color: rgb(117, 60, 60); transform: scale(1.05) }
-.cdnrefresh:active { background-color: rgb(82, 42, 42); transform: scale(0.95); }
+.warningButton { background-color: rgb(100, 51, 51); border: 0; border-radius: 4px; width: var(--sharedWidth); height: 40px; color: white; cursor: pointer; transition: 0.5s; }
+.warningButton:hover { background-color: rgb(117, 60, 60); transform: scale(1.05) }
+.warningButton:active { background-color: rgb(82, 42, 42); transform: scale(0.95); }
 
 .apply { background-color: rgb(89, 145, 78); border: 0; border-radius: 4px; width: 130px; height: 40px; color: white; cursor: pointer; transition: 0.5s; }
 .apply:hover { background-color: rgb(70, 117, 60); transform: scale(1.05) }
 .apply:active { background-color: rgb(49, 82, 42); transform: scale(0.95); }
+
+.panickey { background-color: rgb(136, 136, 136); border: 0; border-radius: 4px; width: var(--sharedWidth); height: 40px; color: white; cursor: pointer; transition: 0.5s; }
+.panickey:hover { background-color: rgb(212, 212, 212); transform: scale(1.05) }
+.panickey:active { background-color: rgb(97, 97, 97); transform: scale(0.95); }
+
+#panicKeyPopup { border-radius: 6px; text-align: center; }
 
 /* Themes */
 .settingButton {flex: 1 0 48%; margin: 0.8%; box-sizing: border-box;}

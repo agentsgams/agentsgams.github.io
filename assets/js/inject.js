@@ -13,6 +13,8 @@ if (window.localStorage.hasOwnProperty("agentsgams-title")) { document.title = l
 if (window.localStorage.hasOwnProperty("agentsgams-icon")) { document.querySelector("link[rel=icon]").href = local_icon; debug(`Cloaker favicon is set to "${local_icon}"`) };
 if (window.localStorage.hasOwnProperty("agentsgams-theme")) { document.body.setAttribute("data-theme", local_theme); debug(`Theme is set to ${local_theme}`) };
 
+if (window.localStorage.hasOwnProperty("agentsgams-panickey")) { document.addEventListener('keydown', function(e) { const key = e.key; if (localStorage.getItem('agentsgams-panickey')==key) {window.location.href=localStorage.getItem('agentsgams-panickeylink')} }) }
+
 // Secret DevTools Easter Egg
 var array = ["Ah, hello Gordon Freeman!", "Hello there!", "It's great to see you again!", "hi,", "whats up reddit, its kendrick lamar", "It is nice to see you!", "I see someone is using DevTools..!", "Chrome or Firefox?", "letter from agentn86..", "[insert funny joke that you can only see if your chromebook allows the devtools setting or using a personal computer]"]
 console.warn( `%c${array[Math.floor(Math.random() * array.length)]}%c You can mess around here as you wish, but if you would like to check out the source code go to https://github.com/agentsgams/agentsgams.github.io . I'll see ya there :)`, "font-weight: bold;", "font-weight: normal;")
@@ -58,6 +60,14 @@ async function getCDN(cdns) {
     return cdns[0];
 };
 
+// Panic Key Default
+if (!window.localStorage.hasOwnProperty("agentsgams-panickey")) {
+    debug("Panic key doesn't exist, adding default");
+    localStorage.setItem("agentsgams-panickey", "`");
+    localStorage.setItem("agentsgams-panickeylink", "https://google.com/")
+};
+
+// CDN Default
 if (!window.localStorage.hasOwnProperty("agentsgams-cdn")) {
     debug("User does not appear to have CDN")
     
